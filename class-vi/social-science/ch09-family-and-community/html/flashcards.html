@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — Family and Community</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">👨‍👩‍👧‍👦 <span>Ch 9</span> Family and Community</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 40 cards in 5 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire number drill</h2>
+<p class="muted small">Cover the right column. These are the numbers most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Hours Kamal Parmar taught each day</td><td>5:30 – 9:30 pm</td></tr>
+      <tr><td>Children attending Kamal Parmar's classes</td><td>150</td></tr>
+      <tr><td>Year Shri Mahesh Sharma won the Padma Shri</td><td>2019</td></tr>
+      <tr><td>Year of the Chennai floods</td><td>2015</td></tr>
+      <tr><td>Family values learned at home (count)</td><td>4 (ahimsa, dāna, sevā, tyāga)</td></tr>
+      <tr><td>Big Questions at the start of the chapter</td><td>2</td></tr>
+      <tr><td>Members in Shalini's family tree</td><td>7</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 01 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'Family Basics', q:'What is the family called in this chapter?', a:'The <b>fundamental and most ancient unit</b> of any society.'},
+ {n:2, deck:'Family Basics', q:'What is a joint family?', a:'Several <b>generations living together</b> — grandparents, parents, uncles/aunts, siblings, cousins.'},
+ {n:3, deck:'Family Basics', q:'What is a nuclear family?', a:'A <b>couple and their children</b> (sometimes just one parent and children).'},
+ {n:4, deck:'Family Basics', q:'Who is quoted saying "Love and dharma are the flower and fruit of family life"?', a:'<b>Tiruvalluvar.</b>'},
+ {n:5, deck:'Family Basics', q:'What word is missing from most Indian languages, compared to English?', a:'A word for <b>"cousin"</b> — cousins are called brothers/sisters instead.'},
+ {n:6, deck:'Family Basics', q:'What does चाचा (chacha) mean in the example table?', a:'<b>Father\'s younger brother</b> (uncle).'},
+ {n:7, deck:'Family Basics', q:'What does Tamil have, that English mostly lacks?', a:'Different terms for <b>elder vs younger</b> brother/sister.'},
+ {n:8, deck:'Family Basics', q:'What are family relationships based on?', a:'<b>Love, care, cooperation</b> and <b>interdependence</b>.'},
+
+ {n:9,  deck:'Roles & Values', q:'What four values does the family "school" teach?', a:'<b>Ahimsa, dāna, sevā, tyāga.</b>'},
+ {n:10, deck:'Roles & Values', q:'What does "dāna" mean?', a:'<b>Giving.</b>'},
+ {n:11, deck:'Roles & Values', q:'What does "sevā" mean?', a:'<b>Service.</b>'},
+ {n:12, deck:'Roles & Values', q:'What does "tyāga" mean?', a:'<b>Sacrifice</b> — giving up your own needs for the family\'s needs.'},
+ {n:13, deck:'Roles & Values', q:'What are parents responsible for, per "Roles and Responsibilities"?', a:'Raising children to be <b>happy, responsible members of society</b>.'},
+ {n:14, deck:'Roles & Values', q:'What happens to children\'s responsibilities as they grow up?', a:'They <b>take on more</b>, helping other family members.'},
+ {n:15, deck:'Roles & Values', q:'What does "cooperation" mean, as used in the chapter?', a:'<b>Working together.</b>'},
+ {n:16, deck:'Roles & Values', q:'Following one\'s duty has been an important principle of what?', a:'<b>Indian culture</b> — this duty is called <b>dharma</b>.'},
+
+ {n:17, deck:'Shalini & Tenzing', q:'Where does Shalini\'s family live?', a:'A town in <b>Kerala</b>.'},
+ {n:18, deck:'Shalini & Tenzing', q:'What festival was Shalini\'s family preparing for?', a:'<b>Onam.</b>'},
+ {n:19, deck:'Shalini & Tenzing', q:'Why couldn\'t the family afford new clothes for everyone at first?', a:'Shalini\'s uncle (<b>Chittappa</b>) had just lost his job.'},
+ {n:20, deck:'Shalini & Tenzing', q:'What did Shalini get instead of a silk dress?', a:'A simple <b>cotton dress</b>.'},
+ {n:21, deck:'Shalini & Tenzing', q:'What did Acchamma explain about the simpler dress?', a:'This is how families <b>support each other and share</b> what they have.'},
+ {n:22, deck:'Shalini & Tenzing', q:'Where does Tenzing\'s family live?', a:'A mountain village in <b>Meghalaya</b>.'},
+ {n:23, deck:'Shalini & Tenzing', q:'What does Tenzing\'s mother do?', a:'Works in a local <b>handicraft cooperative</b> — fabrics, wood carvings, tourist items.'},
+ {n:24, deck:'Shalini & Tenzing', q:'What does Tenzing\'s grandfather do for the neighbourhood?', a:'Registers <b>power-failure complaints</b> and once collected money for storm-damage repairs.'},
+
+ {n:25, deck:'Community Power', q:'What can a "community" be, according to the chapter?', a:'Connected families/people, or a group by <b>religion, region, work or interest</b>.'},
+ {n:26, deck:'Community Power', q:'Why do communities agree on unwritten rules about shared resources?', a:'To give everyone <b>secure access</b> to water, grazing land, forest produce, etc.'},
+ {n:27, deck:'Community Power', q:'What happens if individuals in a community don\'t do their duties?', a:'The community <b>will not function smoothly</b>.'},
+ {n:28, deck:'Community Power', q:'Where is Jhabua, and what crisis did it face?', a:'<b>Madhya Pradesh</b> — an acute <b>water crisis</b>.'},
+ {n:29, deck:'Community Power', q:'What is the "halma" tradition?', a:'The Bhil community coming together, <b>unpaid</b>, to help anyone in a crisis.'},
+ {n:30, deck:'Community Power', q:'What did the Bhil community do about the water crisis?', a:'Planted <b>thousands of trees</b> and dug <b>trenches</b> to conserve rainwater.'},
+ {n:31, deck:'Community Power', q:'Who won the Padma Shri in 2019 for work with Bhil communities?', a:'<b>Shri Mahesh Sharma</b>, of the Shivganga movement.'},
+ {n:32, deck:'Community Power', q:'What did private/religious groups do during the 2015 Chennai floods?', a:'<b>Cooked and distributed food</b> to people who needed it.'},
+
+ {n:33, deck:'Urban Quests', q:'Where did Kamal Parmar run his street tuition classes?', a:'<b>Ahmedabad, Gujarat.</b>'},
+ {n:34, deck:'Urban Quests', q:'What was Kamal Parmar\'s regular job?', a:'Owner of a small <b>auto-fabrication workshop</b>.'},
+ {n:35, deck:'Urban Quests', q:'What hours did he teach, and what else did he provide?', a:'<b>5:30–9:30 pm</b> daily, plus a <b>free dinner</b>.'},
+ {n:36, deck:'Urban Quests', q:'How many children were soon attending regularly?', a:'<b>150.</b>'},
+ {n:37, deck:'Urban Quests', q:'Who joined as volunteer teachers?', a:'Older children attending <b>regular schools</b>.'},
+ {n:38, deck:'Urban Quests', q:'What is a Residents\' Welfare Association (RWA)?', a:'A newer <b>urban community</b> that makes its own local rules.'},
+ {n:39, deck:'Urban Quests', q:'What does an RWA depend on, showing communities are interdependent?', a:'The <b>trading community</b> for supplies, and <b>municipal workers</b> for waste.'},
+ {n:40, deck:'Urban Quests', q:'What is a "jāti", per the chapter?', a:'A <b>subdivision of society</b>, also often called a community.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

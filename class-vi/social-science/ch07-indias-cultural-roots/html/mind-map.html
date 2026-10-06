@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — India's Cultural Roots</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🕉️ <span>Ch 7</span> India's Cultural Roots</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>Indian culture is an ancient <strong>tree</strong>: many <strong>roots</strong> (Vedic, Buddhist, Jain, folk, tribal) feed one <strong>trunk</strong> of shared ideas — dharma, karma, rebirth, the search for an end to suffering — from which many <strong>branches</strong> grow.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · THE VEDAS — the oldest root</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Four Vedas: Ṛig, Yajur, Sāma, Atharva</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Recited ORALLY, composed in the Sapta Sindhava region</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Ṛig Veda: 5th–2nd millennium BCE (experts' estimate)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>UNESCO, 2008 — "masterpiece of oral heritage"</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Composed by RISHIS and RISHIKAS</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>"ekam sat viprā bahudhā vadanti" — one reality, many names</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · VEDIC SOCIETY &amp; SCHOOLS OF THOUGHT</button>
+    <ul>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Society</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Organised into JANAS (clans) — 30+ named in the Ṛig Veda</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Rājā (king), sabha/samiti (assembly)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Professions: weaver, potter, healer, priest, etc.</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Upanishads</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Introduce REBIRTH and KARMA</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>VEDANTA — everything is one essence, BRAHMAN</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>ĀTMAN (Self) is one with brahman — "tat tvam asi"</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>YOGA — realise brahman in one's own consciousness</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Together → foundations of 'Hinduism' today</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Upanishad stories</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Śhvetaketu — brahman is like the banyan seed</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Nachiketa — given to Yama; learns the ātman is immortal</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Gārgī &amp; Yājñavalkya — persistent questions win the truth</button></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · BUDDHISM</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Siddhārtha Gautama, born in Lumbini (~560 BCE)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>4 sights at 29 → old man, sick man, dead body, ascetic</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Enlightenment under a pipal tree at Bodh Gaya</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Cause of suffering: AVIDYĀ (ignorance) + ATTACHMENT</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>'Buddha' = enlightened/awakened</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Founded the SANGHA — monks (bhikshus), later nuns (bhikshunīs)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>AHIMSA — 'non-hurting', broader than 'non-violence'</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Jātaka tales — e.g. the monkey-king's sacrifice</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · JAINISM</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Vardhamāna, born near Vaishālī, Bihar (early 6th c. BCE)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Left home at 30 → 12 years → supreme wisdom → 'Mahāvīra'</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>'Jain' ← jina = conqueror (of ignorance, not land)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>AHIMSA, ANEKĀNTAVĀDA (not just one aspect), APARIGRAHA (non-possession)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Interconnectedness of all creatures</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Rohineya the burglar — second chances, right thinking</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Monks/nuns spread teachings — monasteries, rock-cut caves (Ellora)</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · OTHER SCHOOLS — AND WHY NOT "RELIGION"</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>CHĀRVĀKA / LOKĀYATA — only matter exists, no afterlife; disappeared</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>'Schools of thought' / 'belief systems' preferred over 'religion'</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Why: philosophical + spiritual + ethical + social aspects, all at once</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Shared trunk: DHARMA, KARMA, REBIRTH, end of suffering/ignorance</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>6 · FOLK AND TRIBAL ROOTS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Oral traditions — folk (common people) &amp; tribal (tribes)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>No ancient word for 'tribe' — just janas in forests/mountains</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>2011: 705 tribes, ~104 million people</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>19th-c. 'primitive' labels — mostly abandoned today</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Examples: Khandoba (central India), Singbonga (Munda/Santhal)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>André Béteille — MUTUAL influence with Hinduism, not one-way</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Six links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · One tree, many roots</h4>
+    <p style="margin-bottom:0">Vedic, Buddhist, Jain, folk and tribal traditions are all <strong>roots</strong> of the same tree. None stands alone — they fed each other for millennia.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · Same questions, different answers</h4>
+    <p style="margin-bottom:0">Vedic thought, Buddhism and Jainism all asked <strong>why we suffer</strong> and <strong>how to end ignorance</strong> — but reached different methods (Vedanta/Yoga, the Buddha's Sangha, Mahāvīra's ahimsa).</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · Two princes, two paths</h4>
+    <p style="margin-bottom:0">Siddhārtha and Vardhamāna both left royal life at a similar age, both endured ascetic searches, and both founded traditions built on <strong>ahimsa</strong> — but their teachings on the self and possessions diverge.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · "Schools", not "religions"</h4>
+    <p style="margin-bottom:0">The chapter's choice of words is deliberate — <strong>philosophical + spiritual + ethical + social</strong> all at once, which the narrower word 'religion' doesn't capture.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">5 · Brahman ≠ Brahmā</h4>
+    <p style="margin-bottom:0">The easiest mix-up in the chapter: <strong>brahman</strong> is the impersonal cosmic essence of Vedanta; <strong>Brahmā</strong> is a god. Keep them apart.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">6 · Not a one-way street</h4>
+    <p style="margin-bottom:0">André Béteille's point is the chapter's real punchline: Hinduism shaped tribal belief, <strong>and</strong> tribal belief shaped Hinduism, throughout its history — <strong>mutual enrichment</strong>, not conquest.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> The four Vedas, and how they were transmitted</label></li>
+    <li><label><input type="checkbox" data-check="m2"> What brahman, ātman and karma each mean — and how they connect</label></li>
+    <li><label><input type="checkbox" data-check="m3"> The Buddha's life story, in order, with the two causes of suffering</label></li>
+    <li><label><input type="checkbox" data-check="m4"> Mahāvīra's life story and the three core Jain teachings</label></li>
+    <li><label><input type="checkbox" data-check="m5"> Why the chapter avoids the word "religion"</label></li>
+    <li><label><input type="checkbox" data-check="m6"> The 2011 tribal population figures and the Béteille quote</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the 50-question test →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 30 Sep 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

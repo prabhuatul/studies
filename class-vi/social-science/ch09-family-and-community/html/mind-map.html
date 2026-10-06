@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — Family and Community</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">👨‍👩‍👧‍👦 <span>Ch 9</span> Family and Community</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>Two units, one idea: the <strong>family</strong> teaches values through daily life, and the <strong>community</strong> — rural or urban — is simply families and people supporting each other at a larger scale. Both are ultimately <strong>interdependent</strong>.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · FAMILY TYPES</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>JOINT family — several generations together</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>NUCLEAR family — couple (or one parent) + children</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Tiruvalluvar: "Love and dharma are the flower and fruit of family life"</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>No word for 'cousin' in most Indian languages — called brothers/sisters</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · VALUES THE FAMILY TEACHES</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Dharma — duty</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Ahimsa — non-violence</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Dāna — giving</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Sevā — service</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Tyāga — sacrifice</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · TWO FAMILY STORIES</button>
+    <ul>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Shalini (Kerala)</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Onam festival, uncle Chittappa lost his job</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Parents bought clothes for the WHOLE extended family</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Shalini got cotton, not silk — didn't mind, happy for everyone</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Tenzing (Meghalaya)</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Mother busy in handicraft cooperative</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Father takes on chores, cooking, garden</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Grandparents: stories, homework help, social work</button></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · ROLES AND RESPONSIBILITIES</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Built on love, care, COOPERATION, interdependence</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Parents raise happy, responsible children</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Children take on more responsibility as they grow</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · COMMUNITY — RURAL EXAMPLES</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Unwritten 'rules' for shared water/grazing/forest resources</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Jhabua (MP) water crisis → Bhil community's HALMA tradition</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Planted trees, dug trenches — unpaid, to 'serve Mother Earth'</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Shri Mahesh Sharma — Padma Shri 2019 (Shivganga movement)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Chennai floods 2015 — private/religious groups distributed food</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>6 · COMMUNITY — URBAN EXAMPLES</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Kamal Parmar (Ahmedabad) — free street tuition, 150 children</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Residents' Welfare Associations (RWAs) — newer, make own rules</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Communities are INTERDEPENDENT — RWAs need traders + municipal workers</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>'Community' is flexible — jāti, religion, region, work, interest</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Five links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · Family is community in miniature</h4>
+    <p style="margin-bottom:0">Everything the chapter says about community — shared duties, interdependence, support in a crisis — is first taught at home, inside the family, through values like tyāga and sevā.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · Sacrifice, not just sharing</h4>
+    <p style="margin-bottom:0">Shalini's cotton dress isn't really about clothes — it's <strong>tyāga</strong> in action. The Bhils' unpaid halma work is the same value, scaled up to a whole community.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · Roles adapt, they don't disappear</h4>
+    <p style="margin-bottom:0">When Tenzing's mother got busier, his father didn't stop contributing — he took on new chores. Responsibility shifts <em>within</em> the family; it doesn't vanish.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · Rural and urban, same principle</h4>
+    <p style="margin-bottom:0">Jhabua's halma and Kamal Parmar's street classes look nothing alike, but both are people giving time and effort <strong>without expecting anything in return</strong>.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">5 · No community stands alone</h4>
+    <p style="margin-bottom:0">Even a Residents' Welfare Association — seemingly self-contained — depends on traders and municipal workers. <strong>Interdependence</strong> is the chapter's closing idea for a reason.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> Joint vs nuclear family, with an example of each</label></li>
+    <li><label><input type="checkbox" data-check="m2"> The four family values and what each means</label></li>
+    <li><label><input type="checkbox" data-check="m3"> Shalini's and Tenzing's stories, in your own words</label></li>
+    <li><label><input type="checkbox" data-check="m4"> Why the halma tradition matters, and who won the Padma Shri for it</label></li>
+    <li><label><input type="checkbox" data-check="m5"> Kamal Parmar's story and what it shows about urban community</label></li>
+    <li><label><input type="checkbox" data-check="m6"> Why communities are described as "interdependent"</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the 50-question Quest →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 01 Oct 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

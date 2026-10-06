@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — The Value of Work</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">💼 <span>Ch 13</span> The Value of Work</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 40 cards in 5 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire number drill</h2>
+<p class="muted small">Cover the right column. These are the numbers most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Cost of wood for Rajesh's chair</td><td>₹600</td></tr>
+      <tr><td>Selling price of Rajesh's chair</td><td>₹1,000</td></tr>
+      <tr><td>Value added by Rajesh's work</td><td>₹400</td></tr>
+      <tr><td>Old travel time to town from Kamlapur</td><td>5 hours</td></tr>
+      <tr><td>New travel time after the highway</td><td>2 hours</td></tr>
+      <tr><td>Big Questions at the start of the chapter</td><td>2</td></tr>
+      <tr><td>End-of-chapter questions/activities/projects</td><td>4</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 03 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'Economic vs Non-Economic', q:'What are "economic activities"?', a:'Activities that involve <b>money or money\'s worth</b>.'},
+ {n:2, deck:'Economic vs Non-Economic', q:'What are "non-economic activities"?', a:'Activities done out of <b>gratitude, love, care, respect</b> — no payment.'},
+ {n:3, deck:'Economic vs Non-Economic', q:'What is a "market"?', a:'A place where people <b>exchange goods and services</b>.'},
+ {n:4, deck:'Economic vs Non-Economic', q:'What is a "fee"?', a:'Payment for <b>professional advice or services</b> (e.g. doctor, lawyer).'},
+ {n:5, deck:'Economic vs Non-Economic', q:'What is Geeta Aunty\'s profession?', a:'A <b>pilot in the Indian Air Force</b>.'},
+ {n:6, deck:'Economic vs Non-Economic', q:'What non-economic activities does Kabir\'s grandfather do?', a:'Free Geography classes, <b>gardening</b>, and running errands.'},
+ {n:7, deck:'Economic vs Non-Economic', q:'What is Rohan\'s paid job, and his volunteer activity?', a:'<b>Software engineer</b> (paid); teaches computer skills on weekends (<b>unpaid</b>).'},
+ {n:8, deck:'Economic vs Non-Economic', q:'Why is Geeta Aunty\'s piloting an economic activity?', a:'Because she receives a <b>salary</b> for it.'},
+
+ {n:9,  deck:'Types of Pay', q:'What is a "salary"?', a:'A <b>fixed, regular</b> payment, usually <b>monthly</b>.'},
+ {n:10, deck:'Types of Pay', q:'What is a "wage"?', a:'Payment for a <b>specific period</b> of work.'},
+ {n:11, deck:'Types of Pay', q:'What is "payment in kind"?', a:'A <b>non-cash</b> payment for work performed.'},
+ {n:12, deck:'Types of Pay', q:'Where does Kavya\'s aunt work?', a:'The <b>village post office</b>.'},
+ {n:13, deck:'Types of Pay', q:'How does Kavya\'s aunt earn extra money in the evening?', a:'<b>Online exam-prep classes</b>, charging a weekly fee.'},
+ {n:14, deck:'Types of Pay', q:'Who is Sahil, and how is he paid?', a:'A <b>farm labourer</b> — paid a <b>daily wage</b>, part cash, part mangoes (payment in kind).'},
+ {n:15, deck:'Types of Pay', q:'What is Kavya\'s uncle\'s job?', a:'A <b>construction technician</b> who operates a bulldozer.'},
+ {n:16, deck:'Types of Pay', q:'What did the new highway near Kamlapur promise?', a:'Cutting travel time to town from <b>5 hours to 2 hours</b>.'},
+
+ {n:17, deck:'Value Addition', q:'What is "value addition"?', a:'The <b>increase in monetary value</b> created while transforming something.'},
+ {n:18, deck:'Value Addition', q:'What is Rajesh\'s profession?', a:'A <b>carpenter</b>.'},
+ {n:19, deck:'Value Addition', q:'How much does Rajesh pay for the wood?', a:'<b>₹600.</b>'},
+ {n:20, deck:'Value Addition', q:'How much does Rajesh sell the chair for?', a:'<b>₹1,000.</b>'},
+ {n:21, deck:'Value Addition', q:'What does the ₹400 difference represent?', a:'The value of Rajesh\'s <b>skill, time and effort</b>.'},
+ {n:22, deck:'Value Addition', q:'Why are Rajesh\'s activities economic?', a:'Because they all <b>involve payment</b>.'},
+ {n:23, deck:'Value Addition', q:'Name three professions the worksheet marks as creating monetary value.', a:'<b>Tailor, Doctor, Scientist</b> (also Police, Pilot).'},
+ {n:24, deck:'Value Addition', q:'Name an activity the worksheet marks as NOT creating monetary value.', a:'E.g. <b>parents cooking dinner for their family</b>, or caring for a sick grandparent.'},
+
+ {n:25, deck:'Sevā & Non-Economic Value', q:'What does "sevā" mean?', a:'<b>Selfless service.</b>'},
+ {n:26, deck:'Sevā & Non-Economic Value', q:'Where is sevā commonly seen?', a:'<b>Temples, gurudwaras, mosques, churches.</b>'},
+ {n:27, deck:'Sevā & Non-Economic Value', q:'What is a "langar"?', a:'A <b>community kitchen</b> serving free food to every visitor.'},
+ {n:28, deck:'Sevā & Non-Economic Value', q:'What feelings does sevā foster?', a:'<b>Satisfaction and gratitude</b> for what we have.'},
+ {n:29, deck:'Sevā & Non-Economic Value', q:'Sevā contributes to society how?', a:'<b>Without expecting anything in return.</b>'},
+ {n:30, deck:'Sevā & Non-Economic Value', q:'What does the chapter say about the value of non-economic activities?', a:'They may not involve money, but the <b>value they generate is important</b> in our lives.'},
+ {n:31, deck:'Sevā & Non-Economic Value', q:'Give an example of sevā from the chapter besides langars.', a:'A <b>temple distributing prasād</b> to devotees.'},
+ {n:32, deck:'Sevā & Non-Economic Value', q:'What overall contribution do non-economic activities make?', a:'To <b>social welfare, wellbeing, and quality of life</b>.'},
+
+ {n:33, deck:'Community Power', q:'What is the Swachh Bharat Abhiyan based on?', a:'The <b>collective effort</b> of all Indian citizens to keep surroundings clean.'},
+ {n:34, deck:'Community Power', q:'What do people do together under Swachh Bharat Abhiyan?', a:'Clean up <b>streets, roads, parks</b> and public areas.'},
+ {n:35, deck:'Community Power', q:'What does "Van Mahotsav" mean?', a:'"<b>Festival of forests</b>."'},
+ {n:36, deck:'Community Power', q:'What is the purpose of Van Mahotsav?', a:'Promote awareness of trees/forests through <b>tree plantation drives</b>.'},
+ {n:37, deck:'Community Power', q:'What do Swachh Bharat Abhiyan and Van Mahotsav have in common?', a:'Both show the <b>strength of community participation</b>.'},
+ {n:38, deck:'Community Power', q:'What do festivals often involve, relating to non-economic activity?', a:'People <b>gathering, decorating, and sharing food</b> together.'},
+ {n:39, deck:'Community Power', q:'How many end-of-chapter "Questions, activities and projects" are there?', a:'<b>Four.</b>'},
+ {n:40, deck:'Community Power', q:'What is the central distinction the whole chapter is built around?', a:'<b>Economic</b> (money) vs <b>non-economic</b> (no payment, done out of care) activities.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

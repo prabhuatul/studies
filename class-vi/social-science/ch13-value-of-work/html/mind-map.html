@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — The Value of Work</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">💼 <span>Ch 13</span> The Value of Work</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>One question sorts every activity in the chapter: <strong>was money exchanged?</strong> Yes → economic (paid in salary, fee, wage or kind, and adding value along the way). No → non-economic (still valuable — just paid in gratitude, wellbeing and community strength instead).</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · ECONOMIC VS NON-ECONOMIC</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>ECONOMIC — involves money or money's worth</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>NON-ECONOMIC — no payment, done out of love/care/gratitude</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Geeta Aunty (pilot, salary) vs Kabir's grandfather (free classes)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>One person can do BOTH — e.g. Rohan's job + his volunteering</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · TYPES OF PAY</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>SALARY — fixed, regular, monthly (Kavya's aunt &amp; uncle)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>FEE — for professional services (aunt's online classes)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>WAGE — for a specific period of work (Sahil, daily)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>PAYMENT IN KIND — non-cash (Sahil's mangoes)</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · VALUE ADDITION</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Rajesh: wood ₹600 → skill + tools → chair sold ₹1,000</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>₹400 = value of his skill, time, effort</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Worksheet: Tailor/Doctor/Scientist = ✓ · family chores/care = ✗</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · SEVĀ &amp; NON-ECONOMIC VALUE</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Sevā = selfless service — temples, gurudwaras, mosques, churches</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Langar = free community kitchen (e.g. Golden Temple)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Fosters satisfaction &amp; gratitude — nothing expected in return</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · COMMUNITY POWER</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Swachh Bharat Abhiyan — collective cleanliness effort</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Van Mahotsav — 'festival of forests', tree plantation drives</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Festivals — decorating, cooking together — non-economic, still valuable</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Five links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · One test for everything</h4>
+    <p style="margin-bottom:0">Every example in the chapter — pilots, carpenters, grandparents, langars — answers the same question: <strong>did money change hands?</strong> That single test sorts the whole chapter.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · Pay has four shapes</h4>
+    <p style="margin-bottom:0">Salary, fee, wage, payment in kind aren't random vocabulary — each fits a specific kind of work: regular employment, professional advice, time-based labour, or non-cash exchange.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · Value addition is visible with numbers</h4>
+    <p style="margin-bottom:0">Rajesh's chair turns an abstract idea — "work creates value" — into simple arithmetic: ₹1,000 − ₹600 = ₹400 of pure human skill and effort.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · Non-economic doesn't mean worthless</h4>
+    <p style="margin-bottom:0">The chapter goes out of its way to say non-economic activities matter — sevā, family care, and volunteering all create real value, just not a price tag.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">5 · Individual acts become collective strength</h4>
+    <p style="margin-bottom:0">Swachh Bharat Abhiyan and Van Mahotsav show non-economic effort scaling up: one person's small act of care becomes a nationwide movement when many people do it together.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> The definitions of economic and non-economic activities, with one example each</label></li>
+    <li><label><input type="checkbox" data-check="m2"> The four types of pay and who in the chapter receives each</label></li>
+    <li><label><input type="checkbox" data-check="m3"> Rajesh's chair example, with the exact numbers</label></li>
+    <li><label><input type="checkbox" data-check="m4"> What sevā and a langar are, and why they matter</label></li>
+    <li><label><input type="checkbox" data-check="m5"> Swachh Bharat Abhiyan and Van Mahotsav, and what they show about community</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the 50-question Quest →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 03 Oct 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

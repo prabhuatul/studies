@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — Locating Places on Earth</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">📍 <span>Ch 1</span> Locating Places on Earth</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>The chapter answers one question: <strong>“how do we say exactly where something is?”</strong> It answers it twice — first for a small area (<strong>a map</strong>), then for the whole planet (<strong>the grid</strong>). And the grid turns out to give us <strong>time</strong> as well as place.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · MAPS — small areas</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>A map = an area seen from the TOP</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>A collection of maps = ATLAS</button></li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Three kinds</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>PHYSICAL — natural features</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>POLITICAL — countries, boundaries, cities</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>THEMATIC — one specific kind of information</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Three components — D · D · S</button>
+        <ul>
+          <li>
+            <button class="node"><span class="tw">▾</span>DISTANCE → the scale</button>
+            <ul>
+              <li><button class="node leaf"><span class="tw">·</span>1 cm = 500 m</button></li>
+              <li><button class="node leaf"><span class="tw">·</span>2.5 cm = 500 km on the India map</button></li>
+            </ul>
+          </li>
+          <li>
+            <button class="node"><span class="tw">▾</span>DIRECTION → cardinal points</button>
+            <ul>
+              <li><button class="node leaf"><span class="tw">·</span>N at top; clockwise E, S, W</button></li>
+              <li><button class="node leaf"><span class="tw">·</span>Intermediate: NE, SE, SW, NW</button></li>
+              <li><button class="node leaf"><span class="tw">·</span>Arrow marked ‘N’</button></li>
+            </ul>
+          </li>
+          <li>
+            <button class="node"><span class="tw">▾</span>SYMBOLS → standard set</button>
+            <ul>
+              <li><button class="node leaf"><span class="tw">·</span>Stand in for buildings, roads, rivers, forests</button></li>
+              <li><button class="node leaf"><span class="tw">·</span>Fixed for India by the SURVEY OF INDIA</button></li>
+              <li><button class="node leaf"><span class="tw">·</span>PO · PTO · PS</button></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · THE GLOBE — why we need it</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Earth is NEARLY a sphere, flattened at the poles</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>A sphere cannot be shown accurately on flat paper</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>ORANGE-PEEL TEST — the peel tears at the edges</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>So: use a GLOBE — same shape as the Earth</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · COORDINATES — the big idea</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>THE MARKET — “7th shop, 5th row”</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>THE CHESSBOARD — letters a–h + numbers 1–8 → d2 to d4</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>THE EARTH — latitude + longitude</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Principle: TWO VALUES FIX ONE POSITION</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · THE GRID — latitude &amp; longitude</button>
+    <ul>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>LATITUDE → controls CLIMATE</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Distance from the EQUATOR</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Parallels run EAST–WEST · FULL circles · UNEQUAL</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>0° at Equator → 90°N / 90°S</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Torrid → temperate → frigid</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>LONGITUDE → controls TIME</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Distance from the PRIME MERIDIAN</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Meridians run NORTH–SOUTH · HALF circles · ALL EQUAL</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>0° at Greenwich (fixed 1884) → 180° E / W</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>180°E = 180°W = just 180°</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>HEMISPHERES</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Prime Meridian → WESTERN / EASTERN</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Equator → NORTHERN / SOUTHERN</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>INDIA’S OWN PRIME MERIDIAN</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>MADHYA REKHĀ — ‘middle line’</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Through UJJAYINĪ (today Ujjain), about 75.8°E</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>VARĀHAMIHIRA worked there ~1,500 years ago</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Reference for all Indian astronomical texts</button></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · TIME — the chain of reasoning</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Earth spins WEST to EAST</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>One full turn = 360° = 24 hours</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>→ 15 DEGREES PER HOUR (the key number)</button></li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>LOCAL TIME</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Noon at Greenwich → 1pm at 15°E, 2pm at 30°E</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>→ 11am at 15°W, 10am at 30°W</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>East = ahead · West = behind</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>STANDARD TIME</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>A country cannot run on dozens of local times</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>IST = GMT + 5 hrs 30 min</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>→ 5:30 pm here when it is noon in London</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>TIME ZONES</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Broadly follow the 15° bands</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>BUT lines bend along INTERNATIONAL BORDERS</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>USA = 6 zones · RUSSIA = 11 zones</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Half-hour offsets exist: India +5.5</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>INTERNATIONAL DATE LINE</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>About 180°, opposite the Prime Meridian</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>+12 and −12 touch here</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>EASTWARD = SUBTRACT a day</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>WESTWARD = ADD a day</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Deviates so no country is split across two dates</button></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Five links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · Round → globe → grid</h4>
+    <p style="margin-bottom:0">Earth is round, <strong>so</strong> we need a globe, <strong>so</strong> we need a grid. Each step forces the next. The orange-peel test is the proof of the first step.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · Twins with different jobs</h4>
+    <p style="margin-bottom:0">Latitude and longitude share the same idea — distance from a zero line, in degrees. But latitude gives you <strong>climate</strong> and longitude gives you <strong>time</strong>.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · Longitude <em>is</em> time</h4>
+    <p style="margin-bottom:0">Because the Earth turns a fixed 15° per hour, knowing how far east or west you are <em>is</em> knowing the time. <strong>This is the link most students miss.</strong></p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · Truth vs convenience</h4>
+    <p style="margin-bottom:0">Local time is the <strong>truth</strong>; standard time is the <strong>convenience</strong>. The Gujarat–Assam example is there to show the gap between them.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">5 · Two ends of one line</h4>
+    <p style="margin-bottom:0">The Prime Meridian and the Date Line are two ends of the same great circle. One is 0° and resets the <strong>hour</strong>; the other is ~180° and resets the <strong>date</strong>.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">6 · India was there first</h4>
+    <p style="margin-bottom:0">The idea of a prime meridian isn’t European. India's <strong>madhya rekhā</strong> through Ujjayinī predates Greenwich by many centuries.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> The three components of a map, with the tool for each</label></li>
+    <li><label><input type="checkbox" data-check="m2"> Why a globe is needed — and the activity that proves it</label></li>
+    <li><label><input type="checkbox" data-check="m3"> Six differences between parallels and meridians</label></li>
+    <li><label><input type="checkbox" data-check="m4"> The 15°-per-hour calculation, starting from 360 and 24</label></li>
+    <li><label><input type="checkbox" data-check="m5"> The difference between local and standard time, with the IST figure</label></li>
+    <li><label><input type="checkbox" data-check="m6"> The two Date Line rules, in the right direction</label></li>
+    <li><label><input type="checkbox" data-check="m7"> Three facts about the Ujjayinī meridian</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the 50-question test →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 22 Aug 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

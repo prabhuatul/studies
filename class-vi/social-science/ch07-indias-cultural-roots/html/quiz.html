@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCQ Test — India's Cultural Roots</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🕉️ <span>Ch 7</span> India's Cultural Roots</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html" aria-current="page">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap narrow">
+
+<!-- ==================== START SCREEN ==================== -->
+<section id="screen-start">
+  <div class="pagehead">
+    <div class="eyebrow">Social Science · Class VI · Chapter 7</div>
+    <h1>MCQ Test — India's Cultural Roots</h1>
+    <p><strong id="totalQ">50</strong> multiple-choice questions covering the whole chapter.</p>
+  </div>
+
+  <div id="lastAttempt" class="note tip hidden"></div>
+
+  <div class="card">
+    <h3 style="margin-top:0">How this test works</h3>
+    <ul>
+      <li><strong>One question at a time.</strong> Pick an option, then press <em>Next</em>.</li>
+      <li><strong>You can change your mind.</strong> Move back and forth with <em>Previous</em> / <em>Next</em>, or jump straight to any question using the numbered squares.</li>
+      <li><strong>Nothing is revealed while you work.</strong> No answer is shown until you finish the whole test — just like a real exam.</li>
+      <li><strong>Afterwards you get a full review:</strong> your score, which questions you got wrong, the correct answer, and <em>the reason</em> for every mistake.</li>
+      <li><strong>Wrong answers carry no penalty</strong>, so it is always worth attempting a question.</li>
+    </ul>
+
+    <div class="note tip">
+      <span class="lbl">Keyboard shortcuts</span>
+      Press <code>1</code>–<code>4</code> or <code>A</code>–<code>D</code> to choose an option,
+      and <code>←</code> <code>→</code> to move between questions.
+    </div>
+
+    <h4>Options</h4>
+    <label style="display:flex;gap:.6rem;align-items:flex-start;margin:.5rem 0">
+      <input type="checkbox" id="timedOpt" checked style="margin-top:.3rem">
+      <span>Timed test — <strong id="totalMin">40</strong> minutes.
+        <span class="small muted">The test submits itself when time runs out. Untick for untimed practice.</span></span>
+    </label>
+    <label style="display:flex;gap:.6rem;align-items:flex-start;margin:.5rem 0">
+      <input type="checkbox" id="shuffleOpt" style="margin-top:.3rem">
+      <span>Shuffle the question order.
+        <span class="small muted">Useful the second and third time round, so you don't just remember the sequence.</span></span>
+    </label>
+
+    <div class="btnrow" style="margin-top:1.4rem">
+      <button class="btn primary big" id="startBtn">Start the test →</button>
+      <a class="btn" href="summary.html">Revise first</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TEST SCREEN ==================== -->
+<section id="screen-test" class="hidden">
+  <div class="qmeta">
+    <span class="qnum" id="qnum">Question 1 of 50</span>
+    <span class="pill a" id="qtopic">Vedas</span>
+    <span class="grow"></span>
+    <span id="answeredCount" class="small">0 answered</span>
+    <strong id="timer" class="hidden">⏱ 40:00</strong>
+  </div>
+
+  <div class="bar" style="margin-bottom:1.4rem"><i id="bar"></i></div>
+
+  <div class="card">
+    <div class="qtext" id="qtext"></div>
+    <div class="opts" id="opts"></div>
+  </div>
+
+  <div class="btnrow" style="margin-top:1.2rem">
+    <button class="btn" id="prevBtn">← Previous</button>
+    <button class="btn" id="nextBtn">Next →</button>
+    <span style="margin-left:auto"></span>
+    <button class="btn primary" id="finishBtn">Finish &amp; see results</button>
+  </div>
+
+  <h4 style="margin-top:1.8rem">Jump to a question</h4>
+  <div class="dots" id="dots"></div>
+  <p class="small muted" style="margin-top:.8rem">
+    Filled squares are questions you have answered. Nothing here tells you whether an answer is right —
+    that comes after you finish.
+  </p>
+</section>
+
+<!-- ==================== RESULT SCREEN ==================== -->
+<section id="screen-result" class="hidden">
+  <div class="card scorehero">
+    <div class="big" id="bigScore">0 / 50</div>
+    <div class="sub" id="scorePct">0% correct</div>
+    <div class="verdict" id="verdict"></div>
+  </div>
+
+  <div class="statgrid">
+    <div class="stat ok"><div class="v" id="sCorrect">0</div><div class="l">Correct</div></div>
+    <div class="stat no"><div class="v" id="sWrong">0</div><div class="l">Wrong</div></div>
+    <div class="stat"><div class="v" id="sBlank">0</div><div class="l">Not attempted</div></div>
+  </div>
+
+  <div class="note key hidden" id="weakTopics"></div>
+
+  <div class="btnrow" style="margin-top:1.4rem">
+    <button class="btn primary" id="retakeBtn">Take the test again</button>
+    <a class="btn" href="summary.html">Revision sheet</a>
+    <a class="btn" href="flashcards.html">Flashcards</a>
+    <a class="btn" href="lesson.html">Full lesson</a>
+  </div>
+
+  <div class="review">
+    <h2>Answer review</h2>
+    <p class="muted small">
+      Every question you got wrong shows <strong>your answer</strong>, the <strong>correct answer</strong>,
+      and <strong>the reason</strong>. Read the reasons — that is where the learning happens.
+    </p>
+    <div class="chipbar">
+      <button class="chip on" data-rev="all">All questions</button>
+      <button class="chip" data-rev="wrong">Only what I got wrong</button>
+      <button class="chip" data-rev="blank">Only what I skipped</button>
+    </div>
+    <div id="reviewList"></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 30 Sep 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script src="assets/quiz-data.js"></script>
+<script src="assets/quiz.js"></script>
+</body>
+</html>

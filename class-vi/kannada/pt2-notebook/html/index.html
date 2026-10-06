@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kannada PT-2 — Notebook in English</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .kn { font-family: "Nirmala UI", "Noto Sans Kannada", "Tunga", "Kedage", var(--sans); }
+  .ln.kn { font-size: 1.22rem; font-weight: 600; line-height: 1.7; }
+  .ln.ro { font-family: var(--mono); font-size: .9rem; color: var(--teal); margin-top: .1rem; }
+  .ln.en { font-size: .95rem; color: var(--text); margin-top: .15rem; }
+  .tg { display: inline-block; min-width: 3.6rem; font-family: var(--sans); font-size: .66rem; font-weight: 700;
+        letter-spacing: .08em; text-transform: uppercase; color: var(--text-faint); }
+  h2 .kn { font-size: 1.35rem; }
+  h3.kh { margin-top: 1.6rem; }
+  h3.kh .ro, h3.kh .en { font-weight: 500; font-size: .9rem; color: var(--text-soft); }
+  .kq { display: grid; grid-template-columns: 2.2rem 1fr; gap: .2rem .7rem; }
+  .kq .qn { font-weight: 800; color: var(--accent); font-size: 1.1rem; }
+  .lbl2 { font-size: .7rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--text-soft); margin-bottom: .15rem; }
+  .ansblk { margin-top: .7rem; padding: .6rem .8rem; border-left: 3px solid var(--green); background: var(--green-soft); border-radius: 0 8px 8px 0; }
+  .ansblk .lbl2 { color: var(--green); }
+  details.vocab { margin-top: .6rem; }
+  details.vocab > summary { cursor: pointer; font-size: .85rem; font-weight: 600; color: var(--accent); }
+  table.vt td.kn, table.wt td.kn, table.jt td.kn { font-size: 1.08rem; }
+  td.ro { font-family: var(--mono); font-size: .84rem; color: var(--teal); }
+  .verse .vn { font-size: .7rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--text-soft); }
+  .nt { margin: .5rem 0 0; }
+  tr.unc td { background: var(--amber-soft); }
+  .kns { scroll-margin-top: 5rem; }
+  .spk { display: none; margin-left: .4rem; border: 1px solid var(--border); background: var(--surface); border-radius: 6px;
+         cursor: pointer; font-size: .8rem; padding: .05rem .35rem; vertical-align: middle; }
+  body.can-speak .spk { display: inline-block; }
+  .viewbar { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; align-items: center; padding: .75rem 1rem;
+             background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+             position: sticky; top: 3.4rem; z-index: 20; margin: 1rem 0; }
+  .viewbar label { display: inline-flex; gap: .35rem; align-items: center; font-size: .88rem; cursor: pointer; }
+  .viewbar input { accent-color: var(--accent); }
+  .keygrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: .2rem 1rem; font-size: .88rem; }
+  .keygrid code { color: var(--teal); }
+  /* hide modes */
+  body.no-ro .ro { display: none !important; }
+  body.no-en .en { display: none !important; }
+  body.no-ans .ansblk, body.no-ans .ansc { visibility: hidden; }
+  body.no-ans .ansblk { display: block; min-height: 2.5rem; }
+  @media print { .viewbar, .spk, .chipbar { display: none !important; } details.vocab { display: block; } details.vocab > *:not(summary) { display: block; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">📗 <span>PT-2</span> Kannada · Notebook in English</div>
+  <nav>
+    <a href="#l2">ಪಾಠ 2</a>
+    <a href="#l3">ಪಾಠ 3</a>
+    <a href="#l5">ಪಾಠ 5</a>
+    <a href="#poem">ಪದ್ಯ</a>
+    <a href="#gr4">ವ್ಯಾಕರಣ</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap narrow">
+
+<div class="pagehead">
+  <div class="eyebrow">Kannada (2nd language) · Class VI · Periodic Test-2</div>
+  <h1>Kannada notebook — with English meanings</h1>
+  <p>Every question and answer from the PT-2 notebook pages, typed in Kannada, with <b>how to say it</b> in English letters and the <b>English meaning</b>. Open "Word by word" under any answer to see what each Kannada word means.</p>
+</div>
+
+<div class="note key">
+  <span class="lbl">How to study</span>
+  1. Read the Kannada aloud using the "say" line. 2. Read the English meaning so you understand it. 3. Untick
+  <b>Answers</b> below and try to say or write each answer yourself. 4. Untick <b>English</b> and <b>Say it</b> too, and check you can still read the Kannada.
+</div>
+
+<details class="acc">
+  <summary><span class="num">🗣</span> Pronunciation key — how to read the "say" lines</summary>
+  <div class="body">
+    <div class="keygrid">
+      <div><code>a</code> — as in <i>about</i> (ಅ)</div>
+      <div><code>aa</code> — as in <i>father</i> (ಆ)</div>
+      <div><code>i</code> — as in <i>sit</i> (ಇ)</div>
+      <div><code>ee</code> — as in <i>see</i> (ಈ)</div>
+      <div><code>u</code> — as in <i>put</i> (ಉ)</div>
+      <div><code>oo</code> — as in <i>food</i> (ಊ)</div>
+      <div><code>e</code> — as in <i>bed</i> (ಎ)</div>
+      <div><code>ay</code> — as in <i>say</i>, long (ಏ)</div>
+      <div><code>o</code> — short o (ಒ)</div>
+      <div><code>oh</code> — as in <i>go</i>, long (ಓ)</div>
+      <div><code>ai</code> — as in <i>eye</i> (ಐ)</div>
+      <div><code>ru</code> — ಋ (as in ಕೃ = kru)</div>
+      <div><code>t, d</code> — soft, tongue touching the teeth (ತ, ದ)</div>
+      <div><code>T, D, N, L</code> — capital = curl the tongue back (ಟ, ಡ, ಣ, ಳ)</div>
+      <div><code>th, dh, kh, gh, bh</code> — with a puff of air (ಥ, ಧ, ಖ, ಘ, ಭ)</div>
+      <div><code>sh</code> — ಶ / ಷ &nbsp; · &nbsp;<code>ch</code> — ಚ</div>
+    </div>
+    <p class="small muted">A doubled consonant (<code>tt</code>, <code>ll</code>, <code>TT</code>) is held a little longer: <span class="kn">ಮತ್ತು</span> = <code>mat-tu</code>. Hyphens just split long words into easy pieces.</p>
+  </div>
+</details>
+
+<div class="viewbar" role="group" aria-label="What to show">
+  <b class="small">Show:</b>
+  <label><input type="checkbox" data-view="no-ro" checked> Say it</label>
+  <label><input type="checkbox" data-view="no-en" checked> English</label>
+  <label><input type="checkbox" data-view="no-ans" checked> Answers</label>
+  <button class="btn" id="vocabAll" style="padding:.3rem .7rem;font-size:.82rem">Open all word-by-word</button>
+</div>
+
+<div id="kn"></div>
+
+<div class="note warn">
+  <span class="lbl">Please check these against the notebook or textbook</span>
+  A few words were hard to read in the photos. They are marked <b>[?]</b> or shaded yellow:
+  <ul>
+    <li><b>Poem:</b> one word in verse 1 and the first word of verse 5.</li>
+    <li><b>Grammar exercise:</b> D (letters ತ, ಲ, ಮಾ, ಲ) and E (ಗಿಡವನೊಂದ).</li>
+    <li><b>Grammar examples:</b> the first and last examples (ಮನೆ, ಹಾಳೆ).</li>
+  </ul>
+</div>
+
+<footer class="foot">
+  <span>Class VI · Kannada (2nd language) · PT-2 notebook</span>
+  <span>Generated 04 Oct 2026</span>
+</footer>
+</main>
+<script src="assets/kn-data.js"></script>
+<script src="assets/kn.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

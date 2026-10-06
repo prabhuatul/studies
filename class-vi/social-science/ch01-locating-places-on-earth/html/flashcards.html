@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — Locating Places on Earth</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">📍 <span>Ch 1</span> Locating Places on Earth</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 40 cards in 6 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire number drill</h2>
+<p class="muted small">Cover the right column. These are the numbers most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Latitude of the Equator</td><td>0°</td></tr>
+      <tr><td>Latitude of the poles</td><td>90°N / 90°S</td></tr>
+      <tr><td>Longitude of the Prime Meridian</td><td>0°</td></tr>
+      <tr><td>Maximum longitude</td><td>180°</td></tr>
+      <tr><td>Year the Prime Meridian was fixed</td><td>1884</td></tr>
+      <tr><td>Degrees the Earth turns per hour</td><td>15°</td></tr>
+      <tr><td>Hours for one full turn</td><td>24</td></tr>
+      <tr><td>Degrees in a full turn</td><td>360°</td></tr>
+      <tr><td>IST ahead of GMT by</td><td>5 hours 30 minutes</td></tr>
+      <tr><td>Longitude of the Ujjayinī meridian</td><td>about 75.8°E</td></tr>
+      <tr><td>Varāhamihira lived about</td><td>1,500 years ago</td></tr>
+      <tr><td>Time zones in the USA</td><td>6</td></tr>
+      <tr><td>Time zones in Russia</td><td>11</td></tr>
+      <tr><td>Watch resets crossing Russia</td><td>10</td></tr>
+      <tr><td>Longitude of the International Date Line</td><td>about 180°</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 22 Aug 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'Maps', q:'What is a map?', a:'A representation or drawing of an area, looked at <b>as if from the top</b>.'},
+ {n:2, deck:'Maps', q:'What is an atlas?', a:'A <b>book or collection of maps</b>.'},
+ {n:3, deck:'Maps', q:'Name the three kinds of maps.', a:'<b>Physical</b> (natural features), <b>Political</b> (countries, boundaries, cities), <b>Thematic</b> (one specific kind of information).'},
+ {n:4, deck:'Maps', q:'What are the three components of a map?', a:'<b>Distance, direction and symbols.</b>'},
+ {n:5, deck:'Maps', q:'What is the scale of a map?', a:'It tells how a distance on the map relates to the real distance on the ground — e.g. <b>1 cm = 500 m</b>.'},
+ {n:6, deck:'Maps', q:'On the map of India, what does the 2.5 cm ruler represent?', a:'<b>500 kilometres</b> on the ground.'},
+ {n:7, deck:'Maps', q:'Name the four cardinal directions in clockwise order from the top.', a:'<b>North, east, south, west.</b>'},
+ {n:8, deck:'Maps', q:'Which government body fixed the standard map symbols for India?', a:'The <b>Survey of India</b>.'},
+
+ {n:9,  deck:'The Earth', q:'What shape is the Earth?', a:'<b>Nearly a sphere</b> — slightly <b>flattened at the poles</b>.'},
+ {n:10, deck:'The Earth', q:"Why can't a sphere be mapped accurately on flat paper?", a:'Because a curved surface cannot be flattened without tearing — shown by the <b>orange-peel test</b>.'},
+ {n:11, deck:'The Earth', q:'What is the orange-peel activity?', a:'Peel an orange into 3–4 large pieces and try to flatten them — they <b>tear at the edges</b>.'},
+ {n:12, deck:'The Earth', q:'What is a globe?', a:'A <b>sphere with a map drawn on it</b> — of the Earth, Moon, Mars, or the stars.'},
+ {n:13, deck:'The Earth', q:'Why is a globe better than a flat map for the Earth’s geography?', a:'Because the globe and the Earth have the <b>same spherical shape</b>.'},
+ {n:14, deck:'The Earth', q:'What are the poles?', a:'The two <b>fixed points</b> at the top and bottom of the globe as it rotates.'},
+
+ {n:15, deck:'Lat & Long', q:'What are coordinates?', a:'A <b>pair of values</b> that fixes a position precisely — on Earth, <b>latitude and longitude</b>.'},
+ {n:16, deck:'Lat & Long', q:'In chess notation, how is the common opening move described?', a:'The queen’s pawn moves <b>from d2 to d4</b>.'},
+ {n:17, deck:'Lat & Long', q:'What is the Equator?', a:'The imaginary circle <b>halfway between the two poles</b> — latitude <b>0°</b>, and the <b>longest</b> parallel.'},
+ {n:18, deck:'Lat & Long', q:'What does latitude measure?', a:'The <b>distance from the Equator</b>, in degrees.'},
+ {n:19, deck:'Lat & Long', q:'What is a parallel of latitude?', a:'An imaginary line running <b>east–west, parallel to the Equator</b>, forming a circle around the Earth.'},
+ {n:20, deck:'Lat & Long', q:'What is the latitude of the North and South Poles?', a:'<b>90°N</b> and <b>90°S</b>.'},
+ {n:21, deck:'Lat & Long', q:'What does longitude measure?', a:'The <b>distance from the Prime Meridian</b>, in degrees.'},
+ {n:22, deck:'Lat & Long', q:'What is a meridian of longitude?', a:'A <b>half-circle</b> running from one pole to the other.'},
+ {n:23, deck:'Lat & Long', q:'What is the Prime Meridian, and its other name?', a:'The reference meridian at <b>0°</b> longitude — also called the <b>Greenwich Meridian</b>.'},
+ {n:24, deck:'Lat & Long', q:'When and where was the Prime Meridian fixed?', a:'In <b>1884</b>, through <b>Greenwich</b>, an area of <b>London, England</b>.'},
+ {n:25, deck:'Lat & Long', q:'Why are 180°E and 180°W written simply as 180°?', a:'Because they are the <b>same meridian</b>.'},
+ {n:26, deck:'Lat & Long', q:'Give the round-figure longitudes of New York, Delhi and Tokyo.', a:'<b>74°W</b>, <b>77°E</b>, <b>140°E</b>.'},
+
+ {n:27, deck:'Grid & Climate', q:'What is the grid?', a:'All the <b>parallels of latitude and meridians of longitude together</b> (also called grid lines).'},
+ {n:28, deck:'Grid & Climate', q:'How does the Prime Meridian divide the Earth?', a:'Into the <b>Western</b> and <b>Eastern</b> Hemispheres.'},
+ {n:29, deck:'Grid & Climate', q:'How does the Equator divide the Earth?', a:'Into the <b>Northern</b> and <b>Southern</b> Hemispheres.'},
+ {n:30, deck:'Grid & Climate', q:'Which is longer — a parallel of latitude or a meridian of longitude?', a:'It depends: parallels are <b>unequal</b> (Equator longest, shrinking to the poles); <b>all meridians are equal</b>.'},
+ {n:31, deck:'Grid & Climate', q:'Name the three climate types by latitude.', a:'<b>Torrid</b> (hot, near the Equator), <b>temperate</b> (moderate, middle latitudes), <b>frigid</b> (cold, near the poles).'},
+ {n:32, deck:'Grid & Climate', q:'What happens to the climate as latitude increases?', a:'It becomes <b>more moderate</b>, then <b>colder</b> towards the poles.'},
+
+ {n:33, deck:'Ujjayinī', q:'What was India’s ancient prime meridian called?', a:'The <b>madhya rekhā</b> — meaning <b>‘middle line’</b>.'},
+ {n:34, deck:'Ujjayinī', q:'Which city did it pass through, and at what longitude?', a:'<b>Ujjayinī</b>, today <b>Ujjain</b>, at about <b>75.8°E</b>.'},
+ {n:35, deck:'Ujjayinī', q:'Who was Varāhamihira?', a:'A <b>famous astronomer</b> who lived and worked at Ujjayinī about <b>1,500 years ago</b>.'},
+
+ {n:36, deck:'Time', q:'How many degrees does the Earth turn in one hour, and why?', a:'<b>15°</b> — because one full turn of <b>360°</b> takes <b>24 hours</b>, and 360 ÷ 24 = 15.'},
+ {n:37, deck:'Time', q:'Going east from the Prime Meridian, does time move ahead or behind?', a:'<b>Ahead</b> — add an hour for every 15°. Going <b>west</b>, subtract.'},
+ {n:38, deck:'Time', q:'What is IST, and how far ahead of GMT is it?', a:'<b>Indian Standard Time</b> — <b>5 hours 30 minutes</b> ahead of <b>GMT</b> (Greenwich Mean Time).'},
+ {n:39, deck:'Time', q:"Why aren't time-zone boundaries straight lines?", a:'They bend to respect each country’s standard time, so they tend to <b>follow international borders</b>.'},
+ {n:40, deck:'Time', q:'What is the International Date Line, and what happens when you cross it?', a:'The line at approximately <b>180°</b> longitude, opposite the Prime Meridian. Crossing it <b>eastward you subtract a day</b>; <b>westward you add a day</b>.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concept Revision — Maths PT-2</title>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/paper.css">
+<style>
+  .chjump { display: flex; gap: .4rem; flex-wrap: wrap; margin: 1rem 0 1.4rem; }
+  .chjump a { text-decoration: none; }
+  .figrow { display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: flex-end; }
+  .figrow .fig { margin: 0; }
+  .checklist { list-style: none; padding-left: 0; }
+  .checklist label { display: flex; gap: .55rem; align-items: flex-start; cursor: pointer; }
+  .checklist input { margin-top: .35rem; accent-color: var(--accent); }
+  .dots { font-family: var(--mono); line-height: 1.15; white-space: pre; font-size: .95rem; margin: 0; }
+  .dotrow { display: flex; gap: 1.6rem; flex-wrap: wrap; align-items: flex-end; margin: .6rem 0; }
+  .dotrow figure { margin: 0; text-align: center; }
+  .dotrow figcaption { font-size: .78rem; color: var(--text-soft); }
+  .intro { background: var(--accent-soft); border: 1px solid var(--accent-line); border-radius: var(--radius);
+           padding: .9rem 1.1rem; margin: 0 0 1rem; font-size: .93rem; }
+  .intro ul { margin: .3rem 0 0; }
+  details.try { border: 1px dashed var(--border); border-radius: 8px; margin: .5rem 0; padding: .55rem .8rem;
+                background: var(--surface); }
+  details.try > summary { cursor: pointer; font-weight: 600; font-size: .92rem; list-style: none; }
+  details.try > summary::-webkit-details-marker { display: none; }
+  details.try > summary::after { content: " — show answer"; color: var(--accent); font-weight: 500; font-size: .82rem; }
+  details.try[open] > summary::after { content: " — hide answer"; }
+  details.try .ansb { margin-top: .45rem; padding: .55rem .75rem; background: var(--green-soft);
+                      border-left: 3px solid var(--green); border-radius: 0 6px 6px 0; font-size: .9rem; }
+  .steps li { margin: .35rem 0; }
+  .eg { margin: .9rem 0; padding: .75rem 1rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); }
+  .eg .t { font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--teal); }
+  .eg p { margin: .35rem 0; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">📐 <span>PT-2</span> Maths Practice Papers</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="revision.html" aria-current="page">Revision</a>
+    <a href="worksheet-solutions.html">Worksheet</a>
+    <a href="paper-1.html">Paper 1</a>
+    <a href="paper-2.html">Paper 2</a>
+    <a href="paper-3.html">Paper 3</a>
+    <a href="paper-4.html">Paper 4</a>
+    <a href="paper-5.html">Paper 5</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap narrow">
+
+<div class="pagehead">
+  <div class="eyebrow">Concept revision · Chapters 1–6 · <em>Ganita Prakash</em></div>
+  <h1>Revise the concepts</h1>
+  <p>Each chapter in the PT-2 syllabus, explained in detail: what each idea means, <em>why</em> it works, step-by-step methods, worked examples, common mistakes and practice questions with answers.</p>
+</div>
+
+<div class="note key">
+  <span class="lbl">How to revise with this page</span>
+  For each chapter: (1) read the topics; (2) cover the worked examples and try them yourself; (3) read the common mistakes;
+  (4) do the <b>Try these</b> questions in your notebook before opening the answers; (5) tick the self-check list honestly.
+  Then attempt a practice paper.
+</div>
+
+<div class="chjump">
+  <a class="chip" href="#ch1">1 · Patterns</a>
+  <a class="chip" href="#ch2">2 · Lines &amp; Angles</a>
+  <a class="chip" href="#ch3">3 · Number Play</a>
+  <a class="chip" href="#ch4">4 · Data Handling</a>
+  <a class="chip" href="#ch5">5 · Prime Time</a>
+  <a class="chip" href="#ch6">6 · Perimeter &amp; Area</a>
+</div>
+
+<input class="search" type="search" placeholder="Search a topic, e.g. co-prime, reflex, pictograph, tiles…" data-filter="details.acc" data-count="#searchCount" aria-label="Search topics">
+<div class="btnrow noprint" style="margin:.8rem 0 0">
+  <button class="btn" data-acc="open">Expand all</button>
+  <button class="btn" data-acc="closed">Collapse all</button>
+  <span id="searchCount" class="small muted" style="margin-left:auto"></span>
+</div>
+
+<!-- ===================================================================== -->
+<!-- CHAPTER 1                                                             -->
+<!-- ===================================================================== -->
+<section data-group id="ch1">
+<h2>Chapter 1 · Patterns in Mathematics</h2>
+<div class="intro">
+  <b>Big idea:</b> mathematics is the search for <b>patterns</b> and for the <b>explanation of why</b> they happen. This chapter covers:
+  <ul><li>famous number sequences</li><li>drawing them as pictures</li><li>surprising links between sequences</li><li>the same numbers hiding inside shape patterns</li></ul>
+</div>
+
+<details class="acc">
+  <summary><span class="num">1.1</span> What is a pattern? What is a sequence?</summary>
+  <div class="body">
+    <p>A <b>pattern</b> is a regularity, something that repeats or grows by a fixed rule. Patterns appear everywhere: the days of the week, the petals of a flower, the tiles on a floor, the beats of a song.</p>
+    <p>A <b>number sequence</b> is a list of numbers that follows a rule, e.g. 2, 4, 6, 8, … The individual numbers are called <b>terms</b>.</p>
+    <p>To find the rule of a sequence, look at:</p>
+    <ol class="steps">
+      <li><b>Differences</b> between neighbouring terms (1, 3, 6, 10 → differences 2, 3, 4: they grow by 1).</li>
+      <li><b>Ratios</b>: is each term a fixed number of times the previous one? (1, 3, 9, 27 → × 3 each time).</li>
+      <li><b>Position</b>: is the 5th term 5 × 5? (1, 4, 9, 16, 25 → squares).</li>
+      <li><b>Previous terms</b>: is each term made from the ones before it? (1, 2, 3, 5, 8 → sum of the previous two).</li>
+    </ol>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.2</span> The ten number sequences you must know</summary>
+  <div class="body">
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Sequence</th><th>First terms</th><th>Rule</th><th>Next three</th></tr></thead>
+      <tbody>
+        <tr><td>All 1's</td><td>1, 1, 1, 1, 1</td><td>the same every time</td><td>1, 1, 1</td></tr>
+        <tr><td>Counting numbers</td><td>1, 2, 3, 4, 5</td><td>add 1</td><td>6, 7, 8</td></tr>
+        <tr><td>Odd numbers</td><td>1, 3, 5, 7, 9</td><td>start at 1, add 2</td><td>11, 13, 15</td></tr>
+        <tr><td>Even numbers</td><td>2, 4, 6, 8, 10</td><td>start at 2, add 2</td><td>12, 14, 16</td></tr>
+        <tr><td>Triangular numbers</td><td>1, 3, 6, 10, 15</td><td>add 2, then 3, then 4, …</td><td>21, 28, 36</td></tr>
+        <tr><td>Square numbers</td><td>1, 4, 9, 16, 25</td><td><i>n</i> × <i>n</i> (differences 3, 5, 7, … the odd numbers)</td><td>36, 49, 64</td></tr>
+        <tr><td>Cube numbers</td><td>1, 8, 27, 64, 125</td><td><i>n</i> × <i>n</i> × <i>n</i></td><td>216, 343, 512</td></tr>
+        <tr><td>Virahānka numbers</td><td>1, 2, 3, 5, 8, 13</td><td>each = sum of the previous two</td><td>21, 34, 55</td></tr>
+        <tr><td>Powers of 2</td><td>1, 2, 4, 8, 16</td><td>multiply by 2</td><td>32, 64, 128</td></tr>
+        <tr><td>Powers of 3</td><td>1, 3, 9, 27, 81</td><td>multiply by 3</td><td>243, 729, 2187</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note tip"><span class="lbl">About Virahānka</span>Virahānka was an Indian scholar of Prakrit poetry. He found the sequence 1, 2, 3, 5, 8, 13 … by counting how many rhythms of a given length can be made from short (1 beat) and long (2 beats) syllables. Indian scholars knew these numbers centuries before Fibonacci, the European mathematician they are often named after.</div>
+    <div class="note warn"><span class="lbl">Check</span>Squares grow by the odd numbers: 1 → 4 (+3) → 9 (+5) → 16 (+7) → 25 (+9). Triangular numbers grow by the counting numbers: 1 → 3 (+2) → 6 (+3) → 10 (+4).</div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.3</span> Seeing sequences as pictures — why they have their names</summary>
+  <div class="body">
+    <div class="dotrow">
+      <figure><pre class="dots">●</pre><figcaption>1</figcaption></figure>
+      <figure><pre class="dots"> ●
+● ●</pre><figcaption>3</figcaption></figure>
+      <figure><pre class="dots">  ●
+ ● ●
+● ● ●</pre><figcaption>6</figcaption></figure>
+      <figure><pre class="dots">   ●
+  ● ●
+ ● ● ●
+● ● ● ●</pre><figcaption>10 · triangular</figcaption></figure>
+    </div>
+    <div class="dotrow">
+      <figure><pre class="dots">●</pre><figcaption>1</figcaption></figure>
+      <figure><pre class="dots">● ●
+● ●</pre><figcaption>4</figcaption></figure>
+      <figure><pre class="dots">● ● ●
+● ● ●
+● ● ●</pre><figcaption>9</figcaption></figure>
+      <figure><pre class="dots">● ● ● ●
+● ● ● ●
+● ● ● ●
+● ● ● ●</pre><figcaption>16 · square</figcaption></figure>
+    </div>
+    <ul>
+      <li><b>Triangular numbers</b>: rows of 1, 2, 3, 4 … dots stacked into a triangle.</li>
+      <li><b>Square numbers</b>: dots in an <i>n</i> × <i>n</i> square.</li>
+      <li><b>Cube numbers</b>: small cubes built into an <i>n</i> × <i>n</i> × <i>n</i> big cube (2 × 2 × 2 = 8 cubes).</li>
+      <li><b>Hexagonal numbers</b> 1, 7, 19, 37, 61: dots arranged in a hexagon. Each new ring adds 6, 12, 18, 24 … dots.</li>
+      <li><b>Powers of 2</b>: keep doubling. Fold a sheet of paper and the number of layers goes 1, 2, 4, 8, 16.</li>
+    </ul>
+    <div class="note key"><span class="lbl">Why the triangular-number formula works</span>
+      Put two copies of the 4th triangle together, one turned upside down. They make a 4 × 5 rectangle of 20 dots, so one triangle has 20 ÷ 2 = 10 dots.
+      In general, the <i>n</i>-th triangular number = <b><i>n</i> × (<i>n</i> + 1) ÷ 2</b>. For example, the 10th is 10 × 11 ÷ 2 = 55, and 1 + 2 + … + 100 = 100 × 101 ÷ 2 = 5050.</div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.4</span> Relations between sequences — the most-asked results</summary>
+  <div class="body">
+    <h4>(a) Adding odd numbers gives square numbers</h4>
+    <div class="tablewrap"><table class="compact">
+      <tbody>
+        <tr><td>1</td><td>= 1</td><td>= 1 × 1</td></tr>
+        <tr><td>1 + 3</td><td>= 4</td><td>= 2 × 2</td></tr>
+        <tr><td>1 + 3 + 5</td><td>= 9</td><td>= 3 × 3</td></tr>
+        <tr><td>1 + 3 + 5 + 7</td><td>= 16</td><td>= 4 × 4</td></tr>
+      </tbody>
+    </table></div>
+    <p><b>Why:</b> each odd number forms an "L" shape that wraps around the previous square to make the next square. 3 dots wrap a 1 × 1 square into a 2 × 2, 5 dots wrap a 2 × 2 into a 3 × 3, and so on.</p>
+    <p><b>Rule:</b> sum of the first <i>n</i> odd numbers = <i>n</i> × <i>n</i>. <b>How many odd numbers from 1 to <i>k</i>?</b> (<i>k</i> + 1) ÷ 2. So 1 + 3 + … + 29 has 15 terms and equals 225.</p>
+
+    <h4>(b) Counting up and down gives square numbers</h4>
+    <p>1 + 2 + 1 = 4, 1 + 2 + 3 + 2 + 1 = 9, 1 + 2 + 3 + 4 + 3 + 2 + 1 = 16. Up to <i>n</i> and back down gives <i>n</i> × <i>n</i>.</p>
+
+    <h4>(c) Adding counting numbers gives triangular numbers</h4>
+    <p>1 = 1, 1 + 2 = 3, 1 + 2 + 3 = 6, 1 + 2 + 3 + 4 = 10. Also, adding all 1's gives the counting numbers: 1, 1 + 1 = 2, 1 + 1 + 1 = 3.</p>
+
+    <h4>(d) Two consecutive triangular numbers make a square</h4>
+    <p>1 + 3 = 4, 3 + 6 = 9, 6 + 10 = 16, 10 + 15 = 25. <b>Why:</b> the two triangles of dots fit together exactly into a square.</p>
+
+    <h4>(e) Powers of 2 and of 3</h4>
+    <ul>
+      <li>1 + 2 = 3 = 4 − 1; &nbsp;1 + 2 + 4 = 7 = 8 − 1; &nbsp;1 + 2 + 4 + 8 = 15 = 16 − 1. The sum is <b>one less than the next power of 2</b>.</li>
+      <li>(1 + 3) × 2 + 1 = 9; &nbsp;(1 + 3 + 9) × 2 + 1 = 27. <b>Twice the sum, plus 1, gives the next power of 3.</b></li>
+    </ul>
+
+    <h4>(f) Hexagonal numbers and cubes</h4>
+    <ul>
+      <li>Triangular number × 6 + 1 = hexagonal number: 1 × 6 + 1 = 7, 3 × 6 + 1 = 19, 6 × 6 + 1 = 37.</li>
+      <li>Adding hexagonal numbers gives cubes: 1 = 1, 1 + 7 = 8, 1 + 7 + 19 = 27, 1 + 7 + 19 + 37 = 64.</li>
+    </ul>
+
+    <h4>(g) Adding cubes</h4>
+    <p>1 + 8 = 9 = 3 × 3; &nbsp;1 + 8 + 27 = 36 = 6 × 6; &nbsp;1 + 8 + 27 + 64 = 100 = 10 × 10. The answers are squares of the <b>triangular</b> numbers 3, 6, 10.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.5</span> Patterns in shapes</summary>
+  <div class="body">
+    <h4>Regular polygons</h4>
+    <p>A <b>polygon</b> is a closed figure made of straight sides. A <b>regular polygon</b> has all sides equal <b>and</b> all angles equal.</p>
+    <div class="figrow"><div class="fig" data-poly="3"></div><div class="fig" data-poly="4"></div><div class="fig" data-poly="5"></div><div class="fig" data-poly="6"></div><div class="fig" data-poly="8"></div><div class="fig" data-poly="12"></div></div>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Sides</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>12</th></tr></thead>
+      <tbody><tr><td>Name</td><td>triangle</td><td>quadrilateral</td><td>pentagon</td><td>hexagon</td><td>heptagon</td><td>octagon</td><td>nonagon</td><td>decagon</td><td>dodecagon</td></tr></tbody>
+    </table></div>
+
+    <h4>Complete graphs</h4>
+    <p>Take some points and join <b>every pair</b> with a line. With 2 points there is 1 line, with 3 points 3 lines, with 4 points 6 lines, with 5 points 10 lines. These are the <b>triangular numbers</b>.</p>
+    <p><b>Why:</b> each new point must be joined to every point already there. The 5th point adds 4 new lines, so the total is 1 + 2 + 3 + 4 = 10.</p>
+    <p><b>Diagonals:</b> in a polygon, the lines of the complete graph that are not sides are diagonals. A pentagon has 10 − 5 = 5 diagonals, a hexagon 15 − 6 = 9, and an octagon 28 − 8 = 20.</p>
+
+    <h4>Stacked squares and stacked triangles</h4>
+    <p>A big square split into 1, 2, 3, 4 … rows of small squares contains 1, 4, 9, 16 … squares. A big triangle split into 1, 2, 3, 4 rows of small triangles contains 1, 4, 9, 16 small triangles (rows: 1 + 3 + 5 + 7, the odd numbers again!). Both give the square numbers.</p>
+
+    <h4>Koch snowflake</h4>
+    <p>Start with an equilateral triangle. At every stage, replace the middle third of <b>each</b> side with a "tent" (two sides of a smaller triangle). Each side becomes 4 sides, each one-third as long.</p>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Stage</th><th>Number of sides</th><th>Length of each side (start 27 cm)</th><th>Perimeter</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td>3</td><td>27 cm</td><td>81 cm</td></tr>
+        <tr><td>1</td><td>12</td><td>9 cm</td><td>108 cm</td></tr>
+        <tr><td>2</td><td>48</td><td>3 cm</td><td>144 cm</td></tr>
+        <tr><td>3</td><td>192</td><td>1 cm</td><td>192 cm</td></tr>
+      </tbody>
+    </table></div>
+    <p>The sides multiply by 4 at each stage, so the perimeter keeps <b>growing</b> even though each side gets shorter.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">📝</span> Chapter 1 · Worked examples</summary>
+  <div class="body">
+    <div class="eg"><div class="t">Example 1</div><p>Find 1 + 3 + 5 + … + 49 without adding.</p>
+      <p>Number of odd numbers = (49 + 1) ÷ 2 = 25. Sum = 25 × 25 = <b>625</b>.</p></div>
+    <div class="eg"><div class="t">Example 2</div><p>Find 31 + 33 + … + 49.</p>
+      <p>1 + … + 49 = 625 (25 odd numbers). 1 + … + 29 = 15 × 15 = 225. Answer = 625 − 225 = <b>400</b>.</p></div>
+    <div class="eg"><div class="t">Example 3</div><p>How many lines join every pair of 8 points?</p>
+      <p>1 + 2 + 3 + 4 + 5 + 6 + 7 = <b>28</b> (= 7 × 8 ÷ 2).</p></div>
+    <div class="eg"><div class="t">Example 4</div><p>Find 1 + 2 + 4 + 8 + … + 256.</p>
+      <p>The next power of 2 after 256 is 512, so the sum = 512 − 1 = <b>511</b>.</p></div>
+    <div class="eg"><div class="t">Example 5</div><p>Write the Virahānka numbers up to 100.</p>
+      <p>1, 2, 3, 5, 8, 13, 21, 34, 55, <b>89</b> (next is 144, which is over 100).</p></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">⚠</span> Chapter 1 · Common mistakes</summary>
+  <div class="body">
+    <div class="note err"><span class="lbl">Avoid these</span><ul>
+      <li>Calling 1, 2, 4, 8 "even numbers". 1 is odd. They are <b>powers of 2</b>.</li>
+      <li>Counting the odd numbers wrongly: from 1 to 29 there are 15, not 29 or 14.</li>
+      <li>Forgetting that a <b>regular</b> polygon needs equal angles as well as equal sides.</li>
+      <li>Saying a complete graph on 5 points has 5 lines. That is only the sides; the answer is 10.</li>
+      <li>Thinking the Koch snowflake's perimeter shrinks. It grows by one-third each stage.</li>
+    </ul></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✎</span> Chapter 1 · Try these</summary>
+  <div class="body">
+    <details class="try"><summary>1. Write the next three terms: 1, 7, 19, 37, …</summary><div class="ansb">The differences are 6, 12, 18, so the next differences are 24, 30, 36 → <b>61, 91, 127</b>.</div></details>
+    <details class="try"><summary>2. Which square number is the sum of the triangular numbers 15 and 21?</summary><div class="ansb">15 + 21 = <b>36</b> = 6 × 6.</div></details>
+    <details class="try"><summary>3. Find 1 + 2 + 3 + … + 50.</summary><div class="ansb">50 × 51 ÷ 2 = <b>1275</b>.</div></details>
+    <details class="try"><summary>4. How many diagonals does a hexagon have?</summary><div class="ansb">Complete graph on 6 points = 15 lines. Minus 6 sides → <b>9 diagonals</b>.</div></details>
+    <details class="try"><summary>5. How many sides does the Koch snowflake have at stage 4?</summary><div class="ansb">3 → 12 → 48 → 192 → <b>768</b>.</div></details>
+    <details class="try"><summary>6. Is 1 + 3 + 9 + 27 + 81 = 121? Check using the powers-of-3 pattern.</summary><div class="ansb">Twice the sum plus 1 should be the next power, 243. 121 × 2 + 1 = 243 ✓ <b>Yes</b>.</div></details>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✓</span> Chapter 1 · Self-check</summary>
+  <div class="body"><ul class="checklist">
+    <li><label><input type="checkbox" data-check="c1a"> I can write the first 6 terms of all ten sequences and give each rule.</label></li>
+    <li><label><input type="checkbox" data-check="c1b"> I can find the sum of the first <i>n</i> odd numbers and the sum 1 + 2 + … + <i>n</i>.</label></li>
+    <li><label><input type="checkbox" data-check="c1c"> I can explain with dots why consecutive triangular numbers make a square.</label></li>
+    <li><label><input type="checkbox" data-check="c1d"> I can count lines in a complete graph and diagonals of a polygon.</label></li>
+    <li><label><input type="checkbox" data-check="c1e"> I can fill in a Koch snowflake table of sides and perimeter.</label></li>
+  </ul></div>
+</details>
+</section>
+
+<!-- ===================================================================== -->
+<!-- CHAPTER 2                                                             -->
+<!-- ===================================================================== -->
+<section data-group id="ch2">
+<h2>Chapter 2 · Lines and Angles</h2>
+<div class="intro">
+  <b>Big idea:</b> geometry is built from a few basic figures: point, line segment, line and ray. An <b>angle</b> measures an amount of <b>turn</b>, in <b>degrees</b>.
+</div>
+
+<details class="acc">
+  <summary><span class="num">2.1</span> Point and line segment</summary>
+  <div class="body">
+    <p><b>Point:</b> an exact <b>location</b>. It has no length, breadth or thickness. A dot only shows where it is. Name it with a capital letter: point A.</p>
+    <p><b>Line segment:</b> the <b>shortest path</b> between two points. It has <b>two end points</b> and a definite length that can be measured with a ruler. It is written AB or BA (both name the same segment).</p>
+    <div class="fig"><svg viewBox="0 0 320 50" width="320" role="img" aria-label="Line segment AB">
+      <line x1="40" y1="25" x2="280" y2="25" stroke="currentColor" stroke-width="2"/>
+      <circle cx="40" cy="25" r="4" fill="currentColor"/><circle cx="280" cy="25" r="4" fill="currentColor"/>
+      <text x="40" y="47" text-anchor="middle" font-size="13" font-weight="700">A</text><text x="280" y="47" text-anchor="middle" font-size="13" font-weight="700">B</text></svg>
+      <div class="cap">Line segment AB: two end points, measurable length.</div></div>
+    <h4>Counting line segments</h4>
+    <p>If <i>n</i> points lie on a line, every pair of points makes a segment. The number of segments is 1 + 2 + … + (<i>n</i> − 1):</p>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Points on the line</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr></thead>
+      <tbody><tr><td>Segments</td><td>1</td><td>3</td><td>6</td><td>10</td><td>15</td></tr></tbody>
+    </table></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">2.2</span> Line and ray</summary>
+  <div class="body">
+    <p><b>Line:</b> a line segment extended <b>endlessly in both directions</b>. It has <b>no end points</b> and cannot be measured. It is drawn with arrows at both ends and written as line AB or with a small letter, line <i>l</i>.</p>
+    <p><b>Ray:</b> starts at one point and goes on endlessly in <b>one direction</b>. It is written <b>start point first</b>: ray OP starts at O and passes through P. A beam of torchlight or a ray of sunlight is a good picture of a ray.</p>
+    <div class="fig"><svg viewBox="0 0 340 110" width="340" role="img" aria-label="Line AB and ray OP">
+      <line x1="20" y1="25" x2="320" y2="25" stroke="currentColor" stroke-width="2"/>
+      <path d="M20 25 l10 -6 v12 z M320 25 l-10 -6 v12 z" fill="currentColor"/>
+      <circle cx="110" cy="25" r="4" fill="currentColor"/><circle cx="230" cy="25" r="4" fill="currentColor"/>
+      <text x="110" y="47" text-anchor="middle" font-size="13" font-weight="700">A</text><text x="230" y="47" text-anchor="middle" font-size="13" font-weight="700">B</text>
+      <line x1="60" y1="85" x2="320" y2="85" stroke="currentColor" stroke-width="2"/><path d="M320 85 l-10 -6 v12 z" fill="currentColor"/>
+      <circle cx="60" cy="85" r="4" fill="currentColor"/><circle cx="190" cy="85" r="4" fill="currentColor"/>
+      <text x="60" y="106" text-anchor="middle" font-size="13" font-weight="700">O</text><text x="190" y="106" text-anchor="middle" font-size="13" font-weight="700">P</text></svg>
+      <div class="cap">Top: line AB (no end points). Bottom: ray OP (starts at O).</div></div>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th></th><th>Line segment</th><th>Ray</th><th>Line</th></tr></thead>
+      <tbody>
+        <tr><td>End points</td><td>2</td><td>1</td><td>0</td></tr>
+        <tr><td>Length</td><td>can be measured</td><td>endless</td><td>endless</td></tr>
+        <tr><td>Name order matters?</td><td>no (AB = BA)</td><td><b>yes</b> (OP ≠ PO)</td><td>no</td></tr>
+      </tbody>
+    </table></div>
+    <ul>
+      <li>Through <b>one</b> point you can draw <b>countless</b> lines (and countless rays).</li>
+      <li>Through <b>two</b> points you can draw <b>exactly one</b> line.</li>
+      <li>If A, B, C lie on a line in that order, ray AB and ray AC are the <b>same ray</b>: same start point, same direction.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">2.3</span> Angle — parts, naming and counting</summary>
+  <div class="body">
+    <p>An <b>angle</b> is formed by <b>two rays with a common starting point</b>. The common point is the <b>vertex</b>; the two rays are the <b>arms</b>. The region between the arms is the <b>interior</b> of the angle.</p>
+    <div class="fig" data-angle='{"deg":55,"labels":["A","B","C"]}'></div>
+    <ul>
+      <li>Name it with three letters, <b>vertex in the middle</b>: ∠ABC or ∠CBA. (∠BAC would be a different angle, with its vertex at A.)</li>
+      <li>If only one angle is at a vertex, ∠B is enough.</li>
+      <li>An angle shows an <b>amount of turn</b>: opening a door, the blades of scissors, the hands of a clock.</li>
+      <li>The <b>length of the arms does not matter</b>. Making the arms longer does not change the angle.</li>
+    </ul>
+    <h4>Comparing angles</h4>
+    <p>Place one angle on top of the other (<b>superimposition</b>) so that the vertices and one arm match. The angle whose second arm lies further out is bigger. A tracing-paper copy makes this easy.</p>
+    <h4>Counting angles</h4>
+    <p>If several rays start from the same vertex (all within a straight angle), <b>any two rays</b> make an angle: 3 rays → 3 angles, 4 rays → 6 angles, 5 rays → 10 angles (triangular numbers again).</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">2.4</span> Degrees and the types of angles</summary>
+  <div class="body">
+    <p>A full turn is divided into <b>360 equal parts</b>, each called a <b>degree (1°)</b>. People chose 360 because it is close to the number of days in a year and because it has many factors (2, 3, 4, 5, 6, 8, 9, 10, 12, 15 …), so halves, thirds, quarters and sixths of a turn are all whole numbers of degrees.</p>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Turn</th><th>Degrees</th><th>Name</th></tr></thead>
+      <tbody>
+        <tr><td>¼ turn</td><td>90°</td><td>right angle</td></tr>
+        <tr><td>½ turn</td><td>180°</td><td>straight angle</td></tr>
+        <tr><td>¾ turn</td><td>270°</td><td>a reflex angle</td></tr>
+        <tr><td>full turn</td><td>360°</td><td>complete angle</td></tr>
+      </tbody>
+    </table></div>
+    <div class="figrow">
+      <div class="fig" data-angle='{"deg":40,"labels":["","",""]}'></div>
+      <div class="fig" data-angle='{"deg":90,"labels":["","",""]}'></div>
+      <div class="fig" data-angle='{"deg":130,"labels":["","",""]}'></div>
+      <div class="fig" data-angle='{"deg":250,"labels":["","",""]}'></div>
+    </div>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Type</th><th>Measure</th><th>Everyday example</th></tr></thead>
+      <tbody>
+        <tr><td>Acute</td><td>more than 0°, less than 90°</td><td>a slice of pizza, the tip of a pencil</td></tr>
+        <tr><td>Right</td><td>exactly 90°</td><td>the corner of a book or a door frame</td></tr>
+        <tr><td>Obtuse</td><td>more than 90°, less than 180°</td><td>a reclining chair, an open laptop</td></tr>
+        <tr><td>Straight</td><td>exactly 180°</td><td>clock hands at 6:00</td></tr>
+        <tr><td>Reflex</td><td>more than 180°, less than 360°</td><td>the "outside" of a pizza slice</td></tr>
+        <tr><td>Complete</td><td>exactly 360°</td><td>a full turn of a wheel</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note key"><span class="lbl">Useful rules</span><ul>
+      <li>Every angle has a reflex partner: <b>reflex = 360° − the smaller angle</b> (120° ↔ 240°).</li>
+      <li>To make a right angle from 72°, add 90° − 72° = 18°. To make a straight angle from 158°, add 180° − 158° = 22°.</li>
+      <li>If ray OB is inside ∠AOC, then ∠AOB + ∠BOC = ∠AOC.</li>
+      <li>Two lines that meet at a right angle are <b>perpendicular</b>.</li>
+    </ul></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">2.5</span> Measuring and drawing angles with a protractor</summary>
+  <div class="body">
+    <p>A protractor is a half circle marked from 0° to 180° with <b>two scales</b>: an outer one and an inner one, running in opposite directions.</p>
+    <h4>To measure an angle</h4>
+    <ol class="steps">
+      <li>Place the protractor's <b>centre point exactly on the vertex</b>.</li>
+      <li>Turn it so the <b>base line (0°)</b> lies along one arm.</li>
+      <li>Find the scale that shows <b>0° on that arm</b>. Follow that scale up to where the other arm crosses it.</li>
+      <li><b>Check by eye:</b> if the angle looks smaller than a right angle, the answer must be less than 90°.</li>
+    </ol>
+    <h4>To draw an angle, e.g. ∠ABC = 125°</h4>
+    <ol class="steps">
+      <li>Draw ray BC with a ruler.</li>
+      <li>Place the protractor centre on B with the base line along BC.</li>
+      <li>On the scale that starts at 0° on BC, put a dot at 125°. Call it A.</li>
+      <li>Remove the protractor and join BA. Mark the angle with an arc and write 125°.</li>
+    </ol>
+    <h4>To draw a reflex angle, e.g. 240°</h4>
+    <p>A protractor only reaches 180°, so draw 360° − 240° = <b>120°</b>, then mark the arc on the <b>outside</b> and label it 240°.</p>
+    <div class="fig" data-angle='{"deg":240,"labels":["P","Q","R"]}'></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">2.6</span> Angles on a clock and a compass</summary>
+  <div class="body">
+    <h4>Clock</h4>
+    <ul>
+      <li>12 hour marks share 360° → <b>30° between neighbouring numbers</b>.</li>
+      <li>The minute hand turns 360° in 60 minutes → <b>6° per minute</b>.</li>
+      <li>The hour hand turns 30° in 60 minutes → <b>½° per minute</b>. It moves too!</li>
+    </ul>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Time</th><th>1:00</th><th>2:00</th><th>3:00</th><th>4:00</th><th>5:00</th><th>6:00</th><th>7:00</th><th>8:00</th><th>9:00</th></tr></thead>
+      <tbody><tr><td>Smaller angle</td><td>30°</td><td>60°</td><td>90°</td><td>120°</td><td>150°</td><td>180°</td><td>150°</td><td>120°</td><td>90°</td></tr></tbody>
+    </table></div>
+    <div class="eg"><div class="t">Example — not on the hour</div><p>Angle at 2:30?</p>
+      <p>Minute hand at 6 → 180° from 12. The hour hand is halfway between 2 and 3: 60° + 15° = 75°. Angle = 180° − 75° = <b>105°</b>.</p></div>
+    <h4>Compass</h4>
+    <p>N → E → S → W are 90° apart, going clockwise. The in-between directions NE, SE, SW, NW are halfway, so each neighbouring pair of the 8 directions is <b>45°</b> apart.</p>
+    <ul>
+      <li>Facing North, turn clockwise to face South: 180°.</li>
+      <li>Facing East, turn 135° clockwise: E → S (90°) + 45° → <b>South-West</b>.</li>
+      <li>Facing North, turn clockwise to face West: <b>270°</b> (reflex).</li>
+    </ul>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">📝</span> Chapter 2 · Worked examples</summary>
+  <div class="body">
+    <div class="eg"><div class="t">Example 1</div><p>Points P, Q, R, S lie on a line. Name all the segments.</p>
+      <p>PQ, PR, PS, QR, QS, RS → <b>6</b> (3 + 2 + 1).</p></div>
+    <div class="eg"><div class="t">Example 2</div><p>∠AOC = 90° and ray OB is inside it with ∠AOB = 35°. Find ∠BOC.</p>
+      <p>∠AOB + ∠BOC = ∠AOC → 35° + ∠BOC = 90° → ∠BOC = <b>55°</b>.</p></div>
+    <div class="eg"><div class="t">Example 3</div><p>Find the smaller and the reflex angle between the clock hands at 8:00.</p>
+      <p>From 8 to 12 is 4 hour marks → 4 × 30° = <b>120°</b>; reflex = 360° − 120° = <b>240°</b>.</p></div>
+    <div class="eg"><div class="t">Example 4</div><p>Through how many degrees does the minute hand turn from 3:10 to 3:40?</p>
+      <p>30 minutes × 6° = <b>180°</b>.</p></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">⚠</span> Chapter 2 · Common mistakes</summary>
+  <div class="body">
+    <div class="note err"><span class="lbl">Avoid these</span><ul>
+      <li>Reading the <b>wrong scale</b> of the protractor gives 180° − the right answer (e.g. 50° instead of 130°).</li>
+      <li>Not placing the centre point exactly on the vertex.</li>
+      <li>Writing ∠ABC with the vertex not in the middle.</li>
+      <li>Treating ray AB and ray BA as the same ray.</li>
+      <li>Saying a line has a length. Only a segment can be measured.</li>
+      <li>At times like 2:30, forgetting that the hour hand has also moved.</li>
+      <li>Thinking longer arms make a bigger angle.</li>
+    </ul></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✎</span> Chapter 2 · Try these</summary>
+  <div class="body">
+    <details class="try"><summary>1. Classify: 15°, 90°, 179°, 181°, 300°, 360°.</summary><div class="ansb">acute, right, obtuse, reflex, reflex, complete.</div></details>
+    <details class="try"><summary>2. Six points lie on a line. How many line segments do they make?</summary><div class="ansb">5 + 4 + 3 + 2 + 1 = <b>15</b>.</div></details>
+    <details class="try"><summary>3. Find the reflex angle of 75°.</summary><div class="ansb">360° − 75° = <b>285°</b>.</div></details>
+    <details class="try"><summary>4. What is the angle between the clock hands at 10:00?</summary><div class="ansb">From 10 to 12 is 2 marks → <b>60°</b> (reflex 300°).</div></details>
+    <details class="try"><summary>5. Four rays OA, OB, OC, OD start from O. How many angles do they make?</summary><div class="ansb">3 + 2 + 1 = <b>6</b>: ∠AOB, ∠AOC, ∠AOD, ∠BOC, ∠BOD, ∠COD.</div></details>
+    <details class="try"><summary>6. Facing West, Ravi turns 90° anticlockwise. Which way does he face?</summary><div class="ansb">Anticlockwise from West: W → S. He faces <b>South</b>.</div></details>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✓</span> Chapter 2 · Self-check</summary>
+  <div class="body"><ul class="checklist">
+    <li><label><input type="checkbox" data-check="c2a"> I can tell a point, segment, ray and line apart and name each correctly.</label></li>
+    <li><label><input type="checkbox" data-check="c2b"> I can count the segments on a line and the angles at a vertex.</label></li>
+    <li><label><input type="checkbox" data-check="c2c"> I can classify any angle and find its reflex partner.</label></li>
+    <li><label><input type="checkbox" data-check="c2d"> I can measure and draw any angle (including reflex) with a protractor.</label></li>
+    <li><label><input type="checkbox" data-check="c2e"> I can find the angle between clock hands and between compass directions.</label></li>
+  </ul></div>
+</details>
+</section>
+
+<!-- ===================================================================== -->
+<!-- CHAPTER 3                                                             -->
+<!-- ===================================================================== -->
+<section data-group id="ch3">
+<h2>Chapter 3 · Number Play</h2>
+<div class="intro">
+  <b>Big idea:</b> numbers are fun to play with. Through puzzles and games, this chapter shows how to reason about:
+  <ul><li>neighbours and supercells</li><li>digits and digit sums</li><li>odd and even numbers</li><li>palindromes</li><li>famous numbers like 6174</li></ul>
+</div>
+
+<details class="acc">
+  <summary><span class="num">3.1</span> Numbers can tell us things — the line of children</summary>
+  <div class="body">
+    <p>Children stand in a line. Each child calls out <b>how many of their neighbours are taller</b> than them. A child in the middle has 2 neighbours; a child at either end has only 1.</p>
+    <ul>
+      <li>"0" means the child is taller than every neighbour.</li>
+      <li>"2" means both neighbours are taller, so this child is shorter than both.</li>
+      <li>A child at the end can only say 0 or 1.</li>
+    </ul>
+    <p>From these numbers alone you can reason about the arrangement. That is the point: numbers carry information.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">3.2</span> Supercells</summary>
+  <div class="body">
+    <p>In a grid of numbers, a cell is a <b>supercell</b> if its number is <b>greater than all its neighbours</b>. Neighbours are only the cells to the left, right, above and below; diagonal cells do not count.</p>
+    <ul>
+      <li>Corner cells have 2 neighbours, edge cells 3, and inside cells 4.</li>
+      <li>The <b>largest</b> number in the grid is <b>always</b> a supercell, because it is bigger than everything.</li>
+      <li>The <b>smallest</b> number is <b>never</b> a supercell.</li>
+      <li>Two neighbouring cells can never both be supercells, since each would have to be bigger than the other.</li>
+    </ul>
+    <div class="fig"><table class="grid-n"><tbody>
+      <tr><td>12</td><td class="sc">45</td><td>30</td><td>27</td></tr>
+      <tr><td class="sc">38</td><td>19</td><td class="sc">52</td><td>16</td></tr>
+      <tr><td>24</td><td class="sc">61</td><td>40</td><td>33</td></tr>
+    </tbody></table><div class="cap">45 beats 12, 30 and 19; 38 beats 12, 19 and 24; 52 beats 30, 19, 16 and 40; 61 beats 24, 19 and 40. 33 is not a supercell, because 40 is bigger.</div></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">3.3</span> Playing with digits</summary>
+  <div class="body">
+    <p>The <b>digit sum</b> of a number is the sum of its digits: 4725 → 4 + 7 + 2 + 5 = 18.</p>
+    <h4>Smallest and largest number with a given digit sum</h4>
+    <ul>
+      <li><b>Smallest:</b> use as few digits as possible and put the big digits on the <b>right</b>. A 3-digit number with digit sum 20 → 299.</li>
+      <li><b>Largest:</b> put the big digits on the <b>left</b>. A 3-digit number with digit sum 20 → 992.</li>
+    </ul>
+    <h4>Counting digits</h4>
+    <p>How many times is the digit 7 written from 1 to 100? In the <b>ones place</b>: 7, 17, 27, … 97 = 10 times. In the <b>tens place</b>: 70–79 = 10 times. Total = <b>20</b>. The number 77 counts twice, since it has two 7s.</p>
+    <p>The same is true for every digit from 1 to 9.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">3.4</span> Pass the parity — odd and even numbers</summary>
+  <div class="body">
+    <p><b>Parity</b> means whether a number is odd or even. Think of an even number as dots that pair up completely, and an odd number as pairs plus <b>one dot left over</b>.</p>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Operation</th><th>Result</th><th>Why (using pairs)</th></tr></thead>
+      <tbody>
+        <tr><td>even + even</td><td>even</td><td>all pairs</td></tr>
+        <tr><td>odd + odd</td><td>even</td><td>the two leftover dots pair up</td></tr>
+        <tr><td>odd + even</td><td>odd</td><td>one dot is still left over</td></tr>
+        <tr><td>even × any number</td><td>even</td><td>groups of pairs</td></tr>
+        <tr><td>odd × odd</td><td>odd</td><td>e.g. 3 × 5 = 15</td></tr>
+      </tbody>
+    </table></div>
+    <ul>
+      <li>Subtraction follows the same rules as addition (odd − even = odd).</li>
+      <li>An <b>odd count</b> of odd numbers adds to an <b>odd</b> total; an <b>even count</b> of odd numbers adds to an even total.</li>
+      <li>Even numbers can be written 2 × <i>n</i>, odd numbers 2 × <i>n</i> + 1.</li>
+    </ul>
+    <div class="eg"><div class="t">Example</div><p>Can five odd numbers add up to 50?</p><p><b>No.</b> Five (an odd count) odd numbers always add up to an odd number, and 50 is even.</p></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">3.5</span> Palindromes and reverse-and-add</summary>
+  <div class="body">
+    <p>A <b>palindrome</b> is a number that reads the same forwards and backwards: 7, 44, 121, 4334, 90709.</p>
+    <h4>Reverse-and-add</h4>
+    <p>Add a number to its reverse; repeat until you get a palindrome:</p>
+    <ul>
+      <li>39 + 93 = 132 → 132 + 231 = <b>363</b> (2 steps)</li>
+      <li>68 + 86 = 154 → 154 + 451 = 605 → 605 + 506 = <b>1111</b> (3 steps)</li>
+      <li>57 + 75 = 132 → 132 + 231 = <b>363</b> (2 steps)</li>
+    </ul>
+    <h4>Palindromes on clocks and calendars</h4>
+    <p>Times: 1:11, 2:22, 10:01, 12:21. Dates: 12/02/2021 (12022021).</p>
+    <h4>Making palindromes</h4>
+    <p>The smallest 3-digit palindrome is 101 and the largest is 999. A 5-digit palindrome looks like <i>a b c b a</i>, so you only choose the first three digits.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">3.6</span> Kaprekar's magic number — 6174</summary>
+  <div class="body">
+    <p><b>D. R. Kaprekar</b>, an Indian mathematics teacher, discovered this in 1949. Take any 4-digit number whose digits are not all the same, then:</p>
+    <ol class="steps">
+      <li>Arrange the digits in <b>descending order</b> (largest number).</li>
+      <li>Arrange them in <b>ascending order</b> (smallest number). Keep any zeros at the front.</li>
+      <li>Subtract the smaller from the larger.</li>
+      <li>Repeat with the answer.</li>
+    </ol>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Step</th><th>Largest</th><th>Smallest</th><th>Difference</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>5432</td><td>2345</td><td>3087</td></tr>
+        <tr><td>2</td><td>8730</td><td>0378</td><td>8352</td></tr>
+        <tr><td>3</td><td>8532</td><td>2358</td><td><b>6174</b></td></tr>
+        <tr><td>4</td><td>7641</td><td>1467</td><td>6174 (stays forever)</td></tr>
+      </tbody>
+    </table></div>
+    <p>You always reach <b>6174</b> in at most 7 steps. For <b>3-digit</b> numbers, the same routine always ends at <b>495</b>: 352 → 297 → 693 → 594 → 495.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">3.7</span> Mental maths, Collatz, estimation and games</summary>
+  <div class="body">
+    <h4>Mental maths strategies</h4>
+    <ul>
+      <li><b>Round and adjust:</b> 498 + 367 = 500 + 367 − 2 = 865.</li>
+      <li><b>Split by place value:</b> 456 + 327 = (400 + 300) + (50 + 20) + (6 + 7) = 783.</li>
+      <li><b>Make friendly numbers:</b> 25 + 48 + 75 = (25 + 75) + 48 = 148.</li>
+    </ul>
+    <h4>The Collatz conjecture (unsolved!)</h4>
+    <p>Rule: if the number is <b>even, halve it</b>; if it is <b>odd, multiply by 3 and add 1</b>. Keep going.</p>
+    <p>6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1 (8 steps). 7 takes much longer, but it still reaches 1.</p>
+    <p>Lothar Collatz suggested in 1937 that every starting number reaches 1. Computers have checked enormous numbers, but <b>nobody has proved it</b>. It is one of maths' famous open problems.</p>
+    <h4>Estimation</h4>
+    <p>To estimate something large (students in a school, steps to school), count a small part and multiply. For example: about 40 students per class × 30 classes ≈ 1200 students.</p>
+    <h4>Games and winning strategies</h4>
+    <p>In a game where players take turns adding 1, 2 or 3 to a running total and whoever says 21 wins, <b>work backwards</b> from 21. If you say 17, your opponent can only reach 18–20, and you reach 21. The same reasoning makes 13, 9, 5 and 1 safe. So say <b>1</b> first and keep landing on 5, 9, 13, 17. <span class="small muted">(Your textbook's version of the game may use slightly different rules, but the "work backwards" idea is the same.)</span></p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">⚠</span> Chapter 3 · Common mistakes</summary>
+  <div class="body">
+    <div class="note err"><span class="lbl">Avoid these</span><ul>
+      <li>Counting <b>diagonal</b> cells as neighbours when finding supercells.</li>
+      <li>Dropping the zero in Kaprekar's routine (write 0378, not 378).</li>
+      <li>Counting 77 (or 55) only once when counting digits.</li>
+      <li>Thinking odd + odd is odd. It is <b>even</b>.</li>
+      <li>Saying the Collatz conjecture is proved. It is still unproved.</li>
+    </ul></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✎</span> Chapter 3 · Try these</summary>
+  <div class="body">
+    <details class="try"><summary>1. Apply Kaprekar's routine to 2026.</summary><div class="ansb">6220 − 0226 = 5994 → 9954 − 4599 = 5355 → 5553 − 3555 = 1998 → 9981 − 1899 = 8082 → 8820 − 0288 = 8532 → 8532 − 2358 = <b>6174</b>.</div></details>
+    <details class="try"><summary>2. Odd or even: 17 + 24 + 39 + 51 + 8?</summary><div class="ansb">Three odd numbers (17, 39, 51) → odd; plus evens → <b>odd</b> (139).</div></details>
+    <details class="try"><summary>3. Smallest 4-digit number with digit sum 30?</summary><div class="ansb">Push 9s to the right: _ 9 9 9 needs a first digit of 30 − 27 = 3 → <b>3999</b>.</div></details>
+    <details class="try"><summary>4. Reverse-and-add starting with 87.</summary><div class="ansb">87 + 78 = 165 → 165 + 561 = 726 → 726 + 627 = 1353 → 1353 + 3531 = <b>4884</b> (4 steps).</div></details>
+    <details class="try"><summary>5. Collatz sequence starting at 12 — how many steps to reach 1?</summary><div class="ansb">12 → 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1 → <b>9 steps</b>.</div></details>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✓</span> Chapter 3 · Self-check</summary>
+  <div class="body"><ul class="checklist">
+    <li><label><input type="checkbox" data-check="c3a"> I can find all the supercells in a grid and explain the rules.</label></li>
+    <li><label><input type="checkbox" data-check="c3b"> I can make the smallest or largest number with a given digit sum.</label></li>
+    <li><label><input type="checkbox" data-check="c3c"> I can decide odd or even without calculating, and explain why.</label></li>
+    <li><label><input type="checkbox" data-check="c3d"> I can run Kaprekar's routine (4- and 3-digit) and reverse-and-add.</label></li>
+    <li><label><input type="checkbox" data-check="c3e"> I can describe the Collatz conjecture and why it is "unsolved".</label></li>
+  </ul></div>
+</details>
+</section>
+
+<!-- ===================================================================== -->
+<!-- CHAPTER 4                                                             -->
+<!-- ===================================================================== -->
+<section data-group id="ch4">
+<h2>Chapter 4 · Data Handling and Presentation</h2>
+<div class="intro">
+  <b>Big idea:</b> <b>collect</b> data to answer a question, <b>organise</b> it (tally marks, frequency tables), and <b>present</b> it so anyone can read it at a glance (pictographs, bar graphs). Also learn to spot graphs that mislead.
+</div>
+
+<details class="acc">
+  <summary><span class="num">4.1</span> Data and how to collect it</summary>
+  <div class="body">
+    <p><b>Data</b> is a collection of facts, numbers or observations gathered to give information about a question. Examples: the heights of students, the favourite fruits of a class, the rainfall each month.</p>
+    <ol class="steps">
+      <li><b>Decide the question</b>, e.g. "Which fruit does my class like most?"</li>
+      <li><b>Collect</b> the data by asking each person, observing or measuring. This is <b>raw data</b>, in the order it was collected.</li>
+      <li><b>Organise</b> it in a frequency table.</li>
+      <li><b>Present</b> it as a pictograph or bar graph.</li>
+      <li><b>Interpret</b> it and answer the question.</li>
+    </ol>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">4.2</span> Tally marks and frequency tables</summary>
+  <div class="body">
+    <p><b>Tally marks</b> are strokes, one per observation. Every 5th stroke is drawn <b>across</b> the previous four, so you can count quickly in fives: <span class="tally"><s>||||</s></span> = 5, <span class="tally"><s>||||</s> <s>||||</s> |||</span> = 13.</p>
+    <p><b>Frequency</b> = the number of times a value occurs.</p>
+    <h4>Method</h4>
+    <ol class="steps">
+      <li>List all the categories in the first column.</li>
+      <li>Read the raw data <b>once</b>, in order. For each value, put a tally stroke against its category and <b>strike it off</b> the list.</li>
+      <li>Count the tallies and write the frequency.</li>
+      <li><b>Check:</b> the frequencies must add up to the total number of observations.</li>
+    </ol>
+    <h4>Grouping data</h4>
+    <p>When the values are spread out (e.g. marks from 8 to 49), tally them in <b>groups</b> of equal size, such as 0–9, 10–19, 20–29, 30–39, 40–49. Each value goes into exactly one group.</p>
+    <div class="eg"><div class="t">Example</div><p>Shoe sizes of 30 students: 5, 6, 4, 7, 6, 5, 8, 6, 5, 7, 6, 4, 6, 7, 5, 6, 8, 5, 6, 7, 4, 6, 5, 7, 6, 9, 5, 6, 7, 6</p>
+      <div class="tablewrap"><table class="compact"><thead><tr><th>Size</th><th>Tally</th><th>Frequency</th></tr></thead><tbody>
+        <tr><td>4</td><td class="tally">|||</td><td>3</td></tr>
+        <tr><td>5</td><td class="tally"><s>||||</s> ||</td><td>7</td></tr>
+        <tr><td>6</td><td class="tally"><s>||||</s> <s>||||</s> |</td><td>11</td></tr>
+        <tr><td>7</td><td class="tally"><s>||||</s> |</td><td>6</td></tr>
+        <tr><td>8</td><td class="tally">||</td><td>2</td></tr>
+        <tr><td>9</td><td class="tally">|</td><td>1</td></tr>
+        <tr><td><b>Total</b></td><td></td><td><b>30</b> ✓</td></tr></tbody></table></div>
+      <p>The most common size is 6. 9 students wear size 7 or bigger.</p></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">4.3</span> Pictographs</summary>
+  <div class="body">
+    <p>A <b>pictograph</b> shows data using pictures or symbols. A <b>key</b> (also called the scale) tells you how much one symbol stands for.</p>
+    <h4>How to draw one</h4>
+    <ol class="steps">
+      <li>Choose a simple symbol connected to the data (📘 for books, 🌳 for trees).</li>
+      <li>Choose a <b>key</b> that divides the values neatly. Look for a number that all the values are multiples of (or multiples of half of it).</li>
+      <li>Number of symbols = value ÷ key. Use a half symbol for half the key.</li>
+      <li>Draw the rows neatly, all symbols the same size, and <b>write the key</b>.</li>
+    </ol>
+    <div class="fig" data-picto='{"head":"Day","labels":["Mon","Tue","Wed","Thu"],"values":[240,720,300,600],"per":120,"sym":"📘","unit":"books"}'></div>
+    <h4>Reading a pictograph</h4>
+    <p>Value = number of symbols × key. 3½ symbols with key 20 → 3 × 20 + 10 = 70.</p>
+    <div class="note warn"><span class="lbl">Limitation</span>Values that are not a simple fraction of the key (like 175 with key 120) are hard to show. Drawing many symbols also takes time. Bar graphs solve both problems.</div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">4.4</span> Bar graphs — drawing and reading</summary>
+  <div class="body">
+    <p>A <b>bar graph</b> shows data with <b>bars of equal width</b>, with <b>equal gaps</b> between them. The <b>length</b> of each bar shows the value, using a uniform scale.</p>
+    <div class="fig" data-bars='{"title":"Favourite fruit of Class VI","labels":["Mango","Apple","Banana","Grapes","Guava"],"values":[40,25,30,15,20],"step":5,"unit":"students","xlab":"Fruit","ylab":"Number of students"}'></div>
+    <h4>How to draw one</h4>
+    <ol class="steps">
+      <li>Draw two axes at right angles. The horizontal axis shows the categories; the vertical axis shows the values.</li>
+      <li><b>Choose a scale:</b> look at the largest value and pick a step so the tallest bar fits your page. Largest 40 → 1 unit = 5 gives 8 units. Largest 840 → 1 unit = 100.</li>
+      <li>Mark the value axis from <b>0</b> in equal steps.</li>
+      <li>Draw each bar: bar length = value ÷ scale (85 with 1 unit = 10 → 8.5 units).</li>
+      <li>Keep all bars the same width with equal gaps.</li>
+      <li><b>Label both axes</b>, give a <b>title</b> and <b>write the scale</b>.</li>
+    </ol>
+    <h4>Questions usually asked from a bar graph</h4>
+    <ul>
+      <li>Highest and lowest value.</li>
+      <li>"How many more?" (subtract) and "how many times?" (divide).</li>
+      <li>Total (add all the bars).</li>
+      <li>"How many categories are above 30?" (count the bars).</li>
+    </ul>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">4.5</span> Misleading graphs and infographics</summary>
+  <div class="body">
+    <p>A graph can <b>mislead</b> if:</p>
+    <ul>
+      <li>the value axis does <b>not start at 0</b>, so a small difference looks huge;</li>
+      <li>the bars or symbols are <b>different widths or sizes</b>;</li>
+      <li>the scale is uneven (steps of 10, then 50, then 100).</li>
+    </ul>
+    <p>Always read the scale before believing a graph.</p>
+    <p><b>Infographics</b> mix pictures, numbers and charts to present data attractively, as in newspapers and posters. They should still be honest and accurate.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">⚠</span> Chapter 4 · Common mistakes</summary>
+  <div class="body">
+    <div class="note err"><span class="lbl">Avoid these</span><ul>
+      <li>Not checking that the frequencies add up to the total.</li>
+      <li>Drawing the 5th tally mark as a 5th upright line instead of across the four.</li>
+      <li>Forgetting the <b>key</b> on a pictograph or the <b>scale</b> on a bar graph. You lose marks for this.</li>
+      <li>Bars of different widths or uneven gaps.</li>
+      <li>Starting the value axis at a number other than 0.</li>
+      <li>Missing a title or axis labels.</li>
+    </ul></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✎</span> Chapter 4 · Try these</summary>
+  <div class="body">
+    <details class="try"><summary>1. Draw the tally for 17.</summary><div class="ansb"><span class="tally"><s>||||</s> <s>||||</s> <s>||||</s> ||</span></div></details>
+    <details class="try"><summary>2. Values 150, 225, 300, 75. Suggest a key for a pictograph.</summary><div class="ansb">All are multiples of 75 → key <b>1 symbol = 75</b> gives 2, 3, 4, 1. (Or 1 symbol = 50 gives 3, 4½, 6, 1½.)</div></details>
+    <details class="try"><summary>3. The largest value is 2100. Suggest a bar-graph scale.</summary><div class="ansb">1 unit = 300 → 7 units, or 1 unit = 500 → 4.2 units. Pick one that gives neat bar lengths for all the values.</div></details>
+    <details class="try"><summary>4. A bar is 6.5 units long with the scale 1 unit = 20. What value does it show?</summary><div class="ansb">6.5 × 20 = <b>130</b>.</div></details>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✓</span> Chapter 4 · Self-check</summary>
+  <div class="body"><ul class="checklist">
+    <li><label><input type="checkbox" data-check="c4a"> I can make a frequency table with tally marks, with or without groups, and check the total.</label></li>
+    <li><label><input type="checkbox" data-check="c4b"> I can choose a key and draw a pictograph with half symbols.</label></li>
+    <li><label><input type="checkbox" data-check="c4c"> I can choose a scale and draw a neat bar graph with a title, labels and the scale written.</label></li>
+    <li><label><input type="checkbox" data-check="c4d"> I can answer "how many more / how many times / total" questions from a graph.</label></li>
+    <li><label><input type="checkbox" data-check="c4e"> I can explain how a graph can mislead.</label></li>
+  </ul></div>
+</details>
+</section>
+
+<!-- ===================================================================== -->
+<!-- CHAPTER 5                                                             -->
+<!-- ===================================================================== -->
+<section data-group id="ch5">
+<h2>Chapter 5 · Prime Time</h2>
+<div class="intro">
+  <b>Big idea:</b> every number is built from <b>prime numbers</b>, the way molecules are built from atoms. The chapter covers:
+  <ul><li>factors and multiples</li><li>primes and co-primes</li><li>prime factorisation</li><li>quick divisibility tests, so you can avoid long division</li></ul>
+</div>
+
+<details class="acc">
+  <summary><span class="num">5.1</span> Factors and multiples</summary>
+  <div class="body">
+    <p>A <b>factor</b> of a number divides it exactly (remainder 0). A <b>multiple</b> of a number is that number × 1, × 2, × 3, …</p>
+    <p>Since 4 × 6 = 24, the numbers 4 and 6 are <b>factors</b> of 24, and 24 is a <b>multiple</b> of 4 and of 6.</p>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Factors</th><th>Multiples</th></tr></thead>
+      <tbody>
+        <tr><td>1 is a factor of every number</td><td>every number is a multiple of itself</td></tr>
+        <tr><td>a number is a factor of itself</td><td>a multiple is ≥ the number</td></tr>
+        <tr><td>factors are ≤ the number</td><td>there are endlessly many</td></tr>
+        <tr><td>there are a limited number</td><td>multiples of 6: 6, 12, 18, 24, …</td></tr>
+      </tbody>
+    </table></div>
+    <h4>Finding all the factors — the pair method</h4>
+    <ol class="steps">
+      <li>Start with 1 × the number.</li>
+      <li>Try 2, 3, 4, … in turn, writing each pair that works.</li>
+      <li><b>Stop when the pairs meet or cross.</b></li>
+    </ol>
+    <p>96: 1 × 96, 2 × 48, 3 × 32, 4 × 24, 6 × 16, 8 × 12 (next would be 12 × 8, so stop) → <b>1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 96</b>.</p>
+    <p class="small muted">A square number such as 36 has an <b>odd</b> number of factors, because 6 × 6 pairs with itself.</p>
+    <h4>Perfect numbers</h4>
+    <p>A number that equals the sum of its factors other than itself: 6 = 1 + 2 + 3, and 28 = 1 + 2 + 4 + 7 + 14.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">5.2</span> Common factors and common multiples</summary>
+  <div class="body">
+    <p><b>Common factors</b> are factors of each of the given numbers. 20 → 1, 2, 4, 5, 10, 20; 28 → 1, 2, 4, 7, 14, 28. Common factors: <b>1, 2, 4</b>.</p>
+    <p><b>Common multiples</b> are multiples of each of the given numbers. Multiples of 4 → 4, 8, <b>12</b>, 16, 20, <b>24</b>; of 6 → 6, <b>12</b>, 18, <b>24</b>. Common multiples: 12, 24, 36 … The <b>smallest</b> is 12.</p>
+    <h4>The Idli-Vada game</h4>
+    <p>Count 1, 2, 3, …; say "idli" for multiples of 3, "vada" for multiples of 5, and "idli-vada" for multiples of <b>both</b>. "Idli-vada" falls on 15, 30, 45, … the common multiples of 3 and 5.</p>
+    <h4>Jumpy and Grumpy</h4>
+    <p>Jumpy jumps 4 units at a time, Grumpy 6 units. Both land on 12, 24, 36, …, the common multiples of 4 and 6. A treasure at 30 can be reached only by Grumpy, because 30 is a multiple of 6 but not of 4.</p>
+    <div class="eg"><div class="t">Example — smallest number divisible by 4, 6 and 10</div>
+      <p>Go through the multiples of the biggest number, 10: 10, 20, 30, 40, 50, <b>60</b>. 60 is the first that is divisible by 4 and 6 as well.</p></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">5.3</span> Prime and composite numbers</summary>
+  <div class="body">
+    <ul>
+      <li><b>Prime number:</b> exactly <b>two</b> factors, 1 and itself (2, 3, 5, 7, 11, …).</li>
+      <li><b>Composite number:</b> <b>more than two</b> factors (4, 6, 8, 9, 10, …).</li>
+      <li><b>1 is neither</b>, because it has only one factor.</li>
+      <li><b>2 is the only even prime</b>. Every other even number also has 2 as a factor.</li>
+    </ul>
+    <h4>Sieve of Eratosthenes (1 to 100)</h4>
+    <ol class="steps">
+      <li>Write 1 to 100 in a grid and cross out 1.</li>
+      <li>Circle 2 and cross out all its other multiples (4, 6, 8, …).</li>
+      <li>Circle the next uncrossed number, 3, and cross out its multiples. Then do the same for 5, then 7.</li>
+      <li>Everything left uncrossed is prime. You can stop after 7 because 11 × 11 = 121 > 100, so every composite number up to 100 has a factor of 7 or less.</li>
+    </ol>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Range</th><th>Primes</th><th>Count</th></tr></thead>
+      <tbody>
+        <tr><td>1–10</td><td>2, 3, 5, 7</td><td>4</td></tr>
+        <tr><td>11–20</td><td>11, 13, 17, 19</td><td>4</td></tr>
+        <tr><td>21–30</td><td>23, 29</td><td>2</td></tr>
+        <tr><td>31–40</td><td>31, 37</td><td>2</td></tr>
+        <tr><td>41–50</td><td>41, 43, 47</td><td>3</td></tr>
+        <tr><td>51–60</td><td>53, 59</td><td>2</td></tr>
+        <tr><td>61–70</td><td>61, 67</td><td>2</td></tr>
+        <tr><td>71–80</td><td>71, 73, 79</td><td>3</td></tr>
+        <tr><td>81–90</td><td>83, 89</td><td>2</td></tr>
+        <tr><td>91–100</td><td>97</td><td>1</td></tr>
+        <tr><td><b>Total</b></td><td></td><td><b>25</b></td></tr>
+      </tbody>
+    </table></div>
+    <p><b>Twin primes</b> are primes that differ by 2: (3, 5), (5, 7), (11, 13), (17, 19), (29, 31), (41, 43), (59, 61), (71, 73).</p>
+    <h4>Is a number prime? Quick test</h4>
+    <p>Try dividing by the primes 2, 3, 5, 7, 11, 13, … and stop once the prime × itself is bigger than the number. Example: 107. It is not divisible by 2, 3, 5 or 7, and 11 × 11 = 121 > 107, so 107 is <b>prime</b>.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">5.4</span> Co-prime numbers</summary>
+  <div class="body">
+    <p>Two numbers are <b>co-prime</b> if their <b>only common factor is 1</b>. They do <b>not</b> need to be prime themselves: 8 and 15 are both composite, but they are co-prime.</p>
+    <h4>How to check</h4>
+    <ol class="steps">
+      <li>Quick look: if both are even, or both end in 0 or 5, or both have digit sums divisible by 3, they share a factor → <b>not co-prime</b>.</li>
+      <li>Otherwise, write the prime factorisation of each. If <b>no prime appears in both</b>, they are co-prime.</li>
+    </ol>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Pair</th><th>Factorisations</th><th>Co-prime?</th></tr></thead>
+      <tbody>
+        <tr><td>18, 35</td><td>2 × 3 × 3 &nbsp;|&nbsp; 5 × 7</td><td>yes</td></tr>
+        <tr><td>39, 91</td><td>3 × 13 &nbsp;|&nbsp; 7 × 13</td><td>no (13)</td></tr>
+        <tr><td>30, 415</td><td>both end in 0/5</td><td>no (5)</td></tr>
+        <tr><td>17, 69</td><td>17 &nbsp;|&nbsp; 3 × 23</td><td>yes</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note key"><span class="lbl">Always co-prime</span>Two different primes · two consecutive numbers (like 117 and 118) · 1 and any number.</div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">5.5</span> Prime factorisation</summary>
+  <div class="body">
+    <p>Prime factorisation writes a number as a <b>product of primes only</b>. Every number greater than 1 has <b>exactly one</b> prime factorisation (apart from the order).</p>
+    <h4>Method 1 — Factor tree</h4>
+    <p>Split the number into any two factors, then split each composite factor again, until every branch ends in a prime:</p>
+    <pre class="diagram">        420
+       /   \
+     42     10
+    /  \   /  \
+   6    7 2    5
+  / \
+ 2   3            420 = 2 × 2 × 3 × 5 × 7</pre>
+    <h4>Method 2 — Repeated division</h4>
+    <div class="tablewrap"><table class="compact" style="width:auto">
+      <tbody>
+        <tr><td>2</td><td>1260</td></tr><tr><td>2</td><td>630</td></tr><tr><td>3</td><td>315</td></tr>
+        <tr><td>3</td><td>105</td></tr><tr><td>5</td><td>35</td></tr><tr><td>7</td><td>7</td></tr><tr><td></td><td>1</td></tr>
+      </tbody>
+    </table></div>
+    <p>1260 = 2 × 2 × 3 × 3 × 5 × 7. Divide by 2 as long as you can, then by 3, then 5, then 7, and so on.</p>
+    <h4>Uses of prime factorisation</h4>
+    <ul>
+      <li><b>Factorising a product without multiplying:</b> 58 × 30 = (2 × 29) × (2 × 3 × 5) = 2 × 2 × 3 × 5 × 29.</li>
+      <li><b>Checking divisibility:</b> 2520 = 2 × 2 × 2 × 3 × 3 × 5 × 7 contains 2 × 2 × 2 = 8 and 3 × 3 = 9, so it is divisible by 8, 9, 7, 5 and 72, but not by 11.</li>
+      <li><b>Finding common factors:</b> 980 = 2 × 2 × 5 × 7 × 7 and 1155 = 3 × 5 × 7 × 11 share 5 and 7, so their common factors are 1, 5, 7 and 35.</li>
+      <li><b>Checking co-primes</b> (see 5.4).</li>
+    </ul>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">5.6</span> Divisibility tests — with the reasons</summary>
+  <div class="body">
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>By</th><th>Test</th><th>Why it works</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td>last digit 0, 2, 4, 6, 8</td><td>10, 100, … are all divisible by 2, so only the ones digit matters</td><td>3958 ✓</td></tr>
+        <tr><td>5</td><td>last digit 0 or 5</td><td>same reason, with 5</td><td>9135 ✓</td></tr>
+        <tr><td>10</td><td>last digit 0</td><td>same reason, with 10</td><td>3960 ✓</td></tr>
+        <tr><td>4</td><td>last <b>two</b> digits divisible by 4</td><td>100 is divisible by 4</td><td>7316 → 16 ✓</td></tr>
+        <tr><td>8</td><td>last <b>three</b> digits divisible by 8</td><td>1000 is divisible by 8</td><td>5224 → 224 ✓</td></tr>
+        <tr><td>3</td><td>digit sum divisible by 3</td><td>10 = 9 + 1, 100 = 99 + 1, … so each digit leaves itself as remainder</td><td>5214 → 12 ✓</td></tr>
+        <tr><td>9</td><td>digit sum divisible by 9</td><td>same reason as for 3</td><td>4356 → 18 ✓</td></tr>
+        <tr><td>6</td><td>divisible by 2 <b>and</b> by 3</td><td>6 = 2 × 3, which are co-prime</td><td>4356 ✓</td></tr>
+        <tr><td>11</td><td>(sum of alternate digits) − (sum of the others) = 0 or a multiple of 11</td><td>—</td><td>4356: (6 + 3) − (5 + 4) = 0 ✓</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note key"><span class="lbl">Combining tests</span>A number divisible by two <b>co-prime</b> numbers is divisible by their product: divisible by 3 and 8 → divisible by 24. This does <b>not</b> work if they share a factor: 12 is divisible by 4 and 6 but not by 24.</div>
+    <div class="eg"><div class="t">Example — missing digit</div><p>Find the smallest digit ★ so that 52★4 is divisible by 8.</p>
+      <p>Test the last three digits 2★4: 204 ✗, 214 ✗, 224 = 8 × 28 ✓ → <b>★ = 2</b>.</p></div>
+    <p class="small muted">The textbook chapter covers the tests for 2, 4, 5, 8 and 10. The school worksheet also asks for 3, 6, 9 and 11, so learn all nine.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">⚠</span> Chapter 5 · Common mistakes</summary>
+  <div class="body">
+    <div class="note err"><span class="lbl">Avoid these</span><ul>
+      <li>Calling 1 a prime number.</li>
+      <li>Thinking every odd number is prime. 9, 15, 21, 51, 57, 87 and 91 are all composite.</li>
+      <li>Thinking co-prime numbers must both be prime.</li>
+      <li>Stopping a factorisation at a composite number (420 = 2 × 2 × 3 × 35). Keep going until every factor is prime: 35 = 5 × 7.</li>
+      <li>Using only the last digit for the tests for 4 or 8.</li>
+      <li>Saying "divisible by 4 and 6, so divisible by 24".</li>
+      <li>Missing a factor pair when listing factors.</li>
+    </ul></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✎</span> Chapter 5 · Try these</summary>
+  <div class="body">
+    <details class="try"><summary>1. List all the factors of 72.</summary><div class="ansb">1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72 (12 factors).</div></details>
+    <details class="try"><summary>2. Is 91 prime?</summary><div class="ansb"><b>No</b>: 91 = 7 × 13.</div></details>
+    <details class="try"><summary>3. Are 45 and 77 co-prime?</summary><div class="ansb">45 = 3 × 3 × 5, 77 = 7 × 11 → no common prime → <b>yes</b>.</div></details>
+    <details class="try"><summary>4. Prime factorise 1728.</summary><div class="ansb">2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3.</div></details>
+    <details class="try"><summary>5. Is 7,128 divisible by 8? By 9? By 11?</summary><div class="ansb">128 = 8 × 16 → yes. Digit sum 18 → yes. (8 + 1) − (2 + 7) = 0 → yes. (7128 = 8 × 891 = 11 × 648.)</div></details>
+    <details class="try"><summary>6. Smallest number with prime factors 2, 3 and 11?</summary><div class="ansb">2 × 3 × 11 = <b>66</b>.</div></details>
+    <details class="try"><summary>7. Up to 60, when do Jumpy (jumps of 3) and Grumpy (jumps of 5) both land?</summary><div class="ansb">The common multiples of 3 and 5: <b>15, 30, 45, 60</b>.</div></details>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✓</span> Chapter 5 · Self-check</summary>
+  <div class="body"><ul class="checklist">
+    <li><label><input type="checkbox" data-check="c5a"> I can list all the factors of a number using pairs, and the first few multiples.</label></li>
+    <li><label><input type="checkbox" data-check="c5b"> I can find common factors and the smallest common multiple.</label></li>
+    <li><label><input type="checkbox" data-check="c5c"> I can write all 25 primes up to 100 and the twin primes.</label></li>
+    <li><label><input type="checkbox" data-check="c5d"> I can test whether two numbers are co-prime.</label></li>
+    <li><label><input type="checkbox" data-check="c5e"> I can prime-factorise by a factor tree and by division.</label></li>
+    <li><label><input type="checkbox" data-check="c5f"> I can apply all nine divisibility tests and give the reason.</label></li>
+  </ul></div>
+</details>
+</section>
+
+<!-- ===================================================================== -->
+<!-- CHAPTER 6                                                             -->
+<!-- ===================================================================== -->
+<section data-group id="ch6">
+<h2>Chapter 6 · Perimeter and Area</h2>
+<div class="intro">
+  <b>Big idea:</b> <b>perimeter</b> is the distance <b>around</b> a closed figure, measured in cm or m. <b>Area</b> is the amount of surface <b>inside</b> it, measured in cm² or m². The two are different: figures with the same perimeter can have different areas.
+</div>
+
+<details class="acc">
+  <summary><span class="num">6.1</span> Perimeter and its formulas</summary>
+  <div class="body">
+    <p><b>Perimeter</b> = the total length of the boundary. Imagine walking once around the edge: the distance you walk is the perimeter.</p>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Figure</th><th>Perimeter</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Rectangle</td><td>2 × (length + breadth)</td><td>l + b + l + b</td></tr>
+        <tr><td>Square</td><td>4 × side</td><td>4 equal sides</td></tr>
+        <tr><td>Triangle</td><td>a + b + c</td><td>add all three sides</td></tr>
+        <tr><td>Equilateral triangle</td><td>3 × side</td><td>3 equal sides</td></tr>
+        <tr><td>Regular polygon (<i>n</i> sides)</td><td><i>n</i> × side</td><td><i>n</i> equal sides</td></tr>
+        <tr><td>Any polygon</td><td>sum of all sides</td><td>walk around it</td></tr>
+      </tbody>
+    </table></div>
+    <h4>Finding a missing side (working backwards)</h4>
+    <ul>
+      <li>Rectangle with perimeter 25 cm and breadth 5 cm: l + b = 25 ÷ 2 = 12.5 → l = 12.5 − 5 = <b>7.5 cm</b>.</li>
+      <li>Square with perimeter 84 cm: side = 84 ÷ 4 = <b>21 cm</b>.</li>
+      <li>Regular pentagon with perimeter 100 cm: side = 100 ÷ 5 = <b>20 cm</b>.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">6.2</span> Perimeter word problems</summary>
+  <div class="body">
+    <ul>
+      <li><b>Running laps:</b> distance = number of rounds × perimeter. Akshi runs 4 rounds of a 60 m × 40 m track: 4 × 200 = 800 m.</li>
+      <li><b>Fencing:</b> length of fence = perimeter − any gate left open. Cost = length × rate. A 24 m × 15 m garden with a 3 m gate: (78 − 3) × ₹35 = ₹2,625.</li>
+      <li><b>Lace or border:</b> the length needed = perimeter of the cloth, photo frame or table.</li>
+      <li><b>A wire bent into a new shape:</b> the length of the wire (the perimeter) stays the same. A square of side 15 cm (60 cm of wire) bent into a rectangle 18 cm long → breadth = 30 − 18 = 12 cm.</li>
+      <li><b>"At least" questions:</b> round <b>up</b>. To cover at least 1 km on a 140 m track: 1000 ÷ 140 ≈ 7.1 → <b>8 rounds</b>.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">6.3</span> Area — counting squares and the formulas</summary>
+  <div class="body">
+    <p><b>Area</b> is measured in <b>square units</b>: 1 cm² is the area of a square of side 1 cm.</p>
+    <h4>Counting squares on squared paper</h4>
+    <ul>
+      <li>A full square counts as 1.</li>
+      <li>More than half a square counts as 1.</li>
+      <li>Exactly half counts as ½ (two halves make 1).</li>
+      <li>Less than half: ignore it.</li>
+    </ul>
+    <h4>Formulas</h4>
+    <p><b>Rectangle:</b> area = length × breadth. A 5 × 3 rectangle has 5 squares in each of 3 rows = 15 cm². <b>Square:</b> area = side × side.</p>
+    <div class="note warn"><span class="lbl">Units</span>1 m = 100 cm, but <b>1 m² = 100 × 100 = 10,000 cm²</b>. Convert lengths to the same unit <b>before</b> multiplying.</div>
+    <h4>Tiling problems</h4>
+    <div class="eg"><div class="t">Example</div><p>How many square tiles of side 60 cm cover a floor 12 m × 9 m?</p>
+      <p>12 m = 1200 cm → 1200 ÷ 60 = 20 tiles along the length. 9 m = 900 cm → 900 ÷ 60 = 15 along the breadth. Tiles = 20 × 15 = <b>300</b>. Or: floor area ÷ tile area = 1,080,000 ÷ 3600 = 300.</p></div>
+    <h4>Irregular shapes</h4>
+    <p>Split the shape into rectangles, find each area, and add them. Or take the big rectangle and subtract the missing part. An 8 × 6 rectangle with a 3 × 2 corner cut out has area 48 − 6 = 42 cm².</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">6.4</span> Area of a triangle, and the tangram</summary>
+  <div class="body">
+    <div class="fig"><svg viewBox="0 0 300 170" width="300" role="img" aria-label="Rectangle split by its diagonal into two equal triangles">
+      <g class="svg-accent"><path d="M30 150 H270 V16 Z" fill="currentColor" fill-opacity=".18"/></g>
+      <rect x="30" y="16" width="240" height="134" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line x1="30" y1="150" x2="270" y2="16" stroke="currentColor" stroke-width="2"/>
+      <text x="150" y="166" text-anchor="middle" font-size="12">base</text>
+      <text x="288" y="88" text-anchor="middle" font-size="12">height</text></svg>
+      <div class="cap">The diagonal cuts the rectangle into two identical triangles.</div></div>
+    <p>A diagonal cuts a rectangle into <b>two identical right triangles</b>, so each triangle is <b>half</b> the rectangle: <b>area of a right triangle = ½ × base × height</b>. A 10 cm × 6 cm rectangle → each triangle is 30 cm².</p>
+    <p>A triangle drawn in a rectangle on the same base, with its top corner on the opposite side, also has half the rectangle's area.</p>
+    <h4>Tangram</h4>
+    <p>A tangram is a square cut into 7 pieces: 2 large triangles, 1 medium triangle, 2 small triangles, 1 square and 1 parallelogram. As fractions of the whole square:</p>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Piece</th><th>Large triangle (each)</th><th>Medium triangle</th><th>Square</th><th>Parallelogram</th><th>Small triangle (each)</th></tr></thead>
+      <tbody><tr><td>Fraction</td><td>¼</td><td>⅛</td><td>⅛</td><td>⅛</td><td>1⁄16</td></tr></tbody>
+    </table></div>
+    <p>Check: ¼ + ¼ + ⅛ + ⅛ + ⅛ + 1⁄16 + 1⁄16 = 1. Any shape made from all 7 pieces has the same area as the original square.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">6.5</span> Same perimeter, different area — and other surprises</summary>
+  <div class="body">
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Perimeter 24 cm: l × b</th><th>1 × 11</th><th>2 × 10</th><th>3 × 9</th><th>4 × 8</th><th>5 × 7</th><th>6 × 6</th></tr></thead>
+      <tbody><tr><td>Area (cm²)</td><td>11</td><td>20</td><td>27</td><td>32</td><td>35</td><td><b>36</b></td></tr></tbody>
+    </table></div>
+    <div class="tablewrap"><table class="compact">
+      <thead><tr><th>Area 36 cm²: l × b</th><th>1 × 36</th><th>2 × 18</th><th>3 × 12</th><th>4 × 9</th><th>6 × 6</th></tr></thead>
+      <tbody><tr><td>Perimeter (cm)</td><td>74</td><td>40</td><td>30</td><td>26</td><td><b>24</b></td></tr></tbody>
+    </table></div>
+    <ul>
+      <li>With the same perimeter, the <b>square has the largest area</b>.</li>
+      <li>With the same area, the <b>square has the smallest perimeter</b>.</li>
+      <li><b>Cutting a notch from a corner</b>: the area decreases, but the <b>perimeter stays the same</b>, because the two new inner edges exactly replace the two pieces removed.</li>
+      <li><b>Cutting a square into 4 equal squares</b>: the total area is unchanged, but the total perimeter <b>doubles</b> (side 12 → four squares of side 6 → 4 × 24 = 96 cm, against 48 cm before).</li>
+      <li><b>A path inside a garden</b> (1 m wide): the inner rectangle is 2 m shorter in <b>each</b> direction. Path area = outer area − inner area.</li>
+    </ul>
+    <div class="eg"><div class="t">Example — find the sides from P and A</div><p>A rectangle has perimeter 46 cm and area 120 cm². Find its sides.</p>
+      <p>l + b = 23. Factor pairs of 120: … (8, 15), (10, 12). Only 8 + 15 = 23 → <b>15 cm × 8 cm</b>.</p></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">⚠</span> Chapter 6 · Common mistakes</summary>
+  <div class="body">
+    <div class="note err"><span class="lbl">Avoid these</span><ul>
+      <li>Writing perimeter in cm² or area in cm. Perimeter is a length (cm); area is square units (cm²).</li>
+      <li>Rectangle perimeter written as l + b. It is 2 × (l + b).</li>
+      <li>Mixing m and cm before multiplying.</li>
+      <li>Forgetting to subtract the gate when fencing.</li>
+      <li>For a 1 m path inside a garden, subtracting 1 from each side instead of 2.</li>
+      <li>Thinking a bigger perimeter always means a bigger area.</li>
+    </ul></div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✎</span> Chapter 6 · Try these</summary>
+  <div class="body">
+    <details class="try"><summary>1. A rectangle is 14 cm × 9 cm. Find its perimeter and area.</summary><div class="ansb">P = 2 × 23 = <b>46 cm</b>; A = <b>126 cm²</b>.</div></details>
+    <details class="try"><summary>2. An equilateral triangle and a square have the same perimeter, 36 cm. Find each side.</summary><div class="ansb">Triangle: 36 ÷ 3 = <b>12 cm</b>; square: 36 ÷ 4 = <b>9 cm</b>.</div></details>
+    <details class="try"><summary>3. How many 25 cm × 25 cm tiles cover a 5 m × 4 m floor?</summary><div class="ansb">500 ÷ 25 = 20; 400 ÷ 25 = 16 → <b>320 tiles</b>.</div></details>
+    <details class="try"><summary>4. Area of a right triangle with legs 12 cm and 7 cm?</summary><div class="ansb">½ × 12 × 7 = <b>42 cm²</b>.</div></details>
+    <details class="try"><summary>5. Fencing a 30 m × 20 m field at ₹12 per metre, leaving a 4 m gate. Cost?</summary><div class="ansb">(100 − 4) × 12 = <b>₹1,152</b>.</div></details>
+    <details class="try"><summary>6. Which has the bigger area: a 9 × 5 rectangle or a square with the same perimeter?</summary><div class="ansb">P = 28 → square side 7 → 49 cm² &gt; 45 cm². The <b>square</b>.</div></details>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">✓</span> Chapter 6 · Self-check</summary>
+  <div class="body"><ul class="checklist">
+    <li><label><input type="checkbox" data-check="c6a"> I can find the perimeter and area of rectangles, squares and regular polygons, and work backwards to a missing side.</label></li>
+    <li><label><input type="checkbox" data-check="c6b"> I can solve track, fencing, wire and tiling problems with the correct units.</label></li>
+    <li><label><input type="checkbox" data-check="c6c"> I can find the area of a right triangle as half a rectangle.</label></li>
+    <li><label><input type="checkbox" data-check="c6d"> I can find areas of L-shapes and paths by adding or subtracting.</label></li>
+    <li><label><input type="checkbox" data-check="c6e"> I can explain why a notched shape keeps the same perimeter.</label></li>
+  </ul></div>
+</details>
+</section>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Ganita Prakash</em></span>
+  <span>Generated 03 Oct 2026</span>
+</footer>
+</main>
+<script src="assets/paper.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

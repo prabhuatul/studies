@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — Grassroots Democracy: Governance</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🏛️ <span>Ch 10</span> Governance</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>One idea runs through the whole chapter: <strong>power needs structure</strong>. Three organs share the work of running a country; three levels share it across geography; and democracy decides <em>who</em> gets to steer it.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · WHY GOVERNANCE?</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Large groups → disagreements → disorder without rules</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>GOVERNANCE = deciding + organising + enforcing rules</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>GOVERNMENT = the body that does this; LAWS = the important rules</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Rules aren't fixed forever — can be discussed and changed</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · THREE ORGANS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>LEGISLATURE — makes laws</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>EXECUTIVE — implements laws (head of state, ministers, agencies)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>JUDICIARY — rules on law-breaking, checks fairness</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>SEPARATION OF POWERS → CHECKS AND BALANCES</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Worked example: cybercrime — laws, cyber police, courts</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · THREE LEVELS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>LOCAL → STATE → CENTRAL (Union) — Fig. 10.4 pyramid</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Electrician analogy: bulb → electrician → Electricity Board</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Flood analogy: small (local) → several towns (State) → massive (Central)</button></li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>National vs State (Fig. 10.5)</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Supreme Court ↔ High Court</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Lok Sabha + Rajya Sabha ↔ State Assembly / Vidhan Sabha</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>President (nominal) + PM ↔ Governor (nominal) + CM</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Defence/Currency (Central) vs Police/Irrigation (State) — Education is SHARED</button></li>
+        </ul>
+      </li>
+      <li><button class="node leaf"><span class="tw">·</span>Mottos: Satyameva Jayate (Govt of India) · Yato Dharmastato Jayah (Supreme Court)</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · DR. A.P.J. ABDUL KALAM</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Born Rameswaram, Tamil Nadu, 1931</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>'Missile Man of India' — space, missile, nuclear programmes</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>11th President, 2002–2007</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Proof: a NOMINAL role can still have real impact</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>F.A.I.L. = First Attempt In Learning · E.N.D. = Effort Never Dies</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · DEMOCRACY</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>dēmos (people) + kratos (rule) = "rule of the people"</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Class monitor analogy → representatives (MLAs, MPs)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>India = REPRESENTATIVE democracy; ~970 million voters (2024); voting age 18+</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>DIRECT democracy — e.g. class picnic vote by show of hands</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>GRASSROOTS democracy — ordinary citizens' participation at the base</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Five links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · Two structures, one logic</h4>
+    <p style="margin-bottom:0">Three organs split power by <strong>function</strong> (who makes, enforces, judges laws); three levels split it by <strong>geography</strong> (local, State, national). Both exist so no single group holds all the power.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · Nominal ≠ powerless</h4>
+    <p style="margin-bottom:0">The President and Governor are "nominal" heads — yet Dr. Kalam's story is the chapter's proof that a nominal role can still change millions of lives.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · The class monitor is the whole idea</h4>
+    <p style="margin-bottom:0">Democracy's biggest concept — why representatives exist at all — is taught through one simple classroom example, then scaled straight up to MLAs and MPs.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · Direct vs representative vs grassroots</h4>
+    <p style="margin-bottom:0">A class picnic vote is <strong>direct</strong> democracy (everyone votes on the actual decision). India runs on <strong>representative</strong> democracy (you vote for someone who decides). <strong>Grassroots</strong> democracy is about how much ordinary citizens still get a say, even within a representative system.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">5 · Every level needs checks</h4>
+    <p style="margin-bottom:0">Just as the three organs check each other, the three levels of government step in only as far as a problem demands — a village flood doesn't need the army, but a massive one might.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> The three organs of government and what each does</label></li>
+    <li><label><input type="checkbox" data-check="m2"> The three levels of government, with the electrician and flood analogies</label></li>
+    <li><label><input type="checkbox" data-check="m3"> The National vs State table — judiciary, legislature, executive, functions</label></li>
+    <li><label><input type="checkbox" data-check="m4"> Dr. Kalam's life story and what it shows about a "nominal" role</label></li>
+    <li><label><input type="checkbox" data-check="m5"> The difference between direct, representative and grassroots democracy</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the 50-question Quest →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 02 Oct 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

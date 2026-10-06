@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson — Locating Places on Earth</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">📍 <span>Ch 1</span> Locating Places on Earth</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html" aria-current="page">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Lesson · pages 8–25</div>
+  <h1>Locating Places on Earth</h1>
+  <p>This chapter teaches how we represent the Earth and pinpoint any place on it — from a small city map all the way to the International Date Line.</p>
+</div>
+
+<input class="search" type="search" placeholder="Search the lesson — try “meridian”, “IST”, “Ujjayinī”…"
+       data-filter="details.acc" data-count="#searchCount" aria-label="Search the lesson">
+<p class="small muted" id="searchCount" style="margin:.4rem 0 0"></p>
+
+<div class="btnrow" style="margin:1rem 0 1.6rem">
+  <button class="btn" data-acc="open">Expand all</button>
+  <button class="btn" data-acc="closed">Collapse all</button>
+</div>
+
+<!-- ======================= KEY TERMS ======================= -->
+<h2>Key Terms &amp; Definitions</h2>
+<details class="acc" open>
+  <summary><span class="num">30</span> Every term you need to know</summary>
+  <div class="body">
+    <div class="tablewrap">
+    <table>
+      <thead><tr><th style="width:26%">Term</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td>Map</td><td>A representation or drawing of an area, viewed as if from the top. May show a village, a district, a country or the whole world.</td></tr>
+        <tr><td>Atlas</td><td>A book or collection of maps.</td></tr>
+        <tr><td>Physical map</td><td>A map mainly showing natural features — mountains, oceans, rivers.</td></tr>
+        <tr><td>Political map</td><td>A map showing countries or states, boundaries, cities, capitals.</td></tr>
+        <tr><td>Thematic map</td><td>A map carrying one specific kind of information.</td></tr>
+        <tr><td>Scale</td><td>The relation between a distance on the map and the real distance on the ground (e.g. 1 cm = 500 m).</td></tr>
+        <tr><td>Cardinal directions</td><td>The four main directions — north, east, south, west (also called cardinal points).</td></tr>
+        <tr><td>Intermediate directions</td><td>Northeast (NE), southeast (SE), southwest (SW), northwest (NW).</td></tr>
+        <tr><td>Symbol</td><td>A small standard drawing used to represent a feature on a map, saving space.</td></tr>
+        <tr><td>Survey of India</td><td>The government body that has fixed the standard set of symbols for maps of India.</td></tr>
+        <tr><td>Globe</td><td>A sphere on which a map is drawn — of the Earth, the Moon, Mars, or the stars.</td></tr>
+        <tr><td>Coordinates</td><td>A pair of values (latitude and longitude) that fixes a location precisely.</td></tr>
+        <tr><td>Poles</td><td>The two fixed points at the top and bottom of the globe as it rotates.</td></tr>
+        <tr><td>Equator</td><td>The imaginary circle halfway between the two poles; latitude 0°; the longest parallel of latitude.</td></tr>
+        <tr><td>Latitude</td><td>A measure of the distance from the Equator, expressed in degrees.</td></tr>
+        <tr><td>Parallel of latitude</td><td>An imaginary line running east–west, parallel to the Equator, drawing a circle around the Earth.</td></tr>
+        <tr><td>Longitude</td><td>A measure of the distance from the Prime Meridian, expressed in degrees.</td></tr>
+        <tr><td>Meridian of longitude</td><td>A half-circle running from one pole to the other.</td></tr>
+        <tr><td>Prime Meridian</td><td>The reference meridian marked 0° longitude, passing through Greenwich.</td></tr>
+        <tr><td>Greenwich Meridian</td><td>Another name for the Prime Meridian — Greenwich is an area of London, England.</td></tr>
+        <tr><td>Grid / grid lines</td><td>The network formed by all the parallels of latitude and meridians of longitude together.</td></tr>
+        <tr><td>Hemisphere</td><td>Half of the Earth. The Prime Meridian makes Western and Eastern; the Equator makes Northern and Southern.</td></tr>
+        <tr><td>madhya rekhā</td><td>‘Middle line’ — the ancient Indian prime meridian, passing through Ujjayinī (Ujjain).</td></tr>
+        <tr><td>Local time</td><td>The time at a particular meridian, based on the Sun’s position there.</td></tr>
+        <tr><td>Standard time</td><td>One time adopted by a whole country, based on a meridian passing through it.</td></tr>
+        <tr><td>GMT</td><td>Greenwich Mean Time — the local time at Greenwich.</td></tr>
+        <tr><td>IST</td><td>Indian Standard Time — 5 hours 30 minutes ahead of GMT.</td></tr>
+        <tr><td>Time zone</td><td>A band of the Earth (broadly 15° wide) sharing one standard time.</td></tr>
+        <tr><td>International Date Line</td><td>The line at approximately 180° longitude, opposite the Prime Meridian, where the date changes.</td></tr>
+        <tr><td>Estuary</td><td>The place where a river meets the sea.</td></tr>
+        <tr><td>Torrid / temperate / frigid</td><td>The hot climate near the Equator / the moderate climate at middle latitudes / the cold climate near the poles.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</details>
+
+<!-- ======================= CORE CONCEPTS ======================= -->
+<h2>Core Concepts</h2>
+
+<details class="acc">
+  <summary><span class="num">1</span> A map and its components</summary>
+  <div class="body">
+    <p>A map is a drawing of some area as seen from above. It can cover a small area (a village, a town), a bigger one (a district or state), or a very large one (India, or the whole world).</p>
+    <p>There are three important components of every map:</p>
+    <ol>
+      <li><strong>Distance</strong> — handled through the scale</li>
+      <li><strong>Direction</strong> — handled through the cardinal points</li>
+      <li><strong>Symbols</strong> — handled through a standard symbol set</li>
+    </ol>
+    <blockquote>A map is like a treasure guide: it shows you where things are and how to get to them.</blockquote>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">2</span> Distance and scale</summary>
+  <div class="body">
+    <p>A huge place fits onto a small sheet of paper thanks to the map’s <strong>scale</strong>. Each centimetre on the map stands for a fixed distance on the ground.</p>
+    <ul>
+      <li>If the scale is <strong>1 cm = 500 m</strong>, then 3 cm on the map means 1,500 m on the ground.</li>
+      <li>On the map of India (Fig. 5.2), the scale is drawn as a ruler with ‘500’ above it and ‘km’ beside it. That ruler measures <strong>2.5 cm in print and represents 500 km</strong> on the ground.</li>
+    </ul>
+    <p>The actual distance between two points on a map therefore depends entirely on the scale being used.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">3</span> Direction</summary>
+  <div class="body">
+    <p>North is at the top of the map. Moving clockwise from north: <strong>east, south, west</strong>. These four are the <strong>cardinal directions</strong> (or cardinal points).</p>
+    <p>Between them lie the <strong>intermediate directions</strong>: northeast, southeast, southwest, northwest. Most maps simply carry an arrow marked <strong>‘N’</strong> pointing north.</p>
+    <pre class="diagram">           North
+   Northwest  |  Northeast
+            \ | /
+    West ---- + ---- East
+            / | \
+   Southwest  |  Southeast
+           South</pre>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">4</span> Symbols</summary>
+  <div class="body">
+    <p>On the map of a large city or a country there is not enough room to draw every building. Instead a <strong>symbol</strong> stands for each feature — buildings (railway station, school, post office), roads and railway lines, and natural elements (a river, a pond, a forest). This packs a great many details into a small space.</p>
+    <p>Different countries use different symbol sets. In India the <strong>Survey of India</strong>, a government body, has fixed the standard set.</p>
+    <div class="note tip">
+      <span class="lbl">Abbreviations to remember</span>
+      <strong>PO</strong> = Post Office · <strong>PTO</strong> = Post &amp; Telegraph Office · <strong>PS</strong> = Police Station
+    </div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">5</span> Mapping the Earth — why a globe</summary>
+  <div class="body">
+    <p>Mapping the Earth is harder than mapping a town, because the Earth is not flat — it is <strong>nearly a sphere</strong>. (‘Nearly’, because it is slightly <strong>flattened at the poles</strong>; in practice we treat it as spherical.)</p>
+    <p>A sphere cannot be shown accurately on a flat sheet of paper. Try the <strong>orange-peel test</strong>: peel an orange into three or four large pieces and flatten them on a table — you cannot do it without tearing them at the edges.</p>
+    <p>A <strong>globe</strong> is a sphere with a map drawn on it. Because the globe and the Earth share the same spherical shape, a globe represents the Earth’s geography better than a flat map does.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">6</span> Understanding coordinates</summary>
+  <div class="body">
+    <p>Two everyday examples show the idea:</p>
+    <ul>
+      <li><strong>The market.</strong> “Meet me at 6 pm at the 7th shop in the 5th row from the entrance.” Two numbers fix the shop exactly.</li>
+      <li><strong>The chessboard.</strong> Letters <strong>a–h</strong> run along one side and numbers <strong>1–8</strong> along the other, so every square has a name. When White opens by pushing the queen’s pawn two squares forward, the pawn is said to have moved <strong>from d2 to d4</strong>.</li>
+    </ul>
+    <p>In both cases two values together pin down one position. This is a <strong>system of coordinates</strong>, and the same idea is used on maps to locate any place on Earth.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">7</span> Latitudes</summary>
+  <div class="body">
+    <p>Spin the globe: the two fixed points are the <strong>poles</strong>, and halfway between them runs the <strong>Equator</strong>.</p>
+    <p>Stand on the Equator and walk towards a pole — your distance from the Equator grows. <strong>Latitude</strong> measures that distance. At any point on the journey you can draw an imaginary line running east and west, parallel to the Equator; this is a <strong>parallel of latitude</strong>, and it forms a circle around the Earth.</p>
+    <ul>
+      <li>The <strong>Equator is the largest</strong> of these circles.</li>
+      <li>The parallels <strong>grow smaller</strong> as you move north or south.</li>
+      <li>Latitudes are given in <strong>degrees</strong>: the Equator is <strong>0°</strong>, the North Pole <strong>90°N</strong>, the South Pole <strong>90°S</strong>.</li>
+    </ul>
+    <div class="note key">
+      <span class="lbl">Latitude and climate</span>
+      Near the Equator the climate is generally hot (‘<strong>torrid</strong>’). As latitude increases towards a pole the climate becomes more moderate (‘<strong>temperate</strong>’). Closer to the poles it grows cold (‘<strong>frigid</strong>’).
+    </div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">8</span> Longitudes</summary>
+  <div class="body">
+    <p>Travel from the North Pole to the South Pole by the shortest line. You could go through Europe and Africa, or equally through Asia — the distance is the same. These lines are the <strong>meridians of longitude</strong>, and they are all <strong>half-circles</strong> running pole to pole.</p>
+    <h4>Why longitude gives us time</h4>
+    <p>The Earth spins on its axis. Imagine a desk lamp as the Sun shining on a globe: as the globe turns eastward, it is morning in some places, midday, evening or night in others — breakfast time in one country is lunchtime in another while a third is fast asleep. So measuring a place’s longitude also measures the <strong>time</strong> there.</p>
+    <h4>The reference line</h4>
+    <p>Longitude is measured from the <strong>Prime Meridian</strong>, marked <strong>0°</strong>. It is also called the <strong>Greenwich Meridian</strong> because in <strong>1884</strong> some nations agreed that the meridian through <strong>Greenwich</strong>, an area of London in England, would be the international standard.</p>
+    <ul>
+      <li>Longitude increases from <strong>0° to 180°</strong> going either west or east, with <strong>‘W’</strong> or <strong>‘E’</strong> added.</li>
+      <li>Examples in round figures: <strong>New York 74°W</strong>, <strong>Delhi 77°E</strong>, <strong>Tokyo 140°E</strong>.</li>
+      <li>180°W and 180°E are the <em>same</em> meridian, so it is written simply as <strong>180°</strong>.</li>
+    </ul>
+    <p><strong>Coordinates.</strong> Latitude and longitude together are the two coordinates of a place — “Delhi lies at 29°N latitude and 77°E longitude” (rounded, not exact).</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">9</span> The grid and the hemispheres</summary>
+  <div class="body">
+    <p>All the parallels and meridians together form a <strong>grid</strong> over the globe (also called grid lines). This grid is what lets us define any location precisely.</p>
+    <ul>
+      <li>The <strong>Prime Meridian</strong> divides the Earth into the <strong>Western</strong> and <strong>Eastern Hemispheres</strong>.</li>
+      <li>The <strong>Equator</strong> divides it into the <strong>Northern</strong> and <strong>Southern Hemispheres</strong>.</li>
+    </ul>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">10</span> India’s own prime meridian</summary>
+  <div class="body">
+    <p>The Greenwich Meridian was not the first prime meridian. Many centuries before Europe, <strong>India had its own</strong>, called <strong>madhya rekhā</strong> (‘middle line’). It passed through the city of <strong>Ujjayinī</strong> (today <strong>Ujjain</strong>), a renowned centre of astronomy for many centuries. The famous astronomer <strong>Varāhamihira</strong> lived and worked there some <strong>1,500 years ago</strong>.</p>
+    <p>Indian astronomers already understood latitude and longitude, including the need for a zero meridian, and the Ujjayinī meridian became the reference for calculations in all Indian astronomical texts.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">11</span> Understanding time zones</summary>
+  <div class="body">
+    <p>The Earth rotates <strong>west to east</strong>, making a full turn every <strong>24 hours</strong>. A full turn is <strong>360°</strong>, so the Earth turns <strong>15° every hour</strong> (15 × 24 = 360).</p>
+    <p>Mark meridians every 15° eastward from the Prime Meridian — 0°, 15°E, 30°E, 45°E … up to 180°E. Each step is the same as <strong>adding one hour</strong> of local time:</p>
+    <div class="tablewrap">
+    <table>
+      <thead><tr><th>45°W</th><th>30°W</th><th>15°W</th><th>0°</th><th>15°E</th><th>30°E</th><th>45°E</th></tr></thead>
+      <tbody><tr><td>9 AM</td><td>10 AM</td><td>11 AM</td><td><strong>12 PM</strong></td><td>1 PM</td><td>2 PM</td><td>3 PM</td></tr></tbody>
+    </table>
+    </div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">12</span> Local time versus standard time</summary>
+  <div class="body">
+    <p>Every meridian has its own <strong>local time</strong>, but it would be hopelessly inconvenient for one country to run on many local times. So most countries adopt a single <strong>standard time</strong>, based on a meridian passing through the country.</p>
+    <div class="note key"><span class="lbl">The number to memorise</span>
+      <strong>Indian Standard Time (IST) is 5 hours 30 minutes (5.5 hours) ahead of GMT.</strong></div>
+    <p>These standard times are organised into <strong>time zones</strong>, which broadly follow the 15° bands. But on the world map the dividing lines are <strong>not straight</strong> — they bend to respect each country’s standard time and so tend to follow <strong>international borders</strong>.</p>
+    <p>The number written inside a country on a time-zone map is the hours to be <strong>added</strong> to GMT (positive sign) or <strong>subtracted</strong> from GMT (negative sign).</p>
+    <div class="note warn"><span class="lbl">Not one zone per country</span>
+      Some countries are simply too large: the <strong>USA has six</strong> time zones and <strong>Russia has 11</strong> — crossing Russia from east to west you must reset your watch <strong>10 times</strong>.</div>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">13</span> The International Date Line</summary>
+  <div class="body">
+    <p>Opposite the Prime Meridian, at approximately <strong>180° longitude</strong>, lies the <strong>International Date Line</strong>. The <strong>+12 and −12 time zones touch each other</strong> along it.</p>
+    <p>Cross it by ship or plane and you change the date:</p>
+    <div class="tablewrap">
+    <table>
+      <thead><tr><th>Direction of travel</th><th>Date change</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Eastward</strong></td><td><strong>Subtract</strong> a day (Monday → Sunday)</td></tr>
+        <tr><td><strong>Westward</strong></td><td><strong>Add</strong> a day (Sunday → Monday)</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>It is only <em>approximately</em> at 180°, because it <strong>deviates in places to avoid splitting a country into two different dates</strong>.</p>
+  </div>
+</details>
+
+<!-- ======================= RULES ======================= -->
+<h2>Important Rules &amp; Formulas</h2>
+<div class="card">
+  <ul>
+    <li><strong>Rotation rate:</strong> 360° ÷ 24 hours = <strong>15° per hour</strong>, i.e. 1° = 4 minutes of time</li>
+    <li><strong>Time difference between two places:</strong> difference in longitude ÷ 15 = difference in hours</li>
+    <li><strong>Going east</strong> → time is <strong>ahead</strong> (add). <strong>Going west</strong> → time is <strong>behind</strong> (subtract).</li>
+    <li><strong>IST = GMT + 5 hours 30 minutes</strong></li>
+    <li><strong>Real distance</strong> = map distance × scale factor</li>
+    <li><strong>Latitude range:</strong> 0° (Equator) to 90°N / 90°S. <strong>Longitude range:</strong> 0° (Prime Meridian) to 180° E/W.</li>
+    <li><strong>Parallels of latitude</strong> are full circles and unequal in length (Equator largest). <strong>Meridians of longitude</strong> are half-circles and all equal in length.</li>
+    <li><strong>Crossing the IDL:</strong> eastward → subtract a day; westward → add a day.</li>
+  </ul>
+</div>
+
+<!-- ======================= SOLVED EXAMPLES ======================= -->
+<h2>Solved Examples</h2>
+
+<details class="acc">
+  <summary><span class="num">1</span> Local time from longitude</summary>
+  <div class="body">
+    <p><strong>It is 12 noon at Greenwich. What is the local time at 45°E?</strong></p>
+    <ol>
+      <li>Difference in longitude from the Prime Meridian = 45°</li>
+      <li>Time difference = 45 ÷ 15 = <strong>3 hours</strong></li>
+      <li>45°E lies <strong>east</strong> of Greenwich, so the time is <strong>ahead</strong> → add 3 hours</li>
+      <li>12 noon + 3 hours = <strong>3 pm</strong></li>
+    </ol>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">2</span> The Porbandar and Tinsukia puzzle</summary>
+  <div class="body">
+    <p><strong>Two friends talk on the phone in the late afternoon. The one in Tinsukia (Assam) says the sun has set and it is dark; the one in Porbandar (Gujarat) says it is still full daylight. Why? Taking the difference in longitude as 30°, what is the difference in local time?</strong></p>
+    <ol>
+      <li>Assam lies far to the <strong>east</strong> of Gujarat. The Earth spins west to east, so eastern places see the Sun rise — and set — <strong>earlier</strong>.</li>
+      <li>Difference in local time = 30 ÷ 15 = <strong>2 hours</strong></li>
+      <li>So Tinsukia’s local time is about <strong>2 hours ahead</strong> of Porbandar’s. Sunset there happens roughly 2 hours earlier, which is why it is already dark in Assam while Gujarat still has daylight.</li>
+      <li>Both, however, set their clocks to the <strong>same IST</strong> — which is exactly why standard time differs from local time.</li>
+    </ol>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">3</span> Why 5:30 pm in India at noon in London</summary>
+  <div class="body">
+    <p>IST is defined as <strong>GMT + 5 hours 30 minutes</strong>. When it is 12:00 noon GMT in London, Indian clocks read 12:00 + 5:30 = <strong>5:30 pm</strong>.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">4</span> Delhi and Bengaluru</summary>
+  <div class="body">
+    <p><strong>Delhi is at 29°N, Bengaluru at 13°N; both are at about 77°E. What is the difference in their local time?</strong></p>
+    <ol>
+      <li>Local time depends <strong>only on longitude</strong>, not latitude.</li>
+      <li>Both cities share almost the same longitude (77°E), so the difference in longitude ≈ 0°.</li>
+      <li>Difference in local time = 0 ÷ 15 = <strong>practically nil</strong>.</li>
+      <li>Their very different latitudes affect <em>climate</em>, not <em>time</em>.</li>
+    </ol>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">5</span> Using a scale</summary>
+  <div class="body">
+    <p><strong>A map has the scale 2.5 cm = 500 km. Two river estuaries are 7.5 cm apart on the map. What is the real distance?</strong></p>
+    <ol>
+      <li>2.5 cm = 500 km, so 1 cm = 500 ÷ 2.5 = <strong>200 km</strong></li>
+      <li>Real distance = 7.5 × 200 = <strong>1,500 km</strong></li>
+    </ol>
+  </div>
+</details>
+
+<!-- ======================= FIGURES ======================= -->
+<h2>Figures &amp; Diagrams</h2>
+
+<details class="acc">
+  <summary><span class="num">1.1</span> A map of an imaginary small city</summary>
+  <div class="body">
+    <p>A picture-map of a small city. Visible features: a <strong>railway station</strong> at the left with the railway line curving in, a <strong>school</strong> at the bottom left, a <strong>hospital</strong> (marked with a red cross) in the middle, a <strong>market</strong> with striped stalls below it, <strong>apartments</strong> along the top, a small <strong>lake</strong> and stream, the <strong>Nagar Panchayat</strong> building, a <strong>bank</strong> to the right of it, a <strong>museum</strong> at the lower right, and an orchard/field at the top right. Roads connect them all. Four arrows in the top right corner show N, E, S, W.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.2</span> A selection of symbols commonly used in maps</summary>
+  <div class="body">
+    <p>The Survey of India symbol set, paired as label → symbol: railway line (broad gauge, metre gauge) and railway station; roads (metalled, unmetalled); boundaries (international, state, district); river, well, tank, canal, bridge; temple, church, mosque, chhatri; Post Office (<strong>PO</strong>), Post &amp; Telegraph Office (<strong>PTO</strong>), Police Station (<strong>PS</strong>); settlement and graveyard; trees and grass.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.3</span> A globe showing parallels of latitude and meridians of longitude</summary>
+  <div class="body">
+    <p>A globe centred on Africa and Europe. The <strong>Equator</strong> is marked across the middle at 0°, with <strong>30°N</strong>, <strong>60°N</strong> and the <strong>North Pole 90°N</strong> above, and <strong>30°S</strong> below. The <strong>Prime Meridian</strong> runs vertically at 0°, with <strong>West Longitude</strong> (30°W, 60°W) to the left and <strong>East Longitude</strong> (30°E, 60°E, 90°E) to the right. Labelled land masses: North America, Europe, Asia, Africa; oceans: Atlantic, Indian.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.4</span> The hemispheres</summary>
+  <div class="body">
+    <p>Three small globes side by side. The first shows the <strong>Greenwich Meridian</strong> and the <strong>Equator</strong> together. The second shows the <strong>Prime Meridian</strong> splitting the Earth into <strong>Western</strong> and <strong>Eastern Hemispheres</strong>. The third shows the <strong>Equator</strong> splitting it into <strong>Northern</strong> and <strong>Southern Hemispheres</strong>.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.5</span> The Ujjayinī prime meridian in ancient Indian astronomy</summary>
+  <div class="body">
+    <p>A map of India with a dashed vertical line at <strong>75.8°E</strong> — the ancient Ujjayinī meridian. <strong>Ancient cities</strong> (marked with a circle) named in astronomical texts as lying on it: <strong>Kurukṣhetra</strong>, <strong>Rohitaka/Rohtak</strong>, <strong>Mālavangara/Nagar</strong>, <strong>Ujjayinī/Ujjain</strong>, <strong>Māhiṣhmati/Maheshwar</strong>, and <strong>Kumārī/Kanyakumari</strong>. <strong>Modern cities</strong> (marked with a square) shown for reference: Delhi, Kolkata, Mumbai, Chennai, Bengaluru. Some ancient cities sit very close to the line and others a little off it, because measuring longitude needed accurate timekeeping, which was less precise then.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.7</span> Longitude against local time</summary>
+  <div class="body">
+    <p>A graph with <strong>longitudes along the bottom</strong> (45°W, 30°W, 15°W, 0°, 15°E, 30°E, 45°E) and <strong>local time along the top</strong> (9 AM, 10 AM, 11 AM, 12 PM, 1 PM, 2 PM, 3 PM), referenced to the Prime Meridian at 0°. Each coloured band is a zone of <strong>15°</strong> centred on a meridian, with the 15° width marked by a double-headed arrow.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.8</span> World map of time zones</summary>
+  <div class="body">
+    <p>A world map divided into vertical time-zone bands, with the offset from GMT written inside various countries (e.g. <strong>India +5.5</strong>, Russia showing +3 through +11, USA and Brazil showing negative values). Labels include Greenland, UK, Europe, Africa, Russia, China, India, Australia, and the Pacific, Atlantic and Indian Oceans. The dividing lines visibly bend away from straight meridians to follow international borders. International borders on this map are approximate, not exact.</p>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">1.9</span> A few time zones in Africa and Eurasia</summary>
+  <div class="body">
+    <p>A globe centred on India showing GMT offsets for a number of countries — 0, +1, +2, +3, <strong>+3.5</strong>, +4, <strong>+4.5</strong>, +5, <strong>+5.5</strong> (India), +6, <strong>+6.5</strong>, +7, +8, +9, <strong>+9.5</strong>, +10, +11, +12. The half-hour offsets show that not every zone is a whole number of hours.</p>
+  </div>
+</details>
+
+<div class="note warn">
+  <span class="lbl">Gap in the notes</span>
+  Fig. 1.6 falls on a page not yet photographed — to be added in a later session.
+</div>
+
+<!-- ======================= EXERCISES ======================= -->
+<h2>Exercise Questions</h2>
+
+<details class="acc">
+  <summary><span class="num">11</span> In-text questions — LET’S EXPLORE</summary>
+  <div class="body">
+    <ol>
+      <li>On the map in Fig. 1.1 on page 8 — (a) Mark the hospital. (b) What is the meaning of the blue-coloured areas? (c) Which is farther away from the railway station — the school, the Nagar Panchayat or the public garden?</li>
+      <li>As a class activity, form groups of three or four. Each group draws a map of your school and some of the streets or roads leading to it, and a few neighbouring buildings. Compare all the maps and discuss.</li>
+      <li>Draw a simple map of a school playground, assuming it is a rectangle 40 m long and 30 m wide. Draw it precisely with your ruler on a scale of <strong>1 cm = 10 m</strong>.</li>
+      <li>Now measure the diagonal of that rectangle. How many centimetres do you get? Using the scale, calculate the real length of the playground’s diagonal in metres.</li>
+      <li>Consider the map of the small city again. Identify the correct and incorrect statements: (a) The market is north of the hospital. (b) The museum is southeast of the bank. (c) The railway station is northwest of the hospital. (d) The lake is northwest of the apartment blocks.</li>
+      <li>Taking your school as the starting point, in which cardinal direction is your home? Discuss with your teacher and your parents.</li>
+      <li>Draw a rough map of your locality or village, including your home, school and a few other important landmarks. Show the cardinal directions and use a few of the symbols from Fig. 1.2.</li>
+      <li>Using chess notation, write down your move if you play black, and respond with the same move.</li>
+      <li>If the globe or atlas in your class has well-marked latitudes and longitudes, note down approximate values for the latitude and longitude of (1) Mumbai, (2) Kolkata, (3) Singapore, (4) Paris.</li>
+      <li>Two friends, one in Porbandar (Gujarat) and the other in Tinsukia (Assam), are speaking on the phone in the late afternoon. The one in Assam says the sun has set and it is now dark; the one in Gujarat is surprised and says it is still full daylight. Explain why. Then calculate the difference in local time between the two cities. <em>(Hint: take the difference in longitude as 30°.)</em></li>
+      <li>Return to the two friends in Gujarat and Assam. Use this example to explain the difference between <strong>local time</strong> and <strong>standard time</strong>.</li>
+    </ol>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">8</span> End-of-chapter — Questions, activities and projects</summary>
+  <div class="body">
+    <ol>
+      <li>Returning to page 10 and to Fig. 5.2 in Chapter 5, taking the scale to be 2.5 cm = 500 km, calculate the real distance from the <strong>estuary</strong> of the Ganga river to the estuary of the Narmada river. <em>(Hint: round off your measurement on the map to an easy number.)</em></li>
+      <li>Why is it 5:30 pm in India when it is 12 pm or noon in London?</li>
+      <li>Why do we need symbols and colours in the map?</li>
+      <li>Find out what you have in the eight directions from your home or school.</li>
+      <li>What is the difference between local time and standard time? Discuss in groups, with each group writing an answer in 100 to 150 words. Compare the answers.</li>
+      <li>Delhi’s and Bengaluru’s latitudes are 29°N and 13°N; their longitudes are almost the same, 77°E. How much will be the difference in local time between the two cities?</li>
+      <li>Mark the following statements as true or false; explain your answers with a sentence or two.
+        <ul>
+          <li>All parallels of latitude have the same length.</li>
+          <li>The length of a meridian of longitude is half of that of the Equator.</li>
+          <li>The South Pole has a latitude of 90°S.</li>
+          <li>In Assam, the local time and the IST are identical.</li>
+          <li>Lines separating the time zones are identical with meridians of longitude.</li>
+          <li>The Equator is also a parallel of latitude.</li>
+        </ul>
+      </li>
+      <li>Solve the crossword below.</li>
+    </ol>
+  </div>
+</details>
+
+<details class="acc">
+  <summary><span class="num">11</span> Crossword — “Locating places on Earth”</summary>
+  <div class="body">
+    <div class="grid two">
+      <div>
+        <h4>Across</h4>
+        <ol>
+          <li>Lets you squeeze a huge area into your map</li>
+          <li value="4">A convenient sphere</li>
+          <li value="5">The longest parallel of latitude</li>
+          <li value="6">The place the Prime Meridian is attached to</li>
+          <li value="8">So convenient to find your way</li>
+          <li value="10">A measure of the distance from the Equator</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Down</h4>
+        <ol>
+          <li value="2">A measure of the distance from the Prime Meridian</li>
+          <li value="3">These two together allow us to locate a place</li>
+          <li value="6">What latitudes and longitudes together create</li>
+          <li value="7">The time we all follow in India</li>
+          <li value="9">On top of the world</li>
+          <li value="11">An abbreviation for a line across which the day and date change</li>
+        </ol>
+      </div>
+    </div>
+    <div class="btnrow" style="margin-top:1rem">
+      <button class="btn" data-reveal="#cw" data-show-text="Show suggested answers" data-hide-text="Hide answers">Show suggested answers</button>
+    </div>
+    <div id="cw" class="answerbox hidden" style="margin-top:1rem">
+      <div class="note tip">
+        <span class="lbl">Suggested answers</span>
+        <p style="margin-top:0"><strong>Across —</strong> 1 SCALE · 4 GLOBE · 5 EQUATOR · 6 GREENWICH · 8 MAP · 10 LATITUDE</p>
+        <p><strong>Down —</strong> 2 LONGITUDE · 3 COORDINATES · 6 GRID · 7 IST · 9 ARCTIC · 11 IDL</p>
+        <p style="margin-bottom:0"><strong>Note:</strong> 9 Down (“On top of the world”) is a best guess — the printed grid was partly cut off in the photo, so fill the squares in yourself and check the letter count before trusting it.</p>
+      </div>
+    </div>
+  </div>
+</details>
+
+<!-- ======================= SUMMARY ======================= -->
+<h2>Quick Summary</h2>
+<div class="card">
+  <ul>
+    <li>A <strong>map</strong> is a drawing of an area seen from above; a collection of maps is an <strong>atlas</strong>. Maps are physical, political or thematic.</li>
+    <li>Every map has three components: <strong>distance</strong> (scale), <strong>direction</strong> (cardinal points) and <strong>symbols</strong> (Survey of India set for India).</li>
+    <li>The Earth is <strong>nearly spherical</strong>, slightly flattened at the poles, so a flat sheet cannot show it accurately — hence the <strong>globe</strong>.</li>
+    <li><strong>Latitude</strong> measures distance from the <strong>Equator</strong> (0°) up to the poles (90°N, 90°S). Parallels of latitude are <strong>full circles</strong>, unequal in length, the Equator being the longest.</li>
+    <li><strong>Longitude</strong> measures distance from the <strong>Prime Meridian</strong> (0°, through Greenwich, fixed in 1884) up to 180° E or W. Meridians are <strong>half-circles</strong>, all of equal length.</li>
+    <li>Together, latitude and longitude form a <strong>grid</strong> and give every place its <strong>coordinates</strong>.</li>
+    <li>The Prime Meridian creates the <strong>Eastern/Western</strong> hemispheres; the Equator creates the <strong>Northern/Southern</strong>.</li>
+    <li>India’s ancient prime meridian, <strong>madhya rekhā</strong>, ran through <strong>Ujjayinī</strong> (Ujjain) at about 75.8°E; <strong>Varāhamihira</strong> worked there ~1,500 years ago.</li>
+    <li>The Earth turns <strong>15° per hour</strong>, so longitude fixes time. Local time changes with every meridian; countries adopt one <strong>standard time</strong> instead. <strong>IST = GMT + 5:30</strong>.</li>
+    <li><strong>Time zones</strong> broadly follow 15° bands but bend to follow international borders. Large countries have several (USA 6, Russia 11).</li>
+    <li>The <strong>International Date Line</strong> lies near 180°, opposite the Prime Meridian. Crossing it eastward you subtract a day; westward you add a day.</li>
+    <li>Latitude also shapes <strong>climate</strong>: torrid near the Equator, temperate in the middle, frigid near the poles.</li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the 50-question test →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+  <a class="btn" href="flashcards.html">Flashcards</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Built from 16 textbook pages · 22 Aug 2026</span>
+</footer>
+
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>

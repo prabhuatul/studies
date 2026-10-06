@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — India's Cultural Roots</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🕉️ <span>Ch 7</span> India's Cultural Roots</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 40 cards in 6 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire number drill</h2>
+<p class="muted small">Cover the right column. These are the numbers most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Number of Vedas</td><td>Four</td></tr>
+      <tr><td>Year UNESCO recognised Vedic chanting</td><td>2008</td></tr>
+      <tr><td>Oldest possible date proposed for the Ṛig Veda</td><td>5th millennium BCE</td></tr>
+      <tr><td>Age Siddhārtha saw the four sights</td><td>29</td></tr>
+      <tr><td>Approximate year used for the Buddha's birth</td><td>560 BCE</td></tr>
+      <tr><td>Age Vardhamāna left home</td><td>30</td></tr>
+      <tr><td>Years of ascetic discipline before Mahāvīra's enlightenment</td><td>12</td></tr>
+      <tr><td>Number of tribes in India (2011)</td><td>705</td></tr>
+      <tr><td>Tribal population in India (2011)</td><td>~104 million</td></tr>
+      <tr><td>Age of the stone panel showing the Buddha teaching (p.114)</td><td>~1,800 years</td></tr>
+      <tr><td>Century Vardhamāna was born</td><td>early 6th century BCE</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 30 Sep 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'The Vedas', q:'What does the word "Veda" mean, and where does it come from?', a:'<b>Knowledge</b> — from the Sanskrit <i>vid</i> (same root as <i>vidyā</i>).'},
+ {n:2, deck:'The Vedas', q:'Name the four Vedas.', a:'<b>Ṛig Veda, Yajur Veda, Sāma Veda, Atharva Veda.</b>'},
+ {n:3, deck:'The Vedas', q:'How were the Vedic hymns transmitted?', a:'<b>Recited orally</b>, not written — passed down through rigorous memorisation for generations.'},
+ {n:4, deck:'The Vedas', q:'Where were the Vedic hymns composed?', a:'In the <b>Sapta Sindhava region</b>.'},
+ {n:5, deck:'The Vedas', q:'What did UNESCO recognise Vedic chanting as, in 2008?', a:'"A <b>masterpiece of the oral and intangible heritage of humanity</b>."'},
+ {n:6, deck:'The Vedas', q:'Who composed the Vedic hymns?', a:'<b>Rishis</b> (male seers) and <b>rishikas</b> (female seers).'},
+ {n:7, deck:'The Vedas', q:'What does "ekam sat viprā bahudhā vadanti" mean?', a:'"The Existent [supreme reality] is <b>one</b>, but sages give it <b>many names</b>."'},
+ {n:8, deck:'The Vedas', q:'What did the closing mantras of the Ṛig Veda call for?', a:'<b>Unity among people</b> — common mind, united purpose and heart.'},
+
+ {n:9,  deck:'Society & Schools', q:'What were the clans of early Vedic society called?', a:'<b>Janas</b> — the Ṛig Veda lists over 30, e.g. Bharatas, Purus, Kurus, Yadus.'},
+ {n:10, deck:'Society & Schools', q:'What do "sabha" and "samiti" mean?', a:'A <b>collective gathering or assembly</b>.'},
+ {n:11, deck:'Society & Schools', q:'Which deity did daily Vedic yajñas mainly honour?', a:'<b>Agni</b>, the deity of fire.'},
+ {n:12, deck:'Society & Schools', q:'What two concepts did the Upanishads introduce?', a:'<b>Rebirth</b> (taking birth again and again) and <b>karma</b> (our actions/their results).'},
+ {n:13, deck:'Society & Schools', q:'What does Vedanta say brahman is?', a:'The <b>one divine essence</b> of which everything — life, nature, the universe — is made. <b>Not</b> the god Brahmā.'},
+ {n:14, deck:'Society & Schools', q:'What is ātman?', a:'The <b>Self</b> — the divine essence in every being, <b>ultimately one with brahman</b>.'},
+ {n:15, deck:'Society & Schools', q:'What does "sarve bhavantu sukhinah" wish for?', a:'"<b>May all creatures be happy</b>," free from disease and sorrow.'},
+ {n:16, deck:'Society & Schools', q:'Which school, growing from the Vedas, develops methods to realise brahman in one\'s own consciousness?', a:'<b>Yoga.</b>'},
+
+ {n:17, deck:'Upanishad Stories', q:'In "Śhvetaketu and the seed of reality", what does Uddālaka compare brahman to?', a:'The <b>invisible seed of a banyan fruit</b> that already contains the future tree.'},
+ {n:18, deck:'Upanishad Stories', q:'Why was Nachiketa sent to Yama\'s world?', a:'His father, giving away possessions in a ritual, angrily said "<b>I give you to Yama</b>" (god of death).'},
+ {n:19, deck:'Upanishad Stories', q:'What did Yama teach Nachiketa about the ātman?', a:'It is <b>neither born nor does it die</b> — it is <b>immortal</b>.'},
+ {n:20, deck:'Upanishad Stories', q:'In the Gārgī–Yājñavalkya debate, what happened after Yājñavalkya asked Gārgī to stop questioning?', a:'She <b>resumed</b>, and he explained how <b>brahman underlies the world</b>, the seasons and the rivers.'},
+
+ {n:21, deck:'Buddhism', q:'Where was Siddhārtha Gautama born?', a:'<b>Lumbini</b> (today in Nepal).'},
+ {n:22, deck:'Buddhism', q:'What four sights changed Siddhārtha\'s life?', a:'An <b>old man, a sick man, a dead body</b>, and a <b>peaceful ascetic</b>.'},
+ {n:23, deck:'Buddhism', q:'Where did Siddhārtha attain enlightenment?', a:'Under a <b>pipal tree at Bodh Gaya</b> (Bihar).'},
+ {n:24, deck:'Buddhism', q:'What two things did the Buddha identify as the source of suffering?', a:'<b>Avidyā</b> (ignorance) and <b>attachment</b>.'},
+ {n:25, deck:'Buddhism', q:'What does "Buddha" mean?', a:'"<b>Enlightened</b>" or "<b>awakened</b>" one.'},
+ {n:26, deck:'Buddhism', q:'What is the Sangha?', a:'The community of <b>monks (bhikshus)</b> and, later, <b>nuns (bhikshunīs)</b> founded by the Buddha.'},
+ {n:27, deck:'Buddhism', q:'In the Buddha\'s saying, what actually makes a person pure?', a:'<b>Truth and dharma residing within</b> — not bathing in sacred rivers.'},
+ {n:28, deck:'Buddhism', q:'In the Jātaka tale, how did the monkey-king save his troop?', a:'Used his <b>own body as a bridge</b> across the stream — severely bruised, and eventually died.'},
+
+ {n:29, deck:'Jainism', q:'Where was Vardhamāna born?', a:'Near <b>Vaishālī</b>, in modern-day <b>Bihar</b>.'},
+ {n:30, deck:'Jainism', q:'What name did Vardhamāna become known by, and what does it mean?', a:'<b>Mahāvīra</b> — "<b>great hero</b>."'},
+ {n:31, deck:'Jainism', q:'What does the word "Jain" (from "jina") mean?', a:'"<b>Conqueror</b>" — of <b>ignorance and attachment</b>, not territory.'},
+ {n:32, deck:'Jainism', q:'What does anekāntavāda mean?', a:'"<b>Not just one</b>" aspect — truth has <b>many aspects</b>, no single statement fully describes it.'},
+ {n:33, deck:'Jainism', q:'What does aparigraha advise?', a:'"<b>Non-possession</b>" — detachment from material things, keeping only what is truly necessary.'},
+ {n:34, deck:'Jainism', q:'What changed Rohineya the burglar\'s life?', a:'Accidentally hearing a <b>sermon by Mahāvīra</b> on liberation from ignorance.'},
+ {n:35, deck:'Jainism', q:'In both Buddhism and Jainism, what does ahimsa cover beyond physical violence?', a:'<b>Violence in thought</b> — even ill feelings towards oneself.'},
+ {n:36, deck:'Jainism', q:'Where did some Buddhist and Jain monks lead ascetic lives?', a:'In <b>caves cut into rock</b>, e.g. at <b>Ellora</b>, Maharashtra.'},
+
+ {n:37, deck:'Folk & Tribal Roots', q:'What is the anthropologists\' definition of a "tribe"?', a:'A group of families/clans with <b>common descent, culture, language</b>, close-knit, under a chief, <b>no private property</b>.'},
+ {n:38, deck:'Folk & Tribal Roots', q:'What word did ancient India use for "tribe"?', a:'<b>None</b> — tribes were simply <b>janas</b> living in forests/mountains.'},
+ {n:39, deck:'Folk & Tribal Roots', q:'How many tribes and tribal people did India have per the 2011 figures?', a:'<b>705 tribes</b>, about <b>104 million people</b>.'},
+ {n:40, deck:'Folk & Tribal Roots', q:'What did André Béteille say about Hinduism and tribal religions?', a:'They have <b>mutually influenced</b> each other since the beginning of history — <b>not</b> a one-way influence.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

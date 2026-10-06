@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — Grassroots Democracy: Governance</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🏛️ <span>Ch 10</span> Governance</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 40 cards in 5 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire number drill</h2>
+<p class="muted small">Cover the right column. These are the numbers most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Levels of government in India</td><td>3 (Local, State, Central)</td></tr>
+      <tr><td>Houses of Parliament</td><td>2 (Lok Sabha, Rajya Sabha)</td></tr>
+      <tr><td>Dr. Kalam's birth year</td><td>1931</td></tr>
+      <tr><td>Dr. Kalam's presidency</td><td>2002–2007 (11th President)</td></tr>
+      <tr><td>India's voters in 2024</td><td>~970 million</td></tr>
+      <tr><td>Minimum voting age in India</td><td>18</td></tr>
+      <tr><td>Big Questions at the start of the chapter</td><td>3</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Exploring Society: India and Beyond</em></span>
+  <span>Generated 02 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'Governance Basics', q:'What is "governance"?', a:'The process of <b>taking decisions, organising society\'s life with rules</b>, and ensuring they are followed.'},
+ {n:2, deck:'Governance Basics', q:'What is a "government"?', a:'The <b>group/system</b> that makes the rules and ensures they are followed.'},
+ {n:3, deck:'Governance Basics', q:'What are "laws"?', a:'Some of the <b>more important rules</b>.'},
+ {n:4, deck:'Governance Basics', q:'What would happen if no one followed society\'s rules?', a:'<b>Society would not be able to function.</b>'},
+ {n:5, deck:'Governance Basics', q:'Are rules and laws fixed forever?', a:'<b>No</b> — they can be discussed and changed.'},
+ {n:6, deck:'Governance Basics', q:'What does the Mahābhārata quote say about a ruler?', a:'"The ruler <b>protects dharma</b>, and dharma protects those who protect it."'},
+ {n:7, deck:'Governance Basics', q:'Name the chapter\'s three Big Questions.', a:'Meaning of governance? Why a government? Meaning/importance of <b>democracy</b>?'},
+ {n:8, deck:'Governance Basics', q:'Give two examples of everyday rules from the chapter.', a:'E.g. <b>school rules, traffic rules, examination rules, workplace rules</b>.'},
+
+ {n:9,  deck:'Three Organs', q:'What is the "legislature"?', a:'The organ that <b>makes (and updates/removes) laws</b>.'},
+ {n:10, deck:'Three Organs', q:'What is the "executive"?', a:'The organ that <b>implements the laws</b> — head of state, ministers, agencies.'},
+ {n:11, deck:'Three Organs', q:'What is the "judiciary"?', a:'The <b>system of courts</b> deciding if a law was broken, and examining fairness of laws/decisions.'},
+ {n:12, deck:'Three Organs', q:'In the cybercrime example, which agency enforces law and order?', a:'The <b>cyber police</b>.'},
+ {n:13, deck:'Three Organs', q:'What is the "separation of powers"?', a:'Keeping the <b>three organs separate</b>, although they interact and work together.'},
+ {n:14, deck:'Three Organs', q:'What do "checks and balances" achieve?', a:'Each organ can <b>check</b> another and <b>restore balance</b> if one oversteps.'},
+ {n:15, deck:'Three Organs', q:'What happens to convicted cybercriminals?', a:'They are usually <b>fined and jailed</b>.'},
+ {n:16, deck:'Three Organs', q:'What could happen if one group controlled all three organs?', a:'<b>Disorder</b> — no checks and balances would remain.'},
+
+ {n:17, deck:'Levels & Structure', q:'How many levels does India\'s government function at?', a:'<b>Three</b> — Local, State, Central (Union).'},
+ {n:18, deck:'Levels & Structure', q:'In the flood example, when does the Central Government step in?', a:'For a <b>massive flood affecting vast areas</b>.'},
+ {n:19, deck:'Levels & Structure', q:'What is the highest court at the national level?', a:'The <b>Supreme Court of India</b>.'},
+ {n:20, deck:'Levels & Structure', q:'What is the highest court at the State level?', a:'The <b>High Court</b>.'},
+ {n:21, deck:'Levels & Structure', q:'What are the two Houses of Parliament?', a:'The <b>Lok Sabha</b> and the <b>Rajya Sabha</b>.'},
+ {n:22, deck:'Levels & Structure', q:'Who is the nominal head of the Central Government?', a:'The <b>President of India</b>.'},
+ {n:23, deck:'Levels & Structure', q:'Who is the executive head of a State Government?', a:'The <b>Chief Minister</b>.'},
+ {n:24, deck:'Levels & Structure', q:'What does "Satyameva Jayate" mean?', a:'"<b>Truth alone triumphs</b>" — the Government of India\'s motto.'},
+
+ {n:25, deck:'Dr. Kalam', q:'Where was Dr. Kalam born, and when?', a:'<b>Rameswaram, Tamil Nadu</b>, in <b>1931</b>.'},
+ {n:26, deck:'Dr. Kalam', q:'What was Dr. Kalam nicknamed, and why?', a:'The <b>\'Missile Man of India\'</b> — for his role in space/missile/nuclear programmes.'},
+ {n:27, deck:'Dr. Kalam', q:'When did Dr. Kalam serve as President?', a:'<b>2002 to 2007</b>, as the <b>11th President</b>.'},
+ {n:28, deck:'Dr. Kalam', q:'What did Dr. Kalam remain deeply connected to, despite his high status?', a:'<b>The people</b>, especially youth, through education and innovation.'},
+ {n:29, deck:'Dr. Kalam', q:'What did his story show about the "nominal" presidency?', a:'Even a <b>nominal role</b> can have a huge <b>real impact</b>.'},
+ {n:30, deck:'Dr. Kalam', q:'What does "F.A.I.L." stand for, in his quote?', a:'"<b>First Attempt In Learning</b>."'},
+ {n:31, deck:'Dr. Kalam', q:'What does "E.N.D." stand for?', a:'"<b>Effort Never Dies</b>."'},
+ {n:32, deck:'Dr. Kalam', q:'What four things did Kalam say lead to achieving anything?', a:'A <b>great aim</b>, <b>knowledge</b>, <b>hard work</b>, and <b>perseverance</b>.'},
+
+ {n:33, deck:'Democracy', q:'What do "dēmos" and "kratos" mean?', a:'<b>"People"</b> and <b>"rule/power"</b> — together, "rule of the people."'},
+ {n:34, deck:'Democracy', q:'Why can\'t "all people" literally rule at once?', a:'It\'s <b>not practical</b> — so representatives are elected instead.'},
+ {n:35, deck:'Democracy', q:'What are elected representatives called at the State level?', a:'<b>MLAs</b> (Members of Legislative Assembly).'},
+ {n:36, deck:'Democracy', q:'What are elected representatives called at the national level?', a:'<b>MPs</b> (Members of Parliament).'},
+ {n:37, deck:'Democracy', q:'What kind of democracy is India?', a:'A <b>representative democracy</b>.'},
+ {n:38, deck:'Democracy', q:'How many voters did India have in 2024?', a:'About <b>970 million</b>.'},
+ {n:39, deck:'Democracy', q:'What is "direct democracy"? Give the chapter\'s example.', a:'Everyone\'s opinion taken directly — e.g. a <b>class picnic vote</b> by show of hands.'},
+ {n:40, deck:'Democracy', q:'What is "grassroots democracy"?', a:'A system enabling <b>ordinary citizens\' participation</b> in decisions affecting them.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
