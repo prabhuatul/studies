@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — Diversity in the Living World</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🌿 <span>Ch 02</span> Diversity in the Living World</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>One idea ties the chapter together: <strong>living things differ, and the differences have reasons</strong>. We group them to understand the differences, explain them with adaptations to habitats, and protect them because they depend on each other.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · DIVERSITY AROUND US</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Nature walk — Dr Raghu, Maniram chacha, Madam Sulekha</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Each bird has a unique chirp</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>BIODIVERSITY = variety of plants + animals in a region</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Plants and animals depend on each other</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · GROUPING PLANTS</button>
+    <ul>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>By height and stem</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>TREE — tall, thick woody trunk (mango)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>SHRUB — many woody stems near ground (rose)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>HERB — small, soft green stem (tomato)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Climbers need support; creepers spread on ground</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>By leaf venation</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>RETICULATE — net-like (hibiscus)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>PARALLEL — side by side (banana, grass)</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>By roots</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>TAPROOT — main root + side roots (mustard)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>FIBROUS — bunch of thin roots (grass)</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>By seeds</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>DICOT — 2 cotyledons (chickpea)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>MONOCOT — 1 cotyledon (maize)</button></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · GROUPING ANIMALS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>By movement — fly, walk, crawl, hop, swim</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Body parts — wings, legs, fins</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Also: food, home, shape, size, colour</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · ADAPTATIONS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Cactus — fleshy stem stores water</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Deodar — conical, sloping branches shed snow</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Rhododendron — short in windy Nilgiris, tall in Sikkim</button></li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Camels</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Hot desert — long legs, wide hooves, 1 hump</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Cold desert — short legs, 2 humps, long hair</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Little urine, dry dung, no sweat</button></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · HABITATS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>TERRESTRIAL — forest, desert, grassland, mountain</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>AQUATIC — pond, lake, river, ocean</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>AMPHIBIANS — frogs, both</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>6 · PROTECTING BIODIVERSITY</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Habitat damage → biodiversity loss</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Project Tiger 1973 · Cheetah 2022 · Bustard protected areas</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Sacred groves · Save Silent Valley (10 years)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Janaki Ammal (plants) · Salim Ali (birds)</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · One seed predicts the whole plant</h4>
+    <p style="margin-bottom:0">Count the cotyledons and you can predict two other features: <strong>2 → reticulate leaves + taproot</strong>; <strong>1 → parallel leaves + fibrous roots</strong>.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · Conditions → adaptations → biodiversity</h4>
+    <p style="margin-bottom:0">Different regions have different conditions (heat, snow, wind, water). Living things there have <strong>adaptations</strong> to match — which is exactly why the biodiversity of regions differs.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · Same animal, different home, different body</h4>
+    <p style="margin-bottom:0">The two camels and the two rhododendrons show that even <strong>one kind</strong> of living thing changes its features to suit its habitat.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · Habitat loss breaks the web</h4>
+    <p style="margin-bottom:0">Because plants and animals depend on each other, damaging one habitat removes homes and food for many — so biodiversity falls. Conservation projects and sacred groves protect the web.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> The definition of biodiversity and two examples of dependence</label></li>
+    <li><label><input type="checkbox" data-check="m2"> The herb / shrub / tree table with examples</label></li>
+    <li><label><input type="checkbox" data-check="m3"> The dicot vs monocot chain — cotyledons, venation, roots, examples</label></li>
+    <li><label><input type="checkbox" data-check="m4"> The two camels compared, feature by feature</label></li>
+    <li><label><input type="checkbox" data-check="m5"> Terrestrial vs aquatic habitats with examples; what amphibians are</label></li>
+    <li><label><input type="checkbox" data-check="m6"> Project Tiger, Cheetah project, Silent Valley, Janaki Ammal, Salim Ali — with dates</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the Quest →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Curiosity: Textbook of Science, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

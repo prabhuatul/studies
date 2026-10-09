@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — Exploring Magnets</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🧲 <span>Ch 04</span> Exploring Magnets</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 29 cards in 5 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire drill</h2>
+<p class="muted small">Cover the right column. These are the facts most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Number of poles in any magnet</td><td>2</td></tr>
+      <tr><td>Strokes needed to magnetise a sewing needle</td><td>30 to 40</td></tr>
+      <tr><td>Round pencils used under magnet A (Activity 4.5)</td><td>5–6</td></tr>
+      <tr><td>Direction a suspended magnet rests in</td><td>North–south</td></tr>
+      <tr><td>Colour usually painted on the compass needle's north end</td><td>Red</td></tr>
+      <tr><td>The three magnetic metals named</td><td>Iron, nickel, cobalt</td></tr>
+      <tr><td>Matsya-yantra was kept in a vessel of…</td><td>oil</td></tr>
+      <tr><td>Grandmother's birthday in Reshma's story</td><td>60th</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Curiosity: Textbook of Science, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'Magnets & Materials', q:'What is a lodestone?', a:'A <b>naturally occurring magnet</b>, discovered in ancient times and used by sailors.'},
+ {n:2, deck:'Magnets & Materials', q:'What are artificial magnets? Give examples.', a:'Magnets <b>made by people</b> — in labs, <b>pencil boxes, stickers, toys</b>.'},
+ {n:3, deck:'Magnets & Materials', q:'What are magnetic materials? Name three.', a:'Materials <b>attracted towards a magnet</b> — <b>iron, nickel, cobalt</b>.'},
+ {n:4, deck:'Magnets & Materials', q:'What are non-magnetic materials? Examples?', a:'Not attracted by a magnet — <b>wood, rubber, plastic, glass</b>.'},
+ {n:5, deck:'Magnets & Materials', q:'Name six shapes of magnets.', a:'<b>Bar, U-shaped, ring, disc, cylindrical, spherical</b>.'},
+ {n:6, deck:'Magnets & Materials', q:'Why did Reshma need a compass in her story?', a:'Sailors were caught in a <b>storm with an overcast sky</b> — no <b>stars</b> to find directions.'},
+ {n:7, deck:'Poles', q:'Where do most iron filings stick on a bar magnet?', a:'Near the <b>ends — the poles</b>; very few in the middle.'},
+ {n:8, deck:'Poles', q:'Name the two poles of a magnet.', a:'The <b>North pole</b> and the <b>South pole</b>.'},
+ {n:9, deck:'Poles', q:'Can a magnet have a single pole?', a:'<b>No.</b> Poles always exist in <b>pairs</b>, even in the smallest broken piece.'},
+ {n:10, deck:'Poles', q:'Three ways a magnet\'s North pole may be marked?', a:'Letter <b>N</b>; a <b>white dot</b>; painted <b>red</b> (South painted blue).'},
+ {n:11, deck:'Poles', q:'What is the North-seeking pole?', a:'The end of a suspended magnet that <b>points north</b>.'},
+ {n:12, deck:'Directions & Compass', q:'In which direction does a freely suspended magnet rest?', a:'<b>North–south</b>.'},
+ {n:13, deck:'Directions & Compass', q:'Why does a suspended magnet point north–south?', a:'Because the <b>Earth itself behaves like a giant magnet</b>.'},
+ {n:14, deck:'Directions & Compass', q:'What happens to a suspended iron bar?', a:'It can rest in <b>any direction</b> — so suspension tests whether metal is a magnet.'},
+ {n:15, deck:'Directions & Compass', q:'Describe a magnetic compass.', a:'Circular box, <b>transparent cover</b>, <b>needle magnet on a pin</b> that rotates freely, <b>red north end</b>, direction <b>dial</b> below.'},
+ {n:16, deck:'Directions & Compass', q:'How do you use a compass?', a:'Let the needle settle, then <b>rotate the box</b> until N and S on the dial line up with the needle.'},
+ {n:17, deck:'Directions & Compass', q:'How do you magnetise a sewing needle?', a:'Stroke it with <b>one pole</b>, in <b>one direction</b>, lifting each time — <b>30–40 times</b>.'},
+ {n:18, deck:'Directions & Compass', q:'What was the matsya-yantra?', a:'An Indian navigation device — a <b>magnetised fish-shaped iron piece in a vessel of oil</b>.'},
+ {n:19, deck:'Attraction & Repulsion', q:'What do unlike poles do?', a:'<b>Attract</b> each other (N–S).'},
+ {n:20, deck:'Attraction & Repulsion', q:'What do like poles do?', a:'<b>Repel</b> each other (N–N or S–S).'},
+ {n:21, deck:'Attraction & Repulsion', q:'What happens when either pole of a magnet is brought near an iron bar?', a:'The iron bar is <b>attracted</b> — by both poles, at both ends.'},
+ {n:22, deck:'Attraction & Repulsion', q:'What is the sure test of a magnet?', a:'<b>Repulsion.</b>'},
+ {n:23, deck:'Attraction & Repulsion', q:'N pole of a magnet near N end of a compass needle — what happens?', a:'The needle <b>moves away</b> (like poles repel).'},
+ {n:24, deck:'Attraction & Repulsion', q:'Two matchbox cars with like poles facing — what happens?', a:'They <b>run away from each other</b>.'},
+ {n:25, deck:'Uses & Care', q:'Does magnetism act through wood, plastic, glass or cardboard?', a:'<b>Yes</b> — no appreciable change in the compass needle\'s deflection.'},
+ {n:26, deck:'Uses & Care', q:'How can you get a steel clip out of water without wetting your fingers?', a:'Move a <b>magnet outside the glass</b> — magnetism acts through glass and water.'},
+ {n:27, deck:'Uses & Care', q:'Three things you should never do to a magnet?', a:'<b>Heat</b> it, <b>drop</b> it, <b>hammer</b> it.'},
+ {n:28, deck:'Uses & Care', q:'Which devices should magnets be kept away from?', a:'<b>Mobile phones</b> and <b>remote controls</b>.'},
+ {n:29, deck:'Uses & Care', q:'How should bar magnets be stored?', a:'In <b>pairs</b>, <b>unlike poles on the same side</b>, <b>wood</b> between, <b>soft iron pieces</b> across the ends.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

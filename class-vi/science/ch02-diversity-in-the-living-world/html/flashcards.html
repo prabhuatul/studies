@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — Diversity in the Living World</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🌿 <span>Ch 02</span> Diversity in the Living World</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 39 cards in 6 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire number & name drill</h2>
+<p class="muted small">Cover the right column. These are the facts most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Cotyledons in a dicot seed</td><td>2</td></tr>
+      <tr><td>Cotyledons in a monocot seed</td><td>1</td></tr>
+      <tr><td>Humps — hot-desert camel</td><td>1</td></tr>
+      <tr><td>Humps — cold-desert camel</td><td>2</td></tr>
+      <tr><td>Project Tiger started</td><td>1973</td></tr>
+      <tr><td>Cheetah Reintroduction Project started</td><td>2022</td></tr>
+      <tr><td>Silent Valley movement lasted</td><td>10 years</td></tr>
+      <tr><td>Janaki Ammal</td><td>1897–1984</td></tr>
+      <tr><td>Salim Ali</td><td>1896–1987 · Padma Vibhushan 1976</td></tr>
+      <tr><td>Salim Ali's books on birds</td><td>a series of 10</td></tr>
+      <tr><td>Legs on an ant</td><td>6</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Curiosity: Textbook of Science, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'Biodiversity', q:'What is biodiversity?', a:'The <b>variety of plants and animals</b> found in a particular region.'},
+ {n:2, deck:'Biodiversity', q:'Who led the nature walk, and what was special about Maniram chacha?', a:'<b>Dr Raghu</b> (a scientist) and <b>Maniram chacha</b>, an expert at <b>mimicking bird calls</b> and identifying plants and animals.'},
+ {n:3, deck:'Biodiversity', q:'What did Dr Raghu say about bird chirps?', a:'Each bird has a <b>unique chirp</b> — an example of <b>diversity in nature</b>.'},
+ {n:4, deck:'Biodiversity', q:'Give two examples showing plants and animals depend on each other.', a:'Trees give <b>food and shelter</b> to birds; animals <b>spread seeds</b> after eating fruits.'},
+ {n:5, deck:'Biodiversity', q:'Why do we group living things?', a:'Grouping makes it <b>easier to understand and study</b> them by similarities and differences.'},
+ {n:6, deck:'Biodiversity', q:'Name two bases for grouping plants and two for animals.', a:'Plants: <b>height, presence of flowers, hard/soft stem</b>. Animals: <b>what they eat, where they live, how they move</b>.'},
+ {n:7, deck:'Plant Groups', q:'What is a tree? Give an example.', a:'A <b>tall</b> plant with a <b>hard, thick, brown, woody</b> stem and branches <b>high up</b> — e.g. <b>mango</b>.'},
+ {n:8, deck:'Plant Groups', q:'What is a shrub? Give an example.', a:'A medium plant with <b>many woody stems</b> branching <b>close to the ground</b> — e.g. <b>rose</b>.'},
+ {n:9, deck:'Plant Groups', q:'What is a herb? Give an example.', a:'A <b>small</b> plant with a <b>soft, green</b> stem — e.g. <b>tomato</b>.'},
+ {n:10, deck:'Plant Groups', q:'Climber vs creeper?', a:'Climber: <b>weak stem, needs support</b> to climb. Creeper: <b>creeps along the ground</b>.'},
+ {n:11, deck:'Plant Groups', q:'Describe tulsi from Table 2.1.', a:'<b>Hard, thin stem</b>, <b>pairs of opposite leaves</b>, <b>pinkish-purple</b> flowers.'},
+ {n:12, deck:'Leaves, Roots, Seeds', q:'What is venation?', a:'The <b>pattern of veins</b> on a leaf.'},
+ {n:13, deck:'Leaves, Roots, Seeds', q:'Reticulate venation — describe and example.', a:'<b>Net-like</b> veins on both sides of a thick middle vein — <b>hibiscus</b>.'},
+ {n:14, deck:'Leaves, Roots, Seeds', q:'Parallel venation — examples.', a:'<b>Banana</b> and <b>grasses</b>.'},
+ {n:15, deck:'Leaves, Roots, Seeds', q:'What is a taproot? Example?', a:'One <b>main root</b> with small side roots — <b>mustard</b>, hibiscus.'},
+ {n:16, deck:'Leaves, Roots, Seeds', q:'What are fibrous roots? Example?', a:'A <b>bunch of similar-sized thin roots</b> from the stem base — <b>common grass</b>.'},
+ {n:17, deck:'Leaves, Roots, Seeds', q:'Dicot vs monocot — the full chain.', a:'Dicot: <b>2 cotyledons → reticulate → taproot</b>. Monocot: <b>1 cotyledon → parallel → fibrous</b>.'},
+ {n:18, deck:'Leaves, Roots, Seeds', q:'Which seeds were soaked in Activity 2.8, and what did they show?', a:'<b>Chickpea</b> (splits into 2 cotyledons — dicot) and <b>maize</b> (1 thin cotyledon — monocot).'},
+ {n:19, deck:'Leaves, Roots, Seeds', q:'Lemongrass — venation and root type?', a:'<b>Parallel</b> venation, <b>fibrous</b> roots.'},
+ {n:20, deck:'Adaptations', q:'What are adaptations?', a:'The <b>special features</b> that enable plants and animals to <b>survive in a particular region</b>.'},
+ {n:21, deck:'Adaptations', q:'How is the cactus adapted to the desert?', a:'Its <b>thick, fleshy stem stores water</b>.'},
+ {n:22, deck:'Adaptations', q:'How is the deodar adapted to snowy mountains?', a:'<b>Conical shape</b> and <b>flexible, sloping branches</b> let snow slide off.'},
+ {n:23, deck:'Adaptations', q:'Why are rhododendrons in the Nilgiris short with small leaves?', a:'To survive the <b>heavy winds</b> on mountain tops. (In Sikkim they are taller.)'},
+ {n:24, deck:'Adaptations', q:'Hot-desert camel — legs and hooves?', a:'<b>Long legs, wide hooves</b> — walk on sand without sinking.'},
+ {n:25, deck:'Adaptations', q:'Cold-desert camel — three special features?', a:'<b>Shorter legs</b>, <b>two humps</b> (shrink in late winter), <b>long hair</b> from head to neck.'},
+ {n:26, deck:'Adaptations', q:'Why can camels go many days without water?', a:'They pass <b>little urine</b>, have <b>dry dung</b> and <b>do not sweat</b> — so they lose little water.'},
+ {n:27, deck:'Adaptations', q:'What do camels store in their humps?', a:'<b>Food</b> — used when food is scarce.'},
+ {n:28, deck:'Habitats', q:'What is a habitat?', a:'The <b>place where plants and animals live</b> — providing food, water, air and shelter.'},
+ {n:29, deck:'Habitats', q:'Terrestrial habitats — four examples.', a:'<b>Forests, deserts, grasslands, mountains</b>.'},
+ {n:30, deck:'Habitats', q:'Aquatic habitats — four examples.', a:'<b>Ponds, lakes, rivers, oceans</b>.'},
+ {n:31, deck:'Habitats', q:'What are amphibians? Example?', a:'Animals living <b>in water as well as on land</b> — e.g. <b>frogs</b>.'},
+ {n:32, deck:'Habitats', q:'What happens when habitats are damaged?', a:'Living things lose <b>homes, food and resources</b> → <b>loss of biodiversity</b>.'},
+ {n:33, deck:'Conservation', q:'When was Project Tiger started, and why?', a:'<b>1973</b>, to protect the declining <b>Bengal Tiger</b>.'},
+ {n:34, deck:'Conservation', q:'When did the Cheetah Reintroduction Project begin?', a:'<b>2022</b>.'},
+ {n:35, deck:'Conservation', q:'Where are Great Indian Bustard habitats protected?', a:'<b>Gujarat, Rajasthan and Maharashtra</b>.'},
+ {n:36, deck:'Conservation', q:'What are sacred groves?', a:'Undisturbed forest patches <b>protected by local communities</b> — no harming animals or cutting trees.'},
+ {n:37, deck:'Conservation', q:'What was the Save Silent Valley movement?', a:'A <b>10-year</b> people\'s movement that stopped a <b>hydroelectric dam on the Kunthipuzha river</b> in Palakkad, Kerala.'},
+ {n:38, deck:'Conservation', q:'Who was Janaki Ammal?', a:'An Indian <b>botanist (1897–1984)</b>; key role in Save Silent Valley; headed the <b>Botanical Survey of India</b>.'},
+ {n:39, deck:'Conservation', q:'Who is the "Birdman of India"?', a:'<b>Salim Ali</b> (1896–1987) — preserved Keoladeo & Ranganathittu; Padma Vibhushan <b>1976</b>.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

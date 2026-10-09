@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — Measurement of Length and Motion</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">📏 <span>Ch 05</span> Length and Motion</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 33 cards in 5 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire conversion drill</h2>
+<p class="muted small">Cover the right column. These are the facts most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>1 km = ? m</td><td>1000</td></tr>
+      <tr><td>1 m = ? cm</td><td>100</td></tr>
+      <tr><td>1 cm = ? mm</td><td>10</td></tr>
+      <tr><td>1 mm = ? cm</td><td>0.1</td></tr>
+      <tr><td>1 inch = ? cm</td><td>2.54</td></tr>
+      <tr><td>1.5 km = ? m</td><td>1500</td></tr>
+      <tr><td>250 cm = ? m</td><td>2.5</td></tr>
+      <tr><td>Smallest length on a 15-cm scale</td><td>1 mm</td></tr>
+      <tr><td>Broken scale: 1.0 cm to 10.4 cm</td><td>9.4 cm</td></tr>
+      <tr><td>Handspans for the table (range)</td><td>13 to 14</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Curiosity: Textbook of Science, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'Measuring & Units', q:'What did Deepa\'s mother mean by "char angula"?', a:'<b>Four fingers\' width</b> — angula is an ancient Indian unit (finger width).'},
+ {n:2, deck:'Measuring & Units', q:'What does Deepa\'s mother call a handspan?', a:'<b>Balisht</b>.'},
+ {n:3, deck:'Measuring & Units', q:'Why did the five friends get different handspan counts for the same table?', a:'Their <b>handspans are of different sizes</b>.'},
+ {n:4, deck:'Measuring & Units', q:'What are the two parts of any measured length?', a:'A <b>number</b> and a <b>unit</b> (e.g. 13 handspans).'},
+ {n:5, deck:'Measuring & Units', q:'Name three ancient Indian units of length.', a:'<b>Angula, dhanusa, yojana</b>.'},
+ {n:6, deck:'Measuring & Units', q:'Which craftspeople still use the angula?', a:'<b>Carpenters and tailors</b>.'},
+ {n:7, deck:'Measuring & Units', q:'Where have objects that may be ancient scales been found?', a:'At sites of the <b>Harappan Civilisation</b>.'},
+ {n:8, deck:'Measuring & Units', q:'Why were standard units adopted?', a:'Different systems caused <b>confusion</b> when people travelled — so countries agreed on <b>SI units</b>.'},
+ {n:9, deck:'SI Units', q:'What is the SI unit of length and its symbol?', a:'The <b>metre</b>, symbol <b>m</b>.'},
+ {n:10, deck:'SI Units', q:'What does SI stand for?', a:'<b>International System of Units</b>.'},
+ {n:11, deck:'SI Units', q:'Give the three conversion facts.', a:'<b>1 km = 1000 m · 1 m = 100 cm · 1 cm = 10 mm</b>.'},
+ {n:12, deck:'SI Units', q:'What is the smallest length a 15-cm scale can measure?', a:'<b>1 mm</b> (= 0.1 cm).'},
+ {n:13, deck:'SI Units', q:'How many centimetres make an inch?', a:'<b>2.54 cm</b>.'},
+ {n:14, deck:'SI Units', q:'Which unit for (a) Delhi–Lucknow, (b) coin thickness?', a:'(a) <b>kilometre</b>; (b) <b>millimetre</b>.'},
+ {n:15, deck:'Measuring Correctly', q:'How should a scale be placed?', a:'<b>In contact with the object, along its length</b>.'},
+ {n:16, deck:'Measuring Correctly', q:'Where should your eye be when reading a scale?', a:'<b>Directly above</b> the point being read.'},
+ {n:17, deck:'Measuring Correctly', q:'How do you measure with a scale whose end is broken?', a:'Start at a <b>full mark</b> (e.g. 1.0 cm) and <b>subtract</b> it from the far reading.'},
+ {n:18, deck:'Measuring Correctly', q:'How do you measure a curved line?', a:'Lay a <b>thread</b> along it (or use a <b>flexible tape</b>), straighten the thread, measure with a scale.'},
+ {n:19, deck:'Measuring Correctly', q:'Which tool for the girth of a tree?', a:'A <b>flexible measuring tape</b> (like a tailor\'s tape).'},
+ {n:20, deck:'Measuring Correctly', q:'Four rules for writing units?', a:'<b>Lowercase</b>; <b>no plural s</b>; <b>no full stop</b> after symbol; <b>space</b> between number and unit.'},
+ {n:21, deck:'Measuring Correctly', q:'How do visually challenged students measure length?', a:'With scales with <b>raised markings</b> they can feel.'},
+ {n:22, deck:'Position & Motion', q:'What is a reference point?', a:'A <b>fixed object or point</b> with respect to which distance is stated.'},
+ {n:23, deck:'Position & Motion', q:'Why did the friends disagree about the garden?', a:'Each measured from <b>their own house</b> — different reference points. From the <b>bus stand</b>, they\'d agree.'},
+ {n:24, deck:'Position & Motion', q:'On "Delhi 70 km", what is the reference point?', a:'<b>Delhi</b>.'},
+ {n:25, deck:'Position & Motion', q:'When is an object in motion?', a:'When its <b>position changes</b> with respect to the reference point <b>with time</b>.'},
+ {n:26, deck:'Position & Motion', q:'Are bus passengers at rest or in motion?', a:'<b>At rest</b> w.r.t. the bus; <b>in motion</b> w.r.t. a building outside.'},
+ {n:27, deck:'Position & Motion', q:'What was used to draw Kabaddi lines?', a:'<b>Chuna powder</b> (limestone powder), measured from a reference point.'},
+ {n:28, deck:'Types of Motion', q:'What is linear motion? Two examples.', a:'Motion along a <b>straight line</b> — falling eraser, march-past, car on a straight road.'},
+ {n:29, deck:'Types of Motion', q:'What is circular motion? Two examples.', a:'Motion along a <b>circular path</b> — whirled eraser, merry-go-round.'},
+ {n:30, deck:'Types of Motion', q:'What is oscillatory motion? Two examples.', a:'Motion <b>to and fro about a fixed position</b> — swing, hanging eraser, vibrating metal strip.'},
+ {n:31, deck:'Types of Motion', q:'What is periodic motion?', a:'Motion that <b>repeats its path after a fixed interval of time</b>.'},
+ {n:32, deck:'Types of Motion', q:'Which types of motion are periodic?', a:'<b>Circular</b> and <b>oscillatory</b>.'},
+ {n:33, deck:'Types of Motion', q:'Rollercoaster ball (Fig. 5.19) — what motions?', a:'<b>Linear</b> on the straight slope and exit; <b>circular</b> around the loop.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

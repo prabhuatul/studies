@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — The Wonderful World of Science</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🔭 <span>Ch 01</span> Wonderful World of Science</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>One idea runs through the chapter: <strong>curiosity, used in a careful order, is science</strong>. Curiosity makes us ask; the scientific method makes the asking useful; and anyone who does it is a scientist.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · WHAT IS SCIENCE?</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>A way of THINKING, OBSERVING and DOING things</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Goal: understand the world + uncover the secrets of the universe</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Most important: CURIOSITY (the book's title)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Everywhere: ocean ↔ space, kitchen ↔ playground</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · THE JIGSAW PUZZLE</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Each discovery = a new piece</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Unending — every answer brings more questions</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Misplaced pieces get moved — understanding changes</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Ideas are all connected</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · WHAT WE WILL EXPLORE</button>
+    <ul>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Life</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Earth — only planet known to support life</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Variety of plants and animals</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Seed → plant, caterpillar → butterfly</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Things around us</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Food and cuisines</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Materials — what are they made of? how to separate?</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Water — rain, ice, steam</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Hot and cold — fever, temperature</button></li>
+        </ul>
+      </li>
+      <li><button class="node leaf"><span class="tw">·</span>Beyond Earth — Sun, Moon, stars</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · THE SCIENTIFIC METHOD</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>OBSERVE → QUESTION → GUESS → TEST → ANALYSE</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Test = experiments or more observations</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Wrong guess → new guess → test again</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Worked example: the pen that stopped writing</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · WE ARE ALL SCIENTISTS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Cook — dal spilled: too much water?</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Cycle repairer — flat tyre: where did air leak?</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Electrician — bulb or switch?</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Science is rarely done alone — work in teams</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Be a "whys" person</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · Curiosity → question</h4>
+    <p style="margin-bottom:0">Curiosity is not just a nice feeling — it is what produces the <strong>question</strong> in step 2. No curiosity, no question, no science.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · The jigsaw explains the method</h4>
+    <p style="margin-bottom:0">Because science is an unending puzzle where pieces can be wrong, we must <strong>test</strong> every guess — and be ready to <strong>make a new one</strong>.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · The pen is the whole method in miniature</h4>
+    <p style="margin-bottom:0">Observe (pen stops) → question (why?) → guess (ink finished) → test (check refill) → analyse (empty or not?) — and loop back with a new guess.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · From pens to the universe</h4>
+    <p style="margin-bottom:0">The same method that fixes a pen is used to solve "bigger problems" and "mysteries of the universe" — learning science just makes us better at it.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> The chapter's definition of science, word for word</label></li>
+    <li><label><input type="checkbox" data-check="m2"> Why the book is called <em>Curiosity</em></label></li>
+    <li><label><input type="checkbox" data-check="m3"> The four ways science is like a jigsaw puzzle</label></li>
+    <li><label><input type="checkbox" data-check="m4"> The five steps of the scientific method, in order</label></li>
+    <li><label><input type="checkbox" data-check="m5"> The pen example, including what happens when the first guess is wrong</label></li>
+    <li><label><input type="checkbox" data-check="m6"> Three everyday people who work like scientists</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the Quest →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Curiosity: Textbook of Science, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

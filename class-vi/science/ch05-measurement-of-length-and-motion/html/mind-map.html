@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — Measurement of Length and Motion</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">📏 <span>Ch 05</span> Length and Motion</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>One idea runs through the chapter: <strong>to describe the world exactly, we need something fixed to compare with</strong> — a standard unit to measure length, and a reference point to describe position and motion.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · HOW DO WE MEASURE?</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Body parts — handspan (balisht), arm, stride, foot</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Different people → different answers (13–14 handspans)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Length = NUMBER + UNIT</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Ancient India — angula, dhanusa, yojana; Harappan scales</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · STANDARD UNITS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Travel → confusion → SI units</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>SI unit of length = METRE (m)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>1 km = 1000 m · 1 m = 100 cm · 1 cm = 10 mm</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>15-cm scale reads down to 1 mm · 1 inch = 2.54 cm</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · MEASURING CORRECTLY</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Choose the right tool (flexible tape for curves/girth)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Scale in contact, along the length</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Eye directly above the reading</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Broken scale → start at a mark and subtract</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Curved line → thread, straighten, measure</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Write units: lowercase, no s, no full stop, space</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · POSITION</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>REFERENCE POINT — fixed point to measure from</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Garden vs school — all correct, different houses</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Kabaddi court — fix the reference point first</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Kilometre stones — Delhi 70 km → 60 km</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · MOTION & REST</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>MOTION — position changes w.r.t. reference point with time</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>REST — position does not change</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Bus passengers: rest (bus) vs motion (building)</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>6 · TYPES OF MOTION</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>LINEAR — straight line (falling eraser, march-past)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>CIRCULAR — circular path (whirled eraser, merry-go-round)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>OSCILLATORY — to and fro (swing, metal strip)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>PERIODIC — repeats after fixed time (circular + oscillatory)</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · Unit and reference point are the same idea</h4>
+    <p style="margin-bottom:0">A standard unit fixes <strong>how much</strong> to compare a length with; a reference point fixes <strong>where</strong> to measure from. Without either, people's answers disagree — the handspans and the garden argument are the same problem.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · Motion is defined by position</h4>
+    <p style="margin-bottom:0">Motion is "change of position with time" — and position needs a reference point. So whether something moves depends on what you compare it with.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · Measuring well is about removing errors</h4>
+    <p style="margin-bottom:0">Each rule — contact, eye above, subtracting a broken end, thread for curves — removes one way a measurement could be wrong.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · Periodic links two types</h4>
+    <p style="margin-bottom:0">Circular and oscillatory motion look different, but both repeat after a fixed time — so both are periodic. Linear motion along a path that doesn't repeat is not.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> Why body-part units fail, using Table 5.1</label></li>
+    <li><label><input type="checkbox" data-check="m2"> All the conversions between km, m, cm, mm (and inch)</label></li>
+    <li><label><input type="checkbox" data-check="m3"> The four rules for measuring correctly, including the broken-scale method</label></li>
+    <li><label><input type="checkbox" data-check="m4"> The four rules for writing units</label></li>
+    <li><label><input type="checkbox" data-check="m5"> The definitions of reference point, motion and rest, with the bus example</label></li>
+    <li><label><input type="checkbox" data-check="m6"> Linear, circular, oscillatory and periodic motion, with two examples each</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the Quest →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Curiosity: Textbook of Science, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

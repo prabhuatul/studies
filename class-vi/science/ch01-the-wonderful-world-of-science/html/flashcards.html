@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — The Wonderful World of Science</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🔭 <span>Ch 01</span> Wonderful World of Science</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 25 cards in 4 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire drill</h2>
+<p class="muted small">Cover the right column. These are the facts most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Number of steps in the scientific method</td><td>5</td></tr>
+      <tr><td>First step</td><td>Observe</td></tr>
+      <tr><td>Step that comes right after "Guess"</td><td>Test</td></tr>
+      <tr><td>Last step</td><td>Analyse</td></tr>
+      <tr><td>Title of the textbook</td><td><em>Curiosity</em></td></tr>
+      <tr><td>Science is compared to a…</td><td>giant, unending jigsaw puzzle</td></tr>
+      <tr><td>Only planet known to support life</td><td>Earth</td></tr>
+      <tr><td>How long the science journey lasts</td><td>next five years or even beyond</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Curiosity: Textbook of Science, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'What is Science?', q:'Define science, as the chapter does.', a:'A way of <b>thinking, observing and doing things</b> to understand the world we live in and to uncover the secrets of the universe.'},
+ {n:2, deck:'What is Science?', q:'What is the most important thing for doing science?', a:'<b>Curiosity</b> — which is why the book is called <em>Curiosity</em>.'},
+ {n:3, deck:'What is Science?', q:'Name two everyday mysteries the chapter says science helps unravel.', a:'Why the <b>stars shine</b>; how a <b>flower knows when to open</b>.'},
+ {n:4, deck:'What is Science?', q:'Where is science found?', a:'<b>Everywhere</b> — from the depths of the ocean to outer space, from the kitchen to the playground.'},
+ {n:5, deck:'What is Science?', q:'Where have some of the most groundbreaking discoveries come from?', a:'From <b>unexpected places</b>.'},
+ {n:6, deck:'What is Science?', q:'Which stage of school does Science begin in as a subject?', a:'The <b>Middle Stage</b> (after the Preparatory Stage).'},
+ {n:7, deck:'The Jigsaw Puzzle', q:'What is science compared to?', a:'A <b>giant and unending jigsaw puzzle</b>.'},
+ {n:8, deck:'The Jigsaw Puzzle', q:'What does each new discovery do in the puzzle?', a:'It <b>adds another piece</b> to the puzzle.'},
+ {n:9, deck:'The Jigsaw Puzzle', q:'Why is there no limit to what we can discover?', a:'Every new piece of knowledge leads to <b>more questions</b>.'},
+ {n:10, deck:'The Jigsaw Puzzle', q:'What does a "piece put in the wrong place" stand for?', a:'An idea that <b>new discoveries show to be wrong</b> — our understanding changes.'},
+ {n:11, deck:'The Jigsaw Puzzle', q:'What do we realise as we discover more?', a:'That the ideas are <b>all connected</b>.'},
+ {n:12, deck:'Scientific Method', q:'List the five steps of the scientific method in order.', a:'<b>Observe → Question → Guess → Test → Analyse.</b>'},
+ {n:13, deck:'Scientific Method', q:'How do we test a guess?', a:'Through <b>experiments or more observations</b>.'},
+ {n:14, deck:'Scientific Method', q:'What do we do in the "analyse" step?', a:'Check whether the results <b>actually answered our question</b>.'},
+ {n:15, deck:'Scientific Method', q:'Pen stops writing — what is the first guess?', a:'The <b>ink has finished</b>.'},
+ {n:16, deck:'Scientific Method', q:'How is the first guess tested?', a:'By <b>opening the pen and checking the ink refill</b>.'},
+ {n:17, deck:'Scientific Method', q:'The refill is not empty. What next?', a:'Make <b>another guess</b> — the ink may have <b>dried up</b> — and test that.'},
+ {n:18, deck:'Scientific Method', q:'Is science just memorising facts or doing experiments?', a:'<b>No</b> — it is a <b>step-by-step process</b> that helps us find answers to our questions.'},
+ {n:19, deck:'We Are All Scientists', q:'Who is a scientist, according to the chapter?', a:'A person who <b>follows the scientific method</b> to solve problems or discover new things.'},
+ {n:20, deck:'We Are All Scientists', q:'What question does the cook ask?', a:'Why did the <b>dal spill out of the cooker</b> — was there too much water?'},
+ {n:21, deck:'We Are All Scientists', q:'What does the bicycle repair person try to find out?', a:'Why the tyre is flat — <b>from where the air leaked out</b>.'},
+ {n:22, deck:'We Are All Scientists', q:'What does the electrician check?', a:'Whether the problem is with the <b>bulb or the switch</b>.'},
+ {n:23, deck:'We Are All Scientists', q:'Is science usually done alone?', a:'<b>Rarely.</b> Scientists across the world work together, often in <b>large teams</b>.'},
+ {n:24, deck:'We Are All Scientists', q:'What is the "first and foremost" thing for learning science well?', a:'Be <b>curious</b> and <b>observe your surroundings keenly</b>.'},
+ {n:25, deck:'We Are All Scientists', q:'Complete: "To be a wise person, you must be a…"', a:'"…<b>\'whys\' person</b>!"'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
