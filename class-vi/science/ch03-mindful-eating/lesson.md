@@ -1,7 +1,7 @@
 # Science — Chapter 3: Mindful Eating: A Path to a Healthy Body
 
 > **Class VI | CBSE / NCERT — Curiosity: Textbook of Science, Grade 6**
-> Last updated: 2026-08-09
+> Last updated: 2026-10-11
 
 ---
 
@@ -472,6 +472,32 @@ A circular diagram showing: Farmer growing wheat → Threshing and winnowing →
 
 ---
 
+<!-- Session: 2026-10-11 -->
+### End-of-Chapter Exercises (Let us enhance our learning, pp.56–58)
+1. Pick the odd one out and give reasons: (i) Jowar, Bajra, Ragi, Chana (ii) Kidney beans, Green gram, Soya bean, Rice
+2. Discuss traditional versus modern culinary practices in India.
+3. A teacher says good food may act as medicine. List at least two questions Ravi can ask his teacher about this.
+4. Not all delicious foods are healthy, and not all nutritious foods are enjoyable. Share your thoughts with examples.
+5. Medu does not eat vegetables but enjoys biscuits, noodles and white bread. He often has stomach ache and constipation. What changes should he make, and why?
+6. Reshma has trouble seeing in dim light. (i) Which deficiency disease is it? (ii) Which food component may be lacking? (iii) Suggest four food items she should include.
+7. Canned fruit juice, fresh fruit juice, fresh fruit — which would you prefer and why?
+8. Gourav fractured his leg. The doctor gave calcium tablets, and on the second visit Vitamin D syrup as well. (i) Why calcium? (ii) Why Vitamin D with calcium? (iii) What question arises in your mind about the doctor's choices?
+9. Sugar is a carbohydrate, but it does not turn blue-black with iodine. What could be the reason?
+10. Raman says, "All starches are carbohydrates but not all carbohydrates are starches." What do you think? Design an activity to test it.
+11. Iodine drops on the teacher's saree turned blue-black but those on Mishti's socks did not. What could be the reason?
+12. Why are millets a healthy choice? Can eating only millets meet all our nutritional needs?
+13. How would you check whether a solution could be an iodine solution?
+
+### Learning Further (projects)
+- Read the nutritional information on at least three fortified food packets and analyse it.
+- Find out how the Apatani tribe of Arunachal Pradesh makes the salt _tapyo_; make a chart.
+- Read about wild foods such as _ranbhajis_ (Maharashtra) and edible mushrooms (Himachal Pradesh); find wild foods of your region.
+- List the junk foods you and friends eat; write to your principal suggesting healthy options.
+- Find out how nutritional needs vary with age, activity and health.
+- Prepare a low-cost balanced diet chart for a twelve-year-old.
+
+---
+
 ## Quick Summary
 
 - People across India eat diverse types of food; choices depend on local crops, culture, taste, and traditions.
@@ -497,8 +523,26 @@ A circular diagram showing: Farmer growing wheat → Threshing and winnowing →
 
 ---
 
+## Interactive version
+
+An interactive HTML study pack is generated from this file.
+Open **`html/index.html`** in any browser — it works offline.
+
+| Page | What it does |
+|---|---|
+| `html/index.html` | Hub — start here |
+| `html/lesson.html` | Full lesson, searchable, collapsible |
+| `html/summary.html` | Night-before revision sheet |
+| `html/flashcards.html` | 30 click-to-flip cards + rapid-fire drill |
+| `html/mind-map.html` | Expandable concept tree |
+| `html/question-bank.html` | Written practice + worked textbook exercises |
+| `html/quiz.html` | 50-question MCQ Quest |
+
+---
+
 ## Session Log
 
 | Date | Pages / Content Added |
 |---|---|
 | 2026-08-09 | Initial: pages 35–55 — complete chapter (all 16 textbook images); sections 3.1 to 3.6, all activities, case studies, Know a Scientist, figures, keywords, and summary |
+| 2026-10-11 | Added end-of-chapter exercises (13 questions, pp.56–58) and Learning further from the NCERT PDF; built the interactive HTML pack (html/). |

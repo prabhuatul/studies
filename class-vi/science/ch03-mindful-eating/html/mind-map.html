@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — Mindful Eating: A Path to a Healthy Body</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🥗 <span>Ch 03</span> Mindful Eating</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>One idea runs through the chapter: <strong>what we eat becomes what we are</strong> — every nutrient has a job, missing one causes disease, and how far our food travels matters too.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · WHAT WE EAT</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Depends on local crops, taste, culture, traditions</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Culinary practices: chulha → gas stove, sil-batta → mixer</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Changed by technology, transport, communication</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · FOOD COMPONENTS</button>
+    <ul>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Energy-giving</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Carbohydrates — primary energy (rice, wheat, potato)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Fats — stored, more energy (nuts, oils, ghee)</button></li>
+        </ul>
+      </li>
+      <li><button class="node leaf"><span class="tw">·</span>Body-building: PROTEINS (dals, milk, egg)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Protective: VITAMINS + MINERALS</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>ROUGHAGE — no nutrients, removes undigested food</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>WATER — absorbs nutrients, removes wastes</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · TESTING FOOD</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Starch + iodine → BLUE-BLACK</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Fat on paper → OILY PATCH</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Protein + CuSO₄ + caustic soda → VIOLET</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Handle chemicals with care</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · DEFICIENCY DISEASES</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Vit A → night blindness · Vit B₁ → beriberi</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Vit C → scurvy (James Lind, 1746)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Vit D → rickets (sunlight!)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Iodine → goitre (iodised salt, 1960s)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Iron → anaemia · Calcium → weak bones</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · HEALTHY CHOICES</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>BALANCED DIET — all nutrients + roughage + water</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>MILLETS — jowar, bajra, ragi, sanwa = nutri-cereals</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>JUNK FOOD — sugar + fat, little else → obesity</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Labels, FORTIFICATION, FSSAI</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>C. Gopalan → Mid Day Meal → PM POSHAN</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>6 · FOOD MILES</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Distance from farmer to consumer</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Eat local: less cost & pollution, fresher, helps farmers</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Story of a chapati: farm → threshing → storage → mill → shop → plate</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Don't waste food</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · Jobs explain the diseases</h4>
+    <p style="margin-bottom:0">Each vitamin or mineral has a job; when it is missing, that job fails — Vitamin A for eyes → night blindness, iron for blood → anaemia.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · Tests prove what's inside</h4>
+    <p style="margin-bottom:0">The iodine, paper and copper-sulphate tests let you check, not guess, which nutrients a food has — the scientific method from Chapter 1 in action.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · Balanced diet ties it all together</h4>
+    <p style="margin-bottom:0">No single food (not even millets) has everything — a balanced diet combines energy-giving, body-building and protective foods with roughage and water.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · Health and planet</h4>
+    <p style="margin-bottom:0">Local, plant-based food is healthier and has fewer food miles — good for our bodies and our environment.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> The five nutrients and their three jobs, with sources</label></li>
+    <li><label><input type="checkbox" data-check="m2"> All seven deficiency diseases from Fig. 3.5</label></li>
+    <li><label><input type="checkbox" data-check="m3"> The three food tests and their colours</label></li>
+    <li><label><input type="checkbox" data-check="m4"> What a balanced diet is and why needs differ</label></li>
+    <li><label><input type="checkbox" data-check="m5"> Why millets are nutri-cereals and why junk food is unhealthy</label></li>
+    <li><label><input type="checkbox" data-check="m6"> What food miles are and three reasons to reduce them</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the Quest →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Curiosity: Textbook of Science, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

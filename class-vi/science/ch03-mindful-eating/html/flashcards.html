@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — Mindful Eating: A Path to a Healthy Body</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">🥗 <span>Ch 03</span> Mindful Eating</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 30 cards in 5 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire disease & test drill</h2>
+<p class="muted small">Cover the right column. These are the facts most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>Vitamin C deficiency</td><td>Scurvy</td></tr>
+      <tr><td>Vitamin D deficiency</td><td>Rickets</td></tr>
+      <tr><td>Vitamin A deficiency</td><td>Night blindness</td></tr>
+      <tr><td>Vitamin B₁ deficiency</td><td>Beriberi</td></tr>
+      <tr><td>Iodine deficiency</td><td>Goitre</td></tr>
+      <tr><td>Iron deficiency</td><td>Anaemia</td></tr>
+      <tr><td>Starch test colour</td><td>Blue-black</td></tr>
+      <tr><td>Protein test colour</td><td>Violet</td></tr>
+      <tr><td>James Lind's scurvy discovery</td><td>1746</td></tr>
+      <tr><td>Mid Day Meal Programme began</td><td>2002 (now PM POSHAN)</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Curiosity: Textbook of Science, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'Food & Culture', q:'What decides the food people eat in a region?', a:'<b>Local crops</b>, <b>taste preferences</b>, and <b>culture and traditions</b>.'},
+ {n:2, deck:'Food & Culture', q:'What are culinary practices?', a:'Methods and traditions of <b>cooking food</b>.'},
+ {n:3, deck:'Food & Culture', q:'Traditional vs modern: chulha and sil-batta?', a:'Chulha → <b>gas stove</b>; sil-batta → <b>mixer/grinder</b>.'},
+ {n:4, deck:'Food & Culture', q:'Why have cooking practices changed?', a:'<b>Technology</b>, better <b>transport</b> and <b>communication</b>.'},
+ {n:5, deck:'Nutrients', q:'Name the five nutrients.', a:'<b>Carbohydrates, fats, proteins, vitamins, minerals</b>.'},
+ {n:6, deck:'Nutrients', q:'Which nutrient is the primary source of energy?', a:'<b>Carbohydrates</b>.'},
+ {n:7, deck:'Nutrients', q:'Which gives more energy — fats or carbohydrates?', a:'<b>Fats</b> (stored energy).'},
+ {n:8, deck:'Nutrients', q:'Why are proteins called body-building foods?', a:'They are needed for <b>growth and repair</b> of the body.'},
+ {n:9, deck:'Nutrients', q:'Two plant and two animal sources of protein?', a:'Plant: <b>dals, soya, beans, peas</b>. Animal: <b>milk, paneer, egg, fish</b>.'},
+ {n:10, deck:'Nutrients', q:'What does roughage do?', a:'Removes <b>undigested food</b>, prevents constipation — gives no nutrients.'},
+ {n:11, deck:'Nutrients', q:'Two roles of water in the body?', a:'Helps <b>absorb nutrients</b>; removes <b>wastes</b> in sweat and urine.'},
+ {n:12, deck:'Vitamins & Minerals', q:'Vitamin A — function and deficiency?', a:'Healthy <b>eyes and skin</b>; lack → <b>night blindness / loss of vision</b>.'},
+ {n:13, deck:'Vitamins & Minerals', q:'Vitamin C — sources and deficiency?', a:'<b>Amla, guava, orange, lemon</b>; lack → <b>scurvy</b>.'},
+ {n:14, deck:'Vitamins & Minerals', q:'Vitamin D — how does the body get it, and why is it needed?', a:'Made in the skin in <b>sunlight</b>; helps absorb <b>calcium</b>. Lack → <b>rickets</b>.'},
+ {n:15, deck:'Vitamins & Minerals', q:'What does iron do? Deficiency?', a:'Important component of <b>blood</b>; lack → <b>anaemia</b>.'},
+ {n:16, deck:'Vitamins & Minerals', q:'Iodine — sources and deficiency?', a:'<b>Seaweed, singhada, iodised salt</b>; lack → <b>goitre</b>.'},
+ {n:17, deck:'Vitamins & Minerals', q:'Symptoms of beriberi?', a:'<b>Swelling, tingling or burning</b> in hands and feet, trouble breathing (Vitamin B₁).'},
+ {n:18, deck:'Vitamins & Minerals', q:'Why wash vegetables before cutting?', a:'Washing <b>after</b> cutting washes away <b>vitamins</b>.'},
+ {n:19, deck:'Food Tests', q:'How do you test for starch?', a:'2–3 drops of <b>dilute iodine</b> → <b>blue-black</b> = starch.'},
+ {n:20, deck:'Food Tests', q:'How do you test for fat?', a:'Press food in <b>paper</b>, dry, hold to light → <b>oily patch</b> = fat.'},
+ {n:21, deck:'Food Tests', q:'How do you test for protein?', a:'Paste + water + <b>copper sulphate</b> + <b>caustic soda</b> → <b>violet</b>.'},
+ {n:22, deck:'Food Tests', q:'Which food shows both fat and protein?', a:'<b>Peanuts</b>.'},
+ {n:23, deck:'Food Tests', q:'Why doesn\'t sugar turn blue-black with iodine?', a:'Sugar is a carbohydrate but <b>not starch</b>.'},
+ {n:24, deck:'Diet & Food Miles', q:'What is a balanced diet?', a:'All nutrients, <b>roughage and water</b> in the <b>right amounts</b>.'},
+ {n:25, deck:'Diet & Food Miles', q:'Name four millets.', a:'<b>Jowar, bajra, ragi, sanwa</b>.'},
+ {n:26, deck:'Diet & Food Miles', q:'Why are millets called nutri-cereals?', a:'Rich in <b>vitamins, minerals (iron, calcium) and fibre</b>.'},
+ {n:27, deck:'Diet & Food Miles', q:'Why is junk food unhealthy?', a:'High in <b>sugar and fat</b>, low in protein, vitamins, minerals, fibre → <b>obesity</b>.'},
+ {n:28, deck:'Diet & Food Miles', q:'What is fortification?', a:'Adding <b>nutrients</b> to food during processing — e.g. <b>iodised salt</b>.'},
+ {n:29, deck:'Diet & Food Miles', q:'What are food miles?', a:'Distance food travels from <b>farmer to consumer</b>.'},
+ {n:30, deck:'Diet & Food Miles', q:'Who was Coluthur Gopalan?', a:'Nutrition pioneer (1918–2019) whose work led to the <b>Mid Day Meal / PM POSHAN</b> programme.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
