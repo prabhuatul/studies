@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — Verbs, Helping Verbs, Modals and Tenses</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">✏️ <span>Ch 0G</span> Grammar Revision</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 35 cards in 5 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>Rapid-fire verb-form drill</h2>
+<p class="muted small">Cover the right column. These are the facts most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>go</td><td>went · gone</td></tr>
+      <tr><td>eat</td><td>ate · eaten</td></tr>
+      <tr><td>write</td><td>wrote · written</td></tr>
+      <tr><td>give</td><td>gave · given</td></tr>
+      <tr><td>fly</td><td>flew · flown</td></tr>
+      <tr><td>drive</td><td>drove · driven</td></tr>
+      <tr><td>find</td><td>found · found</td></tr>
+      <tr><td>become</td><td>became · become</td></tr>
+      <tr><td>throw</td><td>threw · thrown</td></tr>
+      <tr><td>feel</td><td>felt · felt</td></tr>
+      <tr><td>take</td><td>took · taken</td></tr>
+      <tr><td>see</td><td>saw · seen</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Poorvi — Textbook in English, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'Verbs', q:'What are the three forms of a verb?', a:'<b>V1</b> base (write), <b>V2</b> past (wrote), <b>V3</b> past participle (written).'},
+ {n:2, deck:'Verbs', q:'How do regular verbs make V2 and V3?', a:'Add <b>-d / -ed</b>: look → looked → looked.'},
+ {n:3, deck:'Verbs', q:'try → ? and stop → ?', a:'<b>tried</b> (consonant + y → ied); <b>stopped</b> (double the last consonant).'},
+ {n:4, deck:'Verbs', q:'Main verb vs helping verb in "Buntee had followed the farmer"?', a:'Main: <b>followed</b>. Helping: <b>had</b>.'},
+ {n:5, deck:'Verbs', q:'Name the three groups of helping verbs.', a:'<b>be</b> (am, is, are, was, were), <b>do</b> (do, does, did), <b>have</b> (has, have, had).'},
+ {n:6, deck:'Verbs', q:'Is "was" a main or helping verb in "The mahout was kind"?', a:'<b>Main verb</b> — there is no other verb in the sentence.'},
+ {n:7, deck:'Verbs', q:'After do/does/did, which verb form?', a:'<b>V1</b> — "Did he <b>go</b>?", "She does not <b>like</b> it."'},
+ {n:8, deck:'Agreement', q:'He / She / It take which forms?', a:'<b>is, was, has, does</b>, and <b>V1+s</b> in simple present.'},
+ {n:9, deck:'Agreement', q:'We / You / They take which forms?', a:'<b>are, were, have, do</b>, and plain <b>V1</b>.'},
+ {n:10, deck:'Agreement', q:'"My best friend ___ always helpful." (is/are)', a:'<b>is</b> — one friend, singular.'},
+ {n:11, deck:'Agreement', q:'Neither Shikha nor Anuj ___ (like/likes) stories.', a:'<b>likes</b> — the verb agrees with the nearer subject, Anuj.'},
+ {n:12, deck:'Modals', q:'Which modal shows ability?', a:'<b>can</b> (past: <b>could</b>).'},
+ {n:13, deck:'Modals', q:'Which modal shows compulsion?', a:'<b>must</b> — "You must consult an elder."'},
+ {n:14, deck:'Modals', q:'Which modal gives advice?', a:'<b>should</b> — "You should try to remember these cures."'},
+ {n:15, deck:'Modals', q:'Which modal shows a past habit?', a:'<b>used to</b> — "I used to put heeng water on your tummy."'},
+ {n:16, deck:'Modals', q:'Which shows necessity?', a:'<b>need to</b> — "I need to soak the methi seeds."'},
+ {n:17, deck:'Modals', q:'What does "may" show in "You may share them with your friends"?', a:'<b>Suggestion</b> (also permission/possibility).'},
+ {n:18, deck:'Modals', q:'may vs might?', a:'<b>might</b> shows a <b>weaker</b> possibility than may.'},
+ {n:19, deck:'Modals', q:'What form follows a modal?', a:'<b>V1</b> — "She can sing", never "can sings".'},
+ {n:20, deck:'Tenses', q:'Formula: present continuous?', a:'<b>am / is / are + V-ing</b> — The birds are flying.'},
+ {n:21, deck:'Tenses', q:'Formula: past continuous?', a:'<b>was / were + V-ing</b> — The teacher was explaining.'},
+ {n:22, deck:'Tenses', q:'Formula: present perfect?', a:'<b>has / have + V3</b> — The students have completed.'},
+ {n:23, deck:'Tenses', q:'Formula: past perfect?', a:'<b>had + V3</b> — He had tied Buntee.'},
+ {n:24, deck:'Tenses', q:'Formula: simple future?', a:'<b>will / shall + V1</b> — My father will drive me.'},
+ {n:25, deck:'Tenses', q:'Formula: future continuous and future perfect?', a:'<b>will be + V-ing</b>; <b>will have + V3</b>.'},
+ {n:26, deck:'Tenses', q:'When is past perfect used?', a:'For the action that happened <b>first</b> of two past actions.'},
+ {n:27, deck:'Tenses', q:'Which tense with "every Sunday"?', a:'<b>Simple present</b> (habit) — Riya visits her grandmother every Sunday.'},
+ {n:28, deck:'Tenses', q:'Which tense with "now"?', a:'<b>Present continuous</b>.'},
+ {n:29, deck:'Tense Change', q:'Riya visits her grandmother → past?', a:'Riya <b>visited</b> her grandmother.'},
+ {n:30, deck:'Tense Change', q:'The children play football → present continuous?', a:'The children <b>are playing</b> football.'},
+ {n:31, deck:'Tense Change', q:'My father drives me to school → simple future?', a:'My father <b>will drive</b> me to school.'},
+ {n:32, deck:'Tense Change', q:'The boys were playing cricket → simple present?', a:'The boys <b>play</b> cricket.'},
+ {n:33, deck:'Tense Change', q:'The students complete their assignments → present perfect?', a:'The students <b>have completed</b> their assignments.'},
+ {n:34, deck:'Tense Change', q:'Which conjunction gives a reason?', a:'<b>because</b> — I planted a sapling because I wanted to help.'},
+ {n:35, deck:'Tense Change', q:'many or much: "___ flowers"?', a:'<b>many</b> — flowers can be counted.'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

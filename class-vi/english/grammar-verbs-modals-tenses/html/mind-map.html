@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — Verbs, Helping Verbs, Modals and Tenses</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">✏️ <span>Ch 0G</span> Grammar Revision</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>One idea ties the grammar together: <strong>the verb group carries the time and the attitude</strong> — helping verbs build the tense, modals add ability, advice or necessity, and the subject decides the form.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · VERBS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Action or state words</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>V1 base · V2 past · V3 past participle</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Regular (-d/-ed) vs irregular (go–went–gone)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Main verb carries the meaning</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · HELPING VERBS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>BE — am, is, are, was, were → continuous tenses</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>HAVE — has, have, had → perfect tenses</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>DO — do, does, did → questions, negatives (+ V1)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Subject–verb agreement: He is/has, They are/have</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · MODALS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>can/could — ability · may/might — permission, possibility</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>must — compulsion · should/ought to — advice, duty</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>need to — necessity · used to — past habit</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>will/shall/would — future, offers, requests</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Always + V1</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · TENSES</button>
+    <ul>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Present</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Simple: V1/V1+s</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Continuous: am/is/are + V-ing</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Perfect: has/have + V3</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Past</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Simple: V2</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Continuous: was/were + V-ing</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Perfect: had + V3</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>Future</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>Simple: will + V1</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Continuous: will be + V-ing</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>Perfect: will have + V3</button></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · CHANGING TENSE</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>Find subject → find verb forms → apply formula → agree</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Only the verb group changes</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>Watch time words (yesterday ≠ present perfect)</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>6 · JOINERS & QUANTIFIERS</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>and, but, or, because, so, although, unless</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>neither…nor (two negatives) · either…or (choice)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>many/few + countable · much/little + uncountable</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · Helping verbs build the tenses</h4>
+    <p style="margin-bottom:0">Every continuous tense uses <strong>be</strong>; every perfect tense uses <strong>have</strong>. Learn be and have and you have the whole chart.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · V1 after "special" words</h4>
+    <p style="margin-bottom:0">After a modal and after do/does/did, the main verb is always V1. That one rule fixes most grammar mistakes.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · Subject first, then verb</h4>
+    <p style="margin-bottom:0">The subject decides is/are, was/were, has/have. Find it before you fill any blank.</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · Time words point to the tense</h4>
+    <p style="margin-bottom:0">Read the whole sentence for clues — "now", "yesterday", "already", "tomorrow" — before choosing a verb form.</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> Write V2 and V3 for ten irregular verbs</label></li>
+    <li><label><input type="checkbox" data-check="m2"> Name the helping verbs in each of be, do and have</label></li>
+    <li><label><input type="checkbox" data-check="m3"> Give the function of eight modals with an example each</label></li>
+    <li><label><input type="checkbox" data-check="m4"> Fill in the 3 × 3 tense chart from memory</label></li>
+    <li><label><input type="checkbox" data-check="m5"> Change one sentence into all nine tenses</label></li>
+    <li><label><input type="checkbox" data-check="m6"> Explain when to use many/much and neither/nor</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the Quest →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>Poorvi — Textbook in English, Grade 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>
