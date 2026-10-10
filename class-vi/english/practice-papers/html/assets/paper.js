@@ -223,7 +223,7 @@
   }
 
   /* ---------- answer lock: one code for the whole paper ---------- */
-  var LOCK = 3271444834; // scrambled code, see hash()
+  var LOCK = 3271170445; // scrambled code, see hash()
   function hash(s) {
     var h = 5381;
     s = 'pt2:' + s;
