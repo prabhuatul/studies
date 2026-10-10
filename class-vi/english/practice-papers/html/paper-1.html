@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice Paper 1 — English</title>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/paper.css">
+<style>
+  .case { border-left: 3px solid var(--accent-line); background: var(--surface-2); padding: .6rem .9rem; border-radius: 6px; margin-bottom: .6rem; }
+  .case table { margin: .5rem 0 0; }
+  .or { text-align: center; margin: .6rem 0; letter-spacing: .1em; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">📚 <span>English</span> Practice Papers</div>
+  <nav>
+    <a href="../../../../index.html">Study Hub</a>
+    <a href="paper-1.html" aria-current="page">Paper 1</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap narrow">
+
+  <div class="paperhead">
+    <div class="school">PRACTICE PAPER 1 · 80 MARKS</div>
+    <div class="sub">Class VI · English · <em>Poorvi</em> Units 2–3 · Grammar · Writing · Reading</div>
+    <div class="meta"><span>Time: 3 hours</span><span>Difficulty: Medium</span><span>Maximum marks: <span id="totalMarks">80</span></span></div>
+  </div>
+
+  <div class="card instr">
+    <strong>General instructions</strong>
+    <ol>
+      <li>This paper has 16 questions in 3 sections. All questions are compulsory; internal choice is given in Q5, Q6, Q15 and Q16.</li>
+      <li>Section A — Reading: two unseen passages (20 marks).</li>
+      <li>Section B — Grammar (10 marks) and Writing (10 marks).</li>
+      <li>Section C — Literature from <em>Poorvi</em>: extracts, short and long answers (40 marks).</li>
+      <li>Keep to the word limits. Marks are given for content, organisation and accuracy of language.</li>
+    </ol>
+  </div>
+
+  <div class="btnrow noprint" style="margin:1rem 0">
+    <input id="codeInput" class="search" type="password" inputmode="numeric" autocomplete="off" placeholder="Answer code" aria-label="Answer code" style="width:9.5rem">
+    <button class="btn primary" id="unlockBtn">Show answers</button>
+    <button class="btn" id="printBtn">🖨 Print</button>
+    <span id="codeMsg" class="small muted" role="status" style="margin-left:auto"></span>
+  </div>
+
+  <div id="paper"></div>
+
+  <footer class="foot">
+    <span>Class VI · CBSE / NCERT · <em>Poorvi — Textbook in English, Grade 6</em></span>
+    <span>Pattern: CBSE English 80 marks — Reading 20 · Writing &amp; Grammar 20 · Literature 40 · Generated 10 Oct 2026</span>
+  </footer>
+</main>
+<script src="assets/paper.js"></script>
+<script src="assets/paper1-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
