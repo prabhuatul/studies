@@ -22,29 +22,46 @@
 
 | Term | Definition |
 |---|---|
-| विशेषण | संज्ञा या सर्वनाम की विशेषता (गुण, संख्या, मात्रा आदि) बताने वाला शब्द। |
-| विशेष्य | जिस संज्ञा/सर्वनाम की विशेषता बताई जाए — "सुंदर घोड़ा" में घोड़ा। |
-| प्रविशेषण | विशेषण की भी विशेषता बताने वाला शब्द — "बहुत सुंदर" में बहुत। |
-| गुणवाचक विशेषण | गुण, दोष, रंग, आकार, दशा, स्वाद, स्थान या काल बताने वाला विशेषण। |
-| संख्यावाचक विशेषण | गिनी जा सकने वाली वस्तुओं की संख्या बताए — निश्चित (तीन) या अनिश्चित (कुछ, कई)। |
-| परिमाणवाचक विशेषण | नाप-तौल की मात्रा बताए — निश्चित (दो किलो) या अनिश्चित (थोड़ा, बहुत)। |
-| सार्वनामिक विशेषण | जो सर्वनाम संज्ञा से पहले आकर उसकी ओर संकेत करे — यह, वह, कोई, कौन। |
-| क्रिया | जिस शब्द से किसी काम के करने या होने का पता चले। |
-| धातु | क्रिया का मूल रूप — पढ़, लिख, खा, दौड़। |
-| सकर्मक क्रिया | जिस क्रिया के साथ कर्म हो; क्रिया का फल कर्म पर पड़े। |
-| अकर्मक क्रिया | जिस क्रिया के साथ कर्म न हो; फल कर्ता पर ही पड़े। |
-| कर्म | जिस पर क्रिया का प्रभाव पड़े — "बाबा ने घोड़ा दिखाया"। |
-| क्रिया-विशेषण | क्रिया की विशेषता बताने वाला शब्द — धीरे-धीरे, आज, वहाँ, बहुत। |
-| पर्यायवाची | समान अर्थ वाले शब्द — धरती: पृथ्वी, धरा, वसुंधरा। |
-| विलोम | उल्टा अर्थ बताने वाले शब्द — जीत × हार। |
-| अनेकार्थी शब्द | एक शब्द के कई अर्थ — पानी: जल, सम्मान, चमक। |
-| मुहावरा | ऐसा वाक्यांश जो अपने शब्दों से अलग, विशेष अर्थ दे — फूले न समाना = बहुत प्रसन्न होना। |
+| विशेषण | संज्ञा या सर्वनाम की विशेषता (गुण, संख्या, मात्रा आदि) बताने वाला शब्द।
+**Adjective** — a word that describes a noun or pronoun. |
+| विशेष्य | जिस संज्ञा/सर्वनाम की विशेषता बताई जाए — "सुंदर घोड़ा" में घोड़ा।
+The noun being described by the adjective (in "सुंदर घोड़ा", the horse). |
+| प्रविशेषण | विशेषण की भी विशेषता बताने वाला शब्द — "बहुत सुंदर" में बहुत।
+**Intensifier** — a word that describes an adjective ("very beautiful"). |
+| गुणवाचक विशेषण | गुण, दोष, रंग, आकार, दशा, स्वाद, स्थान या काल बताने वाला विशेषण।
+**Adjective of quality** — colour, size, condition, taste, nature, place, time. |
+| संख्यावाचक विशेषण | गिनी जा सकने वाली वस्तुओं की संख्या बताए — निश्चित (तीन) या अनिश्चित (कुछ, कई)।
+**Adjective of number** — for things you can count; definite (three) or indefinite (some, many). |
+| परिमाणवाचक विशेषण | नाप-तौल की मात्रा बताए — निश्चित (दो किलो) या अनिश्चित (थोड़ा, बहुत)।
+**Adjective of quantity** — for things you measure; definite (two litres) or indefinite (a little, a lot). |
+| सार्वनामिक विशेषण | जो सर्वनाम संज्ञा से पहले आकर उसकी ओर संकेत करे — यह, वह, कोई, कौन।
+**Demonstrative/pronominal adjective** — a pronoun used before a noun to point to it (this, that, some, which). |
+| क्रिया | जिस शब्द से किसी काम के करने या होने का पता चले।
+**Verb** — a word that shows an action or a happening. |
+| धातु | क्रिया का मूल रूप — पढ़, लिख, खा, दौड़।
+**Root / base form** of a verb (पढ़ = read, लिख = write). Add "ना" to get the verb name: पढ़ना. |
+| सकर्मक क्रिया | जिस क्रिया के साथ कर्म हो; क्रिया का फल कर्म पर पड़े।
+**Transitive verb** — has an object; the action passes to someone/something. |
+| अकर्मक क्रिया | जिस क्रिया के साथ कर्म न हो; फल कर्ता पर ही पड़े।
+**Intransitive verb** — has no object; the action stays with the doer. |
+| कर्म | जिस पर क्रिया का प्रभाव पड़े — "बाबा ने घोड़ा दिखाया"।
+**Object** — the person/thing the action is done to. |
+| क्रिया-विशेषण | क्रिया की विशेषता बताने वाला शब्द — धीरे-धीरे, आज, वहाँ, बहुत।
+**Adverb** — a word that describes a verb (slowly, today, inside, a lot). |
+| पर्यायवाची | समान अर्थ वाले शब्द — धरती: पृथ्वी, धरा, वसुंधरा।
+**Synonyms** — words with the same meaning. |
+| विलोम | उल्टा अर्थ बताने वाले शब्द — जीत × हार।
+**Antonyms** — words with opposite meanings. |
+| अनेकार्थी शब्द | एक शब्द के कई अर्थ — पानी: जल, सम्मान, चमक।
+**Words with many meanings** (homonyms) — पानी: water, honour, shine. |
+| मुहावरा | ऐसा वाक्यांश जो अपने शब्दों से अलग, विशेष अर्थ दे — फूले न समाना = बहुत प्रसन्न होना।
+**Idiom** — a phrase whose meaning is different from its literal words. |
 
 ---
 
 ## Core Concepts
 
-### विशेषण और विशेष्य
+### विशेषण और विशेष्य · Adjectives and the noun they describe
 
 **संज्ञा या सर्वनाम की विशेषता बताने वाले शब्दों को विशेषण कहते हैं।** जिसकी विशेषता बताई जाती है, उसे **विशेष्य** कहते हैं।
 
@@ -68,7 +85,14 @@
 
 **प्रविशेषण:** जो शब्द विशेषण की भी विशेषता बताए — "बड़ा सुंदर", "बहुत बलवान"।
 
-### विशेषण के चार भेद
+    In English
+An **adjective (विशेषण)** describes a noun or pronoun — its colour, size, nature and so on. The noun it describes is called the **विशेष्य**.
+
+Examples from the lessons: सुंदर, बलवान घोड़ा — a beautiful, strong horse; हरी दूब — green grass; बूढ़ी धरती — the old (tired) earth; प्रसिद्ध डाकू — a famous dacoit.
+
+A word that describes the adjective itself is a **प्रविशेषण** (intensifier): बहुत सुंदर = very beautiful.
+
+### विशेषण के चार भेद · The four kinds of adjectives
 
 | भेद | क्या बताता है | उदाहरण |
 
@@ -85,8 +109,15 @@
 | **सार्वनामिक** | संज्ञा से पहले आकर संकेत करने वाला सर्वनाम | यह घोड़ा, वह अपाहिज, कोई गरीब, कौन लड़का, ऐसा घोड़ा |
 
 > **ध्यान दें:** "**कुछ**" गिनी जाने वाली चीज़ के साथ संख्यावाचक (_कुछ लोग_) और न गिनी जाने वाली चीज़ के साथ परिमाणवाचक (_कुछ पानी_) होता है। "यह/वह" अकेले आएँ तो **सर्वनाम** ("वह डाकू था"), संज्ञा से पहले आएँ तो **सार्वनामिक विशेषण** ("वह डाकू प्रसिद्ध था")।
+    In English
+**1. गुणवाचक — quality:** what something is like (kind, green, old, sweet).
+**2. संख्यावाचक — number:** for things you can count. Definite = exact number (तीन मील, three miles); indefinite = not exact (कई, सैकड़ों — several, hundreds).
+**3. परिमाणवाचक — quantity:** for things you measure (milk, water, time). Definite = दो लीटर (two litres); indefinite = थोड़ा, बहुत (a little, a lot).
+**4. सार्वनामिक — pointing:** a pronoun placed before a noun — यह घोड़ा (this horse), वह अपाहिज (that disabled man).
 
-### विशेषण की तुलना और विशेषण बनाना
+**Trick:** "कुछ" with countable things (कुछ लोग — some people) is a number adjective; with uncountable things (कुछ पानी — some water) it is a quantity adjective. "वह" alone is a pronoun; "वह" + noun is a pointing adjective.
+
+### विशेषण की तुलना और विशेषण बनाना · Comparing adjectives and forming them from nouns
 
 **तुलना की तीन अवस्थाएँ:**
 
@@ -120,7 +151,12 @@
 
 "धार्मिक, सामाजिक, आत्मिक" — तीनों "मेरी माँ" पाठ में आए हैं: "आत्मिक, धार्मिक तथा सामाजिक उन्नति में तुम्हीं मेरी सदैव सहायक रहीं।"
 
-### क्रिया और धातु
+    In English
+**Degrees of comparison** work like English: सुंदर (beautiful) → सुंदरतर (more beautiful) → सुंदरतम (most beautiful). The endings **-तर** and **-तम** are like "-er" and "-est".
+
+**Forming adjectives from nouns** by adding endings: दया (kindness) → दयालु (kind); धर्म (religion) → धार्मिक (religious); बल (strength) → बलवान (strong); भारत → भारतीय (Indian); समाज (society) → सामाजिक (social).
+
+### क्रिया और धातु · Verbs and the root form
 
 **जिस शब्द से किसी काम के करने या होने का बोध हो, उसे क्रिया कहते हैं।** क्रिया का मूल रूप **धातु** कहलाता है; धातु में "ना" जोड़ने पर क्रिया का सामान्य रूप बनता है — पढ़ → पढ़ना, लिख → लिखना, दौड़ → दौड़ना।
 
@@ -136,7 +172,12 @@
 
 | माताजी ने हिंदी पढ़ना आरंभ किया। | पढ़ना आरंभ किया | पढ़ |
 
-### सकर्मक और अकर्मक क्रिया
+    In English
+A **verb (क्रिया)** tells us about an action or a happening. Its basic form is the **root (धातु)** — पढ़ (read), लिख (write). Adding "ना" gives the verb's name: पढ़ना (to read).
+
+From the lessons: आई (came), बुझाई (quenched), हिनहिनाया (neighed), पढ़ना आरंभ किया (began to read).
+
+### सकर्मक और अकर्मक क्रिया · Transitive and intransitive verbs
 
 **सकर्मक क्रिया** — जिसके साथ **कर्म** हो और क्रिया का फल कर्म पर पड़े। **अकर्मक क्रिया** — जिसके साथ कर्म न हो, फल कर्ता पर ही पड़े।
 
@@ -160,7 +201,14 @@
 
 याद रखें: _हँसना, रोना, सोना, जागना, दौड़ना, आना, जाना, उठना, बैठना_ प्रायः अकर्मक होती हैं; _खाना, पीना, लिखना, पढ़ना, देखना, देना_ प्रायः सकर्मक।
 
-### क्रिया-विशेषण और उसके चार भेद
+    In English
+**Transitive (सकर्मक):** the verb has an **object** — "बाबा ने घोड़ा दिखाया" (Baba showed the horse). **Intransitive (अकर्मक):** no object — "घोड़ा हिनहिनाया" (the horse neighed).
+
+**The test:** ask **"क्या?" (what?)** or **"किसको?" (whom?)** before the verb. If you get an answer, it is transitive; if not, intransitive. Verbs like sleep, cry, laugh, run, come, go are usually intransitive; eat, drink, write, read, see, give are usually transitive.
+
+**Two objects (द्विकर्मक):** "माताजी ने बहनों को शिक्षा दी" — Mother gave education to the sisters.
+
+### क्रिया-विशेषण और उसके चार भेद · Adverbs and their four kinds
 
 **जो शब्द क्रिया की विशेषता बताएँ, उन्हें क्रिया-विशेषण कहते हैं।**
 
@@ -177,8 +225,17 @@
 > **विशेषण या क्रिया-विशेषण?:** शब्द किसकी विशेषता बता रहा है, यह देखें:
 _बहुत पानी_ — पानी (संज्ञा) → **परिमाणवाचक विशेषण** · _बहुत सोचा_ — सोचा (क्रिया) → **परिमाणवाचक क्रिया-विशेषण**
 _तेज़ घोड़ा_ → विशेषण · घोड़ा _तेज़ दौड़ा_ → क्रिया-विशेषण
+    In English
+An **adverb (क्रिया-विशेषण)** describes a **verb**. Find its type by the question it answers:
 
-### पाठों का शब्द-भंडार — पर्यायवाची, विलोम, अनेकार्थी
+**When? (कब?) → time — कालवाचक:** सहसा (suddenly), तुरंत (immediately), आज (today).
+**Where? (कहाँ?) → place — स्थानवाचक:** अंदर (inside), बाहर (outside), दूर (far).
+**How? (कैसे?) → manner — रीतिवाचक:** धीरे-धीरे (slowly), ज़ोर से (loudly), सावधानी से (carefully).
+**How much? (कितना?) → quantity — परिमाणवाचक:** बहुत (a lot), थोड़ा (a little), खूब (plenty).
+
+**Adjective or adverb?** Look at what the word describes: बहुत पानी (a lot of water — describes a noun → adjective); बहुत सोचा (thought a lot — describes a verb → adverb).
+
+### पाठों का शब्द-भंडार — पर्यायवाची, विलोम, अनेकार्थी · Word power from the lessons — synonyms, antonyms, words with many meanings
 
 | शब्द | पर्यायवाची |
 
@@ -220,7 +277,16 @@ _तेज़ घोड़ा_ → विशेषण · घोड़ा _ते
 
 **अनेक शब्दों के लिए एक शब्द:** जल को धारण करने वाला — **जलधर** · अपनी लिखी अपनी जीवन-कथा — **आत्मकथा** · जिसकी कोई टाँग या अंग खराब हो — **अपाहिज** · जो शिक्षित न हो — **अशिक्षित**।
 
-### मुहावरे — हार की जीत से
+    In English
+**Synonyms (पर्यायवाची):** different words with the same meaning — धरती, धरा, पृथ्वी all mean earth; अंबर, आकाश, नभ mean sky; जलधर, मेघ mean cloud.
+
+**Antonyms (विलोम):** opposites — जीत × हार (win × loss), विश्वास × अविश्वास (trust × distrust), स्वाधीन × पराधीन (free × dependent). Many antonyms are made by adding **अ-**, **अन-**, **निर-** (like English "un-", "dis-").
+
+**Words with many meanings (अनेकार्थी):** in Rahim's doha, **पानी** means water, honour and shine all at once. **फूट** can mean a sprout bursting out, a quarrel, or something breaking.
+
+**One word for many (जलधर):** जल (water) + धर (holder) = the one that holds water — a cloud or the sea.
+
+### मुहावरे — हार की जीत से · Idioms from "Haar ki Jeet"
 
 | मुहावरा | अर्थ | वाक्य-प्रयोग |
 
@@ -240,7 +306,12 @@ _तेज़ घोड़ा_ → विशेषण · घोड़ा _ते
 
 | सिर मारना | बहुत सोचना / माथापच्ची करना | खड्गसिंह ने बहुत सिर मारा, पर कुछ समझ न सका। |
 
-### अपठित गद्यांश / काव्यांश कैसे हल करें
+    In English
+An **idiom (मुहावरा)** means something different from its words — never translate it word for word.
+
+लट्टू होना — to be charmed by · हृदय पर साँप लोटना — to feel jealous (not "a snake rolling on the heart"!) · फूले न समाना — to be overjoyed · मुँह मोड़ लेना — to turn away from, break ties · मुख खिल जाना — face lighting up with joy · न्योछावर कर देना — to sacrifice/devote · हवा से बातें करना — to run very fast · सिर मारना — to think very hard.
+
+### अपठित गद्यांश / काव्यांश कैसे हल करें · How to solve an unseen passage or poem
 
 - पहले पूरा गद्यांश **एक बार ध्यान से** पढ़ें — मुख्य विचार समझें।
 
@@ -254,7 +325,10 @@ _तेज़ घोड़ा_ → विशेषण · घोड़ा _ते
 
 - उत्तर **अपने शब्दों में, पूरे वाक्य** में लिखें।
 
-### पत्र-लेखन — औपचारिक और अनौपचारिक
+    In English
+1. Read the whole passage once carefully for the main idea. 2. Read the questions and underline the matching lines in the passage. 3. For MCQs, check every option against the passage — choose what the passage says, not your own opinion. 4. A title should be short and capture the main idea. 5. Grammar questions use words from the passage — check how the word is used in its sentence. 6. Write answers in full sentences, in your own words.
+
+### पत्र-लेखन — औपचारिक और अनौपचारिक · Letter writing — formal and informal
 
 |  | औपचारिक पत्र | अनौपचारिक पत्र |
 
@@ -273,8 +347,12 @@ _तेज़ घोड़ा_ → विशेषण · घोड़ा _ते
 > **औपचारिक पत्र का प्रारूप:** सेवा में, → प्रधानाचार्य महोदय, → विद्यालय का नाम, शहर → दिनांक → **विषय:** … → मान्यवर, → सविनय निवेदन है कि… (मुख्य बात) → अतः… (प्रार्थना) → धन्यवाद। → आपका आज्ञाकारी शिष्य, नाम, कक्षा, अनुक्रमांक।
 
 > **अनौपचारिक पत्र का प्रारूप:** अपना पता → दिनांक → पूज्य/प्रिय … → सादर प्रणाम / सस्नेह नमस्ते → कुशलता → मुख्य बात → बड़ों को प्रणाम, छोटों को प्यार → आपका/तुम्हारा … नाम।
+    In English
+**Formal letter (औपचारिक):** to a principal, officer or editor. Polite and to the point. Must have a **subject line (विषय)**. Opens with "मान्यवर" (Respected Sir/Madam) and "सविनय निवेदन है कि…" (I humbly request that…); closes with "धन्यवाद" and "आपका आज्ञाकारी शिष्य" (Your obedient student).
 
-### अनुच्छेद-लेखन
+**Informal letter (अनौपचारिक):** to family or friends. Warm and personal. **No subject line.** Opens with "पूज्य माताजी, सादर प्रणाम" (Respected mother, my greetings) or "प्रिय मित्र" (Dear friend); closes with "आपका प्यारा बेटा" (Your loving son) etc.
+
+### अनुच्छेद-लेखन · Paragraph writing
 
 - विषय पर **एक ही अनुच्छेद** (80–120 शब्द) लिखें; दिए गए **संकेत-बिंदुओं** को क्रम से शामिल करें।
 
@@ -283,17 +361,25 @@ _तेज़ घोड़ा_ → विशेषण · घोड़ा _ते
 - छोटे, सरल वाक्य; विषय से बाहर न जाएँ; अच्छे विशेषणों का प्रयोग करें।
 
 > **नमूना — "वर्षा ऋतु":** जेठ की तपती गर्मी के बाद जब वर्षा की पहली बूँद धरती पर गिरती है, तो सूखी मिट्टी से सोंधी सुगंध उठती है। आसमान में काले-काले बादल गरजते हैं और बिजली चमकती है। पेड़-पौधे नहाकर हरे-भरे हो जाते हैं, हरी दूब मुसकाने लगती है और मोर नाचने लगते हैं। किसान खुशी से खेतों में बीज बोते हैं। बच्चे कागज़ की नावें चलाते हैं। वर्षा धरती की प्यास बुझाकर नया जीवन देती है, इसलिए हमें वर्षा के जल को बचाना चाहिए।
+    In English
+Write **one paragraph** of 80–120 words. Use the given hint points in order. Structure it as **beginning** (introduce the topic), **middle** (main points, examples) and **end** (conclusion or message). Keep sentences short and simple, stay on topic, and use good adjectives. The sample "वर्षा ऋतु" (the rainy season) describes the smell of wet earth, dark clouds, green plants, happy farmers and children with paper boats, and ends with the message to save rainwater.
 
 ---
 
 ## Important Rules / Formulas
 
 - विशेषण → संज्ञा/सर्वनाम की विशेषता; क्रिया-विशेषण → क्रिया की विशेषता।
+Adjective → describes a noun/pronoun; adverb → describes a verb.
 - विशेषण के भेद: गुणवाचक, संख्यावाचक, परिमाणवाचक, सार्वनामिक।
+Four kinds of adjectives: quality, number, quantity, pointing (pronominal).
 - सकर्मक की पहचान: क्रिया से पहले "क्या/किसको" — उत्तर मिले तो सकर्मक।
+Transitive test: ask "what/whom?" before the verb — an answer means transitive.
 - क्रिया-विशेषण: कब? (काल), कहाँ? (स्थान), कैसे? (रीति), कितना? (परिमाण)।
+Adverbs: when? (time), where? (place), how? (manner), how much? (quantity).
 - गिनती → संख्यावाचक; नाप-तौल → परिमाणवाचक।
+Counting → number adjective; measuring → quantity adjective.
 - औपचारिक पत्र में "विषय" लिखना आवश्यक; अनौपचारिक में नहीं।
+Formal letters need a subject line; informal letters do not.
 
 ---
 
@@ -367,12 +453,19 @@ _व्याकरण का अलग अभ्यास-खंड नही�
 ## Quick Summary
 
 - विशेषण संज्ञा/सर्वनाम की विशेषता बताता है; जिसकी विशेषता बताई जाए वह विशेष्य है।
+An adjective describes a noun/pronoun; the noun described is the विशेष्य.
 - विशेषण के चार भेद — गुणवाचक, संख्यावाचक, परिमाणवाचक, सार्वनामिक।
+Four kinds of adjectives — quality, number, quantity, pointing.
 - क्रिया काम का करना या होना बताती है; उसका मूल रूप धातु है।
+A verb shows doing or happening; its base form is the root (धातु).
 - कर्म हो तो सकर्मक, न हो तो अकर्मक — "क्या?" पूछकर पहचानें।
+With an object → transitive; without → intransitive. Ask "what?" to check.
 - क्रिया-विशेषण के चार भेद — कालवाचक, स्थानवाचक, रीतिवाचक, परिमाणवाचक।
+Four kinds of adverbs — time, place, manner, quantity.
 - पाठों के पर्यायवाची, विलोम, अनेकार्थी शब्द और मुहावरे याद रखें।
+Learn the synonyms, antonyms, multi-meaning words and idioms from the lessons.
 - औपचारिक पत्र में विषय और शिष्ट भाषा; अनौपचारिक में आत्मीयता।
+Formal letter: subject line and polite language. Informal: warm and personal.
 
 ---
 
