@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — विशेषण, क्रिया, क्रिया-विशेषण और लेखन</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">✍️ <span>हिंदी</span> व्याकरण अभ्यास</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 34 cards in 5 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip — that is what makes this work. Shuffle for a harder run.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>तुरंत-उत्तर अभ्यास</h2>
+<p class="muted small">Cover the right column. These are the facts most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:38%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>विशेषण के भेद</td><td>4</td></tr>
+      <tr><td>क्रिया-विशेषण के भेद</td><td>4</td></tr>
+      <tr><td>कब? → </td><td>कालवाचक</td></tr>
+      <tr><td>कहाँ? →</td><td>स्थानवाचक</td></tr>
+      <tr><td>कैसे? →</td><td>रीतिवाचक</td></tr>
+      <tr><td>कितना? →</td><td>परिमाणवाचक</td></tr>
+      <tr><td>जलधर</td><td>बादल / समुद्र</td></tr>
+      <tr><td>पानी (3 अर्थ)</td><td>जल, सम्मान, चमक</td></tr>
+      <tr><td>जीत ×</td><td>हार</td></tr>
+      <tr><td>दया ×</td><td>निर्दयता</td></tr>
+      <tr><td>घोड़ा (पर्याय)</td><td>अश्व, तुरंग</td></tr>
+      <tr><td>आँसू (पर्याय)</td><td>अश्रु</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>मल्हार — हिंदी पाठ्यपुस्तक, कक्षा 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'विशेषण', q:'विशेषण किसे कहते हैं?', a:'संज्ञा या सर्वनाम की <b>विशेषता</b> बताने वाले शब्द को — <b>सुंदर</b> घोड़ा।'},
+ {n:2, deck:'विशेषण', q:'विशेष्य किसे कहते हैं?', a:'जिसकी विशेषता बताई जाए — "हरी <b>दूब</b>" में दूब।'},
+ {n:3, deck:'विशेषण', q:'विशेषण के चार भेद?', a:'<b>गुणवाचक, संख्यावाचक, परिमाणवाचक, सार्वनामिक</b>।'},
+ {n:4, deck:'विशेषण', q:'"सैकड़ों घोड़े" — कौन-सा विशेषण?', a:'<b>अनिश्चित संख्यावाचक</b>।'},
+ {n:5, deck:'विशेषण', q:'"तीन मील" — कौन-सा विशेषण?', a:'<b>निश्चित संख्यावाचक</b>।'},
+ {n:6, deck:'विशेषण', q:'"थोड़ा पानी" — कौन-सा विशेषण?', a:'<b>अनिश्चित परिमाणवाचक</b>।'},
+ {n:7, deck:'विशेषण', q:'"वह अपाहिज" में "वह" क्या है?', a:'<b>सार्वनामिक विशेषण</b> — संज्ञा से पहले आकर संकेत कर रहा है।'},
+ {n:8, deck:'विशेषण', q:'प्रविशेषण क्या है?', a:'विशेषण की विशेषता बताने वाला शब्द — "<b>बहुत</b> सुंदर"।'},
+ {n:9, deck:'विशेषण', q:'दया, धर्म, बल से विशेषण?', a:'<b>दयालु, धार्मिक, बलवान</b>।'},
+ {n:10, deck:'विशेषण', q:'सुंदर — उत्तरावस्था और उत्तमावस्था?', a:'<b>सुंदरतर</b>, <b>सुंदरतम</b>।'},
+ {n:11, deck:'क्रिया', q:'क्रिया किसे कहते हैं?', a:'जिससे किसी काम के <b>करने या होने</b> का बोध हो।'},
+ {n:12, deck:'क्रिया', q:'धातु क्या है?', a:'क्रिया का <b>मूल रूप</b> — पढ़, लिख, खा।'},
+ {n:13, deck:'क्रिया', q:'सकर्मक क्रिया की पहचान?', a:'क्रिया से पहले <b>"क्या?"</b> पूछें — उत्तर (कर्म) मिले तो सकर्मक।'},
+ {n:14, deck:'क्रिया', q:'"बाबा ने घोड़ा दिखाया" — क्रिया का भेद?', a:'<b>सकर्मक</b> (क्या दिखाया? — घोड़ा)।'},
+ {n:15, deck:'क्रिया', q:'"घोड़ा हिनहिनाया" — क्रिया का भेद?', a:'<b>अकर्मक</b> — कोई कर्म नहीं।'},
+ {n:16, deck:'क्रिया', q:'द्विकर्मक क्रिया का उदाहरण?', a:'माताजी ने <b>बहनों को</b> <b>शिक्षा</b> दी।'},
+ {n:17, deck:'क्रिया-विशेषण', q:'क्रिया-विशेषण किसे कहते हैं?', a:'जो शब्द <b>क्रिया की विशेषता</b> बताए।'},
+ {n:18, deck:'क्रिया-विशेषण', q:'"सहसा एक ओर से आवाज़ आई" — सहसा?', a:'<b>कालवाचक</b> क्रिया-विशेषण।'},
+ {n:19, deck:'क्रिया-विशेषण', q:'"बाबा धीरे-धीरे चलने लगे" — धीरे-धीरे?', a:'<b>रीतिवाचक</b> क्रिया-विशेषण।'},
+ {n:20, deck:'क्रिया-विशेषण', q:'"दौड़ते हुए अंदर घुसे" — अंदर?', a:'<b>स्थानवाचक</b> क्रिया-विशेषण।'},
+ {n:21, deck:'क्रिया-विशेषण', q:'"खड्गसिंह ने बहुत सोचा" — बहुत?', a:'<b>परिमाणवाचक</b> क्रिया-विशेषण।'},
+ {n:22, deck:'क्रिया-विशेषण', q:'"बहुत पानी" और "बहुत रोया" में अंतर?', a:'पहले में <b>विशेषण</b> (पानी — संज्ञा), दूसरे में <b>क्रिया-विशेषण</b> (रोया — क्रिया)।'},
+ {n:23, deck:'शब्द-भंडार', q:'"पानी" के तीन अर्थ (रहीम)?', a:'<b>जल, सम्मान, चमक</b>।'},
+ {n:24, deck:'शब्द-भंडार', q:'"जलधर" का अर्थ?', a:'जल को धारण करने वाला — <b>बादल</b> (या समुद्र)।'},
+ {n:25, deck:'शब्द-भंडार', q:'धरती के तीन पर्यायवाची?', a:'<b>धरा, पृथ्वी, वसुंधरा</b>।'},
+ {n:26, deck:'शब्द-भंडार', q:'विश्वास, स्वाधीन, हित — विलोम?', a:'<b>अविश्वास, पराधीन, अनहित</b>।'},
+ {n:27, deck:'शब्द-भंडार', q:'"हृदय पर साँप लोटना" का अर्थ?', a:'<b>ईर्ष्या होना</b>।'},
+ {n:28, deck:'शब्द-भंडार', q:'"फूले न समाना" का अर्थ?', a:'<b>बहुत प्रसन्न होना</b>।'},
+ {n:29, deck:'शब्द-भंडार', q:'"लट्टू होना" का अर्थ?', a:'<b>मोहित होना</b>।'},
+ {n:30, deck:'लेखन', q:'औपचारिक पत्र किसे लिखते हैं?', a:'<b>प्रधानाचार्य, अधिकारी, संपादक</b> आदि को।'},
+ {n:31, deck:'लेखन', q:'किस पत्र में "विषय" लिखा जाता है?', a:'<b>औपचारिक</b> पत्र में।'},
+ {n:32, deck:'लेखन', q:'प्रधानाचार्य को पत्र का समापन?', a:'"<b>आपका आज्ञाकारी शिष्य</b>", नाम, कक्षा।'},
+ {n:33, deck:'लेखन', q:'अनुच्छेद के तीन भाग?', a:'<b>आरंभ</b> (परिचय), <b>मध्य</b> (मुख्य बातें), <b>अंत</b> (निष्कर्ष)।'},
+ {n:34, deck:'लेखन', q:'अपठित गद्यांश — पहला कदम?', a:'पूरा गद्यांश <b>एक बार ध्यान से</b> पढ़कर मुख्य विचार समझना।'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

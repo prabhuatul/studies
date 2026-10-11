@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — विशेषण, क्रिया, क्रिया-विशेषण और लेखन</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">✍️ <span>हिंदी</span> व्याकरण अभ्यास</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · the whole chapter on one page</div>
+  <h1>How it all fits together</h1>
+  <p>एक विचार पूरे व्याकरण को जोड़ता है: <strong>हर शब्द किसी दूसरे शब्द के बारे में कुछ बताता है</strong> — विशेषण संज्ञा के बारे में, क्रिया-विशेषण क्रिया के बारे में, और कर्म बताता है कि क्रिया किस पर हुई।</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:.6rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+<p class="legend">Click any branch to open or close it. Dotted boxes are the end of a branch.</p>
+
+<div class="card" style="margin-top:1rem">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · विशेषण</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>संज्ञा/सर्वनाम की विशेषता · विशेष्य</button></li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>चार भेद</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>गुणवाचक — सुंदर, दयालु, हरी</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>संख्यावाचक — तीन मील / कई मास</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>परिमाणवाचक — दो लीटर / थोड़ा पानी</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>सार्वनामिक — यह घोड़ा, वह अपाहिज</button></li>
+        </ul>
+      </li>
+      <li><button class="node leaf"><span class="tw">·</span>प्रविशेषण — बहुत सुंदर</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>तुलना — सुंदर, सुंदरतर, सुंदरतम</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>विशेषण बनाना — दया → दयालु, धर्म → धार्मिक</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · क्रिया</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>काम का करना/होना · धातु = मूल रूप</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>सकर्मक — कर्म हो (घोड़ा दिखाया)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>अकर्मक — कर्म न हो (घोड़ा हिनहिनाया)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>पहचान — "क्या?" पूछें</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>द्विकर्मक — बहनों को शिक्षा दी</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · क्रिया-विशेषण</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>कब? — कालवाचक (सहसा, तुरंत)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>कहाँ? — स्थानवाचक (अंदर, बाहर)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>कैसे? — रीतिवाचक (धीरे-धीरे, ज़ोर से)</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>कितना? — परिमाणवाचक (बहुत, खूब)</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · शब्द-भंडार (पाठ 3–6)</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>पर्यायवाची — धरा, अंबर, जलधर, नयन, अश्रु, अश्व</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>विलोम — जीत × हार, विश्वास × अविश्वास</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>अनेकार्थी — पानी, फूट, कल, पत्र, कर, फल</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>मुहावरे — लट्टू होना, फूले न समाना, हृदय पर साँप लोटना</button></li>
+    </ul>
+  </li>
+
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · लेखन</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>अपठित — पढ़ो, प्रश्न देखो, पंक्ति खोजो, अपने शब्दों में लिखो</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>पत्र — औपचारिक (विषय सहित) / अनौपचारिक</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>अनुच्छेद — संकेत-बिंदु, आरंभ–मध्य–अंत</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<p class="muted small">Links worth saying aloud — this is what turns facts into understanding.</p>
+
+<div class="grid two">
+  <div class="card">
+    <h4 style="margin-top:0">1 · विशेषण और क्रिया-विशेषण जुड़वाँ हैं</h4>
+    <p style="margin-bottom:0">दोनों विशेषता बताते हैं — फ़र्क बस इतना है कि किसकी। संज्ञा के साथ विशेषण, क्रिया के साथ क्रिया-विशेषण।</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">2 · कर्म से क्रिया का भेद तय होता है</h4>
+    <p style="margin-bottom:0">क्रिया के साथ "क्या?" का उत्तर (कर्म) हो तो सकर्मक। यही प्रश्न हर वाक्य पर लगाएँ।</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">3 · पाठ ही व्याकरण की किताब है</h4>
+    <p style="margin-bottom:0">"हरी दूब", "धीरे-धीरे चलने लगे", "घोड़ा हिनहिनाया" — परीक्षा के अधिकतर उदाहरण पाठों से आते हैं।</p>
+  </div>
+  <div class="card">
+    <h4 style="margin-top:0">4 · अच्छे विशेषण, अच्छा लेखन</h4>
+    <p style="margin-bottom:0">अनुच्छेद और पत्र में सटीक विशेषण और क्रिया-विशेषण वर्णन को जीवंत बनाते हैं।</p>
+  </div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <p class="small muted">Close the tree above, then tick each one you can say out loud without looking.</p>
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> विशेषण के चार भेद, हर एक का पाठ से उदाहरण</label></li>
+    <li><label><input type="checkbox" data-check="m2"> "कुछ" और "यह/वह" कब कौन-सा भेद होते हैं</label></li>
+    <li><label><input type="checkbox" data-check="m3"> सकर्मक-अकर्मक पहचानने का प्रश्न और तीन-तीन उदाहरण</label></li>
+    <li><label><input type="checkbox" data-check="m4"> क्रिया-विशेषण के चार भेद और उनके प्रश्न</label></li>
+    <li><label><input type="checkbox" data-check="m5"> हार की जीत के छह मुहावरे अर्थ सहित</label></li>
+    <li><label><input type="checkbox" data-check="m6"> औपचारिक पत्र का पूरा प्रारूप</label></li>
+  </ul>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Take the Quest →</a>
+  <a class="btn" href="summary.html">Revision sheet</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>मल्हार — हिंदी पाठ्यपुस्तक, कक्षा 6</em></span>
+  <span>Generated 10 Oct 2026</span>
+</footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

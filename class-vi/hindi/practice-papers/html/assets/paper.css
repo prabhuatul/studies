@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Practice-paper layout — extends app.css (do not copy into other packs)
+   ========================================================================== */
+
+.paperhead {
+  border: 2px solid var(--text); border-radius: var(--radius);
+  padding: 1rem 1.2rem; margin-bottom: 1.2rem; background: var(--surface);
+}
+.paperhead .school { text-align: center; font-weight: 800; letter-spacing: .04em; font-size: 1.05rem; }
+.paperhead .sub { text-align: center; color: var(--text-soft); font-size: .9rem; margin-top: .15rem; }
+.paperhead .meta {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem;
+  margin-top: .8rem; padding-top: .6rem; border-top: 1px solid var(--border);
+  font-size: .9rem; font-weight: 600;
+}
+
+.instr { font-size: .9rem; }
+.instr ol { margin: .3rem 0; }
+
+.sec-title {
+  display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap;
+}
+.sec-title .pill { font-size: .78rem; }
+.sec-note { color: var(--text-soft); font-size: .88rem; margin: -.3rem 0 .8rem; }
+
+.q {
+  display: grid; grid-template-columns: 2.4rem 1fr auto; gap: .2rem .6rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: .9rem 1rem; margin-bottom: .7rem;
+  box-shadow: var(--shadow);
+}
+.q .qn { font-weight: 800; color: var(--accent); font-size: 1rem; }
+.q .qb { min-width: 0; }
+.q .qb > :first-child { margin-top: 0; }
+.q .qm { font-size: .78rem; font-weight: 700; color: var(--text-soft); white-space: nowrap; text-align: right; }
+.q .tags { grid-column: 2 / 4; display: flex; gap: .35rem; flex-wrap: wrap; margin-top: .3rem; }
+.q .tags .pill { font-size: .68rem; }
+.q .ansrow { grid-column: 2 / 4; margin-top: .4rem; }
+.q .answerbox { grid-column: 2 / 4; }
+.q .answerbox .note { margin: .5rem 0 0; }
+.q .answerbox .note > .lbl { color: var(--green); }
+.q .answerbox .note { background: var(--green-soft); border-color: var(--green); }
+.q .btn { padding: .35rem .8rem; font-size: .82rem; }
+
+.mcq-opts { list-style: none; padding: 0; margin: .5rem 0 0;
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: .25rem .9rem; }
+@media (max-width: 640px) { .mcq-opts { grid-template-columns: repeat(2, 1fr); } }
+.mcq-opts li { margin: 0; }
+.mcq-opts.long { grid-template-columns: 1fr; }
+.ar { margin: .2rem 0; }
+.ar b { color: var(--accent); }
+
+.subq { list-style: lower-roman; padding-left: 1.6rem; }
+.subq.alpha { list-style: lower-alpha; }
+
+.mk { font-size: .74rem; font-weight: 700; color: var(--teal); white-space: nowrap; }
+
+/* figures */
+.fig { margin: .6rem 0; overflow-x: auto; }
+.fig svg { display: block; max-width: 100%; height: auto; color: var(--text); }
+.fig svg text { fill: currentColor; font-family: var(--sans); }
+.fig .cap { font-size: .78rem; color: var(--text-soft); margin-top: .2rem; }
+.svg-accent { color: var(--accent); }
+
+/* tally / data tables */
+table.compact th, table.compact td { padding: .35rem .55rem; }
+.tally { font-family: var(--mono); letter-spacing: .05em; white-space: nowrap; }
+.tally s { text-decoration-thickness: 2px; }
+
+/* pictograph */
+.picto td:nth-child(2) { font-size: 1.25rem; letter-spacing: .1em; line-height: 1.3; }
+.picto .half { display: inline-block; clip-path: inset(0 50% 0 0); }
+.picto-key { font-size: .85rem; font-weight: 650; margin-top: .3rem; }
+
+/* supercell grid */
+table.grid-n { width: auto; border-collapse: collapse; }
+table.grid-n td { border: 1px solid var(--text-soft); width: 2.6rem; height: 2.3rem;
+                  text-align: center; font-weight: 600; padding: 0; }
+table.grid-n tbody tr:hover { background: none; }
+table.grid-n td.sc { background: var(--accent-soft); color: var(--accent); outline: 2px solid var(--accent); }
+
+/* blueprint */
+.blueprint td, .blueprint th { text-align: center; }
+.blueprint td:first-child, .blueprint th:first-child { text-align: left; }
+
+/* answer-key mode: show answers inline, no buttons */
+@media print {
+  .q { break-inside: avoid; box-shadow: none; border-color: #bbb; }
+  .q .ansrow { display: none; }
+  .paperhead { border-color: #000; }
+  .noprint { display: none !important; }
+  body { font-size: 13px; }
+  .wrap { padding-top: 0; }
+}
+
+.rawdata { font-family: var(--mono); font-size: .9rem; line-height: 1.8; word-spacing: .15em; }
