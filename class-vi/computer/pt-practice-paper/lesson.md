@@ -30,13 +30,18 @@ A 40-mark practice paper covering four chapters: Computer Components, File Manag
 ---
 
 ## Interactive version
-Open **`html/paper-1.html`** — works offline.
+Open **`html/index.html`** — works offline.
 
 | Page | What it does |
 |---|---|
+| `html/index.html` | Hub: the four chapter tests and the paper, in suggested order |
+| `html/mcq-components.html` | 20-MCQ test · Computer Components |
+| `html/mcq-files.html` | 20-MCQ test · File Management |
+| `html/mcq-tables.html` | 20-MCQ test · Tables in MS Word |
+| `html/mcq-mailmerge.html` | 20-MCQ test · Mail Merge |
 | `html/paper-1.html` | Full paper; answers + marking scheme behind the same answer code as the Maths PT-2 papers; print button |
 
-Questions live as data in `html/assets/paper1-data.js`; `paper.js` (copied from the Maths papers, with per-paper chapter names) renders them.
+MCQ questions live in `html/assets/mcq-{chapter}-data.js` (rendered by the shared `quiz.js` engine, 20 minutes each, none repeating the paper). Paper questions live in `html/assets/paper1-data.js`; `paper.js` (copied from the Maths papers, with per-paper chapter names) renders them.
 
 ---
 
@@ -44,3 +49,4 @@ Questions live as data in `html/assets/paper1-data.js`; `paper.js` (copied from 
 | Date | Pages / Content Added |
 |---|---|
 | 2026-10-15 | Built Practice Paper 1 (40 marks, 21 questions) from syllabus knowledge — no textbook photos. |
+| 2026-10-15 | Added four 20-question MCQ tests (one per chapter, 80 questions, answer spread balanced) and a hub page. |
