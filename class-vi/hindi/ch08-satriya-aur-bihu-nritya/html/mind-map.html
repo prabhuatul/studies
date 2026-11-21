@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mind Map — सत्रिया और बिहू नृत्य</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* interactive tree */
+  .tree { list-style: none; padding-left: 0; margin: 0; }
+  .tree ul { list-style: none; margin: .35rem 0 .35rem 1.35rem; padding-left: .9rem;
+             border-left: 1.5px dashed var(--border); }
+  .tree li { margin: .3rem 0; }
+  .node {
+    display: inline-flex; align-items: center; gap: .5rem;
+    font-family: inherit; font-size: .92rem; text-align: left;
+    padding: .4rem .75rem; border-radius: 7px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .node:hover { background: var(--surface-2); border-color: var(--accent-line); }
+  .node.leaf { cursor: default; border-style: dotted; color: var(--text-soft);
+               background: transparent; }
+  .node .tw { color: var(--accent); font-size: .75rem; width: .8em; flex-shrink: 0; }
+  .node.leaf .tw { visibility: hidden; }
+  .node.lvl1 { font-weight: 700; font-size: 1rem; background: var(--accent-soft);
+               border-color: var(--accent-line); color: var(--accent); }
+  .node.lvl2 { font-weight: 600; }
+  li.collapsed > ul { display: none; }
+  .legend { font-size: .82rem; color: var(--text-faint); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">💃 <span>पाठ 8</span> सत्रिया और बिहू नृत्य</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="story.html">Story</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="mind-map.html" aria-current="page">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Mind map · click a box to open or close it</div>
+  <h1>पाठ एक नज़र में · The chapter on one map</h1>
+  <p>Start with the five big branches. Open one, and try to say what's inside before you look.</p>
+</div>
+
+<div class="btnrow" style="margin-bottom:1.2rem">
+  <button class="btn" id="expandAll">Expand all</button>
+  <button class="btn" id="collapseAll">Collapse all</button>
+</div>
+
+<div class="card">
+<ul class="tree" id="tree">
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>1 · यात्रा · The journey</button>
+    <ul>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>लंदन से शुरुआत</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>एंजेला, केंजिंग्टन · दोस्त जेम्स, कीरा</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>काल्पनिक खेल — ताजमहल, एफिल टॉवर, कोलोजियम</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>क्यों गए? · Why</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>माँ एलेसेंड्रा — डॉक्यूमेंट्री, ब्रिटिश अकादमी की मदद</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>समय 1 महीना · छुट्टी +1 हफ़्ता · पिता ब्रायन भी</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>रास्ता · Route</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>लंदन → नई दिल्ली → गुवाहाटी (अप्रैल)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>मलंग गाँव → उत्तरी असम, दक्षिणापथ सत्र → वापस लंदन</button></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>2 · बिहू · Bihu</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>त्योहार भी, नृत्य भी — एक ही नाम</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>कृषि आधारित · साल में 3 बार</button></li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>तीन बिहू</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>रोंगाली / बोहाग — अप्रैल (नया साल, बसंत)</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>भोगाली / माघ — जनवरी</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>कोंगाली / काटी — अक्टूबर</button></li>
+        </ul>
+      </li>
+      <li><button class="node leaf"><span class="tw">·</span>बरगद के नीचे मंच · वाद्ययंत्र · लाल-बादामी पोशाक</button></li>
+    </ul>
+  </li>
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>3 · सत्रिया · Sattriya</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>सत्र = वैष्णव मठ (500+) — जन्मभूमि</button></li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>बदलाव · Change over time</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>पहले: केवल युवा साधु</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>20वीं सदी का मध्य: साधु बाहर सिखाने लगे → मठ से निकाले गए</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>आज: महिलाएँ मंच पर — आम बात</button></li>
+        </ul>
+      </li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>जय-विजय की कथा</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>विष्णु के द्वारपाल → ऋषियों को रोका</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>श्राप: असुर बनो → विष्णु का वचन → फिर द्वारपाल</button></li>
+        </ul>
+      </li>
+      <li><button class="node leaf"><span class="tw">·</span>प्रिया और रीता ने मुद्राएँ सिखाईं</button></li>
+    </ul>
+  </li>
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>4 · लोग · People</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>रीना सेन — असम की लेखिका</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>अनु — 10 साल, असमिया शब्द सिखाए, राम बनी</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>अनु के खिलौने — गुड़िया, लकड़ी, नारियल की जटा</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>लेखिका जया मेहता — 'नृत्य कथा', ओडिसी, 1977</button></li>
+    </ul>
+  </li>
+  <li>
+    <button class="node lvl1"><span class="tw">▾</span>5 · असम · Assam</button>
+    <ul>
+      <li><button class="node leaf"><span class="tw">·</span>वन्य-जीवन · रेशम · चाय के बागान · नृत्य परंपरा</button></li>
+      <li><button class="node leaf"><span class="tw">·</span>पूर्वोत्तर के 8 राज्यों में एक</button></li>
+      <li>
+        <button class="node lvl2"><span class="tw">▾</span>मूँगा सिल्क</button>
+        <ul>
+          <li><button class="node leaf"><span class="tw">·</span>सुनहरा · सबसे महँगा · केवल असम/पूर्वोत्तर</button></li>
+          <li><button class="node leaf"><span class="tw">·</span>घर पर धुलाई · 50 वर्ष · सबसे मज़बूत · औषधीय</button></li>
+        </ul>
+      </li>
+      <li><button class="node leaf"><span class="tw">·</span>असमिया पहेलियाँ — मूली, नारियल, होंठ, चींटी</button></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2>How the ideas connect</h2>
+<div class="grid two">
+  <div class="note key"><span class="lbl">खेती → बिहू</span>Most people in Assam are farmers, so their biggest festival follows the farming year: sowing, planting, harvest. That is why there are <b>three</b> Bihus.</div>
+  <div class="note key"><span class="lbl">बसंत → नया साल → बोहाग बिहू</span>April brings spring and the Assamese New Year. That is why Angela, arriving in April, saw Bihu on her very first night.</div>
+  <div class="note key"><span class="lbl">मठ → सत्रिया → बदलाव</span>Sattriya was born in the Satras and danced by monks. When monks began teaching outsiders, women could learn it too. That is why women now perform it on stage.</div>
+  <div class="note key"><span class="lbl">नृत्य → भावनाएँ → दोस्ती</span>Dance expresses feelings in every culture. That is how a London girl and an Assamese girl became friends and shared the same dances.</div>
+</div>
+
+<h2>Self-test — rebuild the map from memory</h2>
+<div class="card">
+  <ul style="list-style:none;padding-left:0">
+    <li><label><input type="checkbox" data-check="m1"> The journey in order: London → Delhi → Guwahati → Malang → Satra → London</label></li>
+    <li><label><input type="checkbox" data-check="m2"> तीन बिहू, महीनों के साथ</label></li>
+    <li><label><input type="checkbox" data-check="m3"> सत्रिया में बदलाव — पहले, 20वीं सदी, आज</label></li>
+    <li><label><input type="checkbox" data-check="m4"> जय-विजय की कथा चार कदमों में</label></li>
+    <li><label><input type="checkbox" data-check="m5"> Every person's name and role</label></li>
+    <li><label><input type="checkbox" data-check="m6"> मूँगा सिल्क की छह बातें</label></li>
+  </ul>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>मल्हार — हिंदी पाठ्यपुस्तक, कक्षा 6</em></span>
+  <span>Generated 21 Nov 2026</span>
+</footer>
+</main>
+<script src="assets/app.js"></script>
+<script>
+(function () {
+  var tree = document.getElementById('tree');
+  function setTw(li) {
+    var btn = li.querySelector(':scope > .node');
+    var tw = btn && btn.querySelector('.tw');
+    if (tw && li.querySelector(':scope > ul')) {
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    }
+  }
+  tree.querySelectorAll('li').forEach(function (li) {
+    var btn = li.querySelector(':scope > .node');
+    if (!btn || !li.querySelector(':scope > ul')) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.toggle('collapsed');
+      setTw(li);
+    });
+  });
+  function all(collapse) {
+    tree.querySelectorAll('li').forEach(function (li) {
+      if (!li.querySelector(':scope > ul')) return;
+      li.classList.toggle('collapsed', collapse);
+      setTw(li);
+    });
+  }
+  document.getElementById('expandAll').addEventListener('click', function () { all(false); });
+  document.getElementById('collapseAll').addEventListener('click', function () { all(true); });
+  // start with the second level closed so the shape is visible at a glance
+  tree.querySelectorAll(':scope > li > ul li').forEach(function (li) {
+    if (li.querySelector(':scope > ul')) { li.classList.add('collapsed'); setTw(li); }
+  });
+})();
+</script>
+</body>
+</html>

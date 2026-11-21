@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards — सत्रिया और बिहू नृत्य</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">💃 <span>पाठ 8</span> सत्रिया और बिहू नृत्य</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="story.html">Story</a>
+    <a href="lesson.html">Lesson</a>
+    <a href="summary.html">Revision</a>
+    <a href="flashcards.html" aria-current="page">Flashcards</a>
+    <a href="mind-map.html">Mind Map</a>
+    <a href="question-bank.html">Question Bank</a>
+    <a href="quiz.html">MCQ Test</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main class="wrap">
+
+<div class="pagehead">
+  <div class="eyebrow">Flashcards · 38 cards in 5 decks</div>
+  <h1>Active recall drill</h1>
+  <p><strong>Click a card to flip it.</strong> Say the answer out loud <em>before</em> you flip. The <b>शब्द-अर्थ</b> deck tests the hard words — Hindi on the front, English on the back.</p>
+</div>
+
+<div id="deckChips" class="chipbar"></div>
+
+<div class="btnrow" style="margin-bottom:1.4rem">
+  <button class="btn" id="shuffleBtn">🔀 Shuffle</button>
+  <button class="btn" id="resetBtn">↺ Original order</button>
+  <button class="btn" id="flipAllBtn">Flip all</button>
+  <span class="small muted" id="fcCount" style="margin-left:auto"></span>
+</div>
+
+<div id="deck" class="fc-deck"></div>
+
+<h2>तुरंत-उत्तर अभ्यास · Rapid fire</h2>
+<p class="muted small">Cover the right column and answer aloud. These are the facts most often asked.</p>
+<div class="card">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Question</th><th style="width:40%">Answer</th></tr></thead>
+    <tbody>
+      <tr><td>बिहू साल में कितनी बार?</td><td>3 बार</td></tr>
+      <tr><td>रोंगाली / बोहाग बिहू</td><td>अप्रैल (बैसाख)</td></tr>
+      <tr><td>भोगाली / माघ बिहू</td><td>जनवरी (माघ)</td></tr>
+      <tr><td>कोंगाली / काटी बिहू</td><td>अक्टूबर (कार्तिक)</td></tr>
+      <tr><td>असम में सत्रों की संख्या</td><td>500 से अधिक</td></tr>
+      <tr><td>साधु बाहर सिखाने लगे</td><td>20वीं शताब्दी का मध्य</td></tr>
+      <tr><td>बीसवीं शताब्दी</td><td>1901 – 2000</td></tr>
+      <tr><td>काम पूरा करने का समय</td><td>1 महीना</td></tr>
+      <tr><td>छुट्टियाँ बढ़ीं</td><td>1 हफ़्ता</td></tr>
+      <tr><td>एंजेला और अनु की उम्र</td><td>10 साल</td></tr>
+      <tr><td>मूँगा साड़ी चलती है</td><td>औसतन 50 वर्ष</td></tr>
+      <tr><td>पूर्वोत्तर के राज्य</td><td>8</td></tr>
+      <tr><td>जया मेहता का जन्म</td><td>1977</td></tr>
+      <tr><td>मूँगा सिल्क लेख</td><td>बिमल श्रीवास्तव, स्रोत, अप्रैल 2008</td></tr>
+      <tr><td>लंदन → ? → गुवाहाटी</td><td>नई दिल्ली</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="btnrow" style="margin-top:2rem">
+  <a class="btn primary" href="quiz.html">Now test yourself →</a>
+  <a class="btn" href="story.html">Re-read the story</a>
+</div>
+
+<footer class="foot">
+  <span>Class VI · CBSE / NCERT · <em>मल्हार — हिंदी पाठ्यपुस्तक, कक्षा 6</em></span>
+  <span>Generated 21 Nov 2026</span>
+</footer>
+</main>
+
+<script>
+window.FLASHCARDS = [
+ {n:1, deck:'कहानी', q:'एंजेला कहाँ रहती थी?', a:'लंदन के <b>केंजिंग्टन</b> में।<br><i>Kensington, London.</i>'},
+ {n:2, deck:'कहानी', q:'एंजेला के माता-पिता के नाम?', a:'माँ <b>एलेसेंड्रा</b> (डॉक्यूमेंट्री फ़िल्म निर्माता), पिता <b>ब्रायन</b>।'},
+ {n:3, deck:'कहानी', q:'एंजेला असम क्यों आई?', a:'माँ को <b>ब्रिटिश अकादमी</b> से असम की नृत्य परंपरा पर <b>डॉक्यूमेंट्री</b> बनाने के लिए वित्तीय मदद मिली।'},
+ {n:4, deck:'कहानी', q:'"पेचीदा बात" क्या थी?', a:'काम पूरा करने के लिए सिर्फ़ <b>एक महीना</b> था।<br><i>Only one month to finish.</i>'},
+ {n:5, deck:'कहानी', q:'एंजेला किसके घर रुकी?', a:'असम की लेखिका <b>रीना सेन</b> के घर; उनकी बेटी <b>अनु</b>।'},
+ {n:6, deck:'कहानी', q:'अनु और एंजेला का खेल?', a:'अनु = <b>राम</b> (लकड़ी का तीर-कमान), एंजेला = <b>रावण</b>।'},
+ {n:7, deck:'कहानी', q:'अनु के खिलौने कैसे थे?', a:'<b>गुड़िया, लकड़ी के खिलौने, नारियल की जटा से बने घर</b>।'},
+ {n:8, deck:'कहानी', q:'कहानी का अंत?', a:'लंदन में कक्षा में <b>वीडियो रिकॉर्डिंग के साथ नृत्य का प्रदर्शन</b> — सबको पसंद आया।'},
+ {n:9, deck:'बिहू', q:'बिहू किस प्रकार का त्योहार है?', a:'<b>कृषि आधारित</b> — farming festival.'},
+ {n:10, deck:'बिहू', q:'बिहू कब-कब मनाया जाता है?', a:'साल में <b>3 बार</b>: बीज बोते समय, धान रोपते समय, अनाज तैयार होने पर।'},
+ {n:11, deck:'बिहू', q:'एंजेला ने बिहू कहाँ देखा?', a:'गुवाहाटी के पास गाँव <b>मलंग</b> में, <b>बरगद</b> के नीचे मंच पर।'},
+ {n:12, deck:'बिहू', q:'तीन बिहू के नाम?', a:'<b>रोंगाली/बोहाग</b> (अप्रैल) · <b>भोगाली/माघ</b> (जनवरी) · <b>कोंगाली/काटी</b> (अक्टूबर)।'},
+ {n:13, deck:'बिहू', q:'एंजेला कौन-सा बिहू देखने आई?', a:'<b>रोंगाली / बोहाग</b> — अप्रैल, असम का नया साल।'},
+ {n:14, deck:'बिहू', q:'बिहू में लड़के-लड़कियाँ कैसे थे?', a:'लड़कों के हाथ में <b>वाद्ययंत्र</b>; लड़कियों की <b>लाल और बादामी</b> पोशाक।'},
+ {n:15, deck:'बिहू', q:'माँ ने नृत्य-संगीत के बारे में क्या कहा?', a:'पूरी दुनिया में लोग नृत्य-संगीत से <b>भावनाएँ व्यक्त</b> करते हैं।'},
+ {n:16, deck:'सत्रिया', q:'सत्र क्या हैं?', a:'असम के <b>वैष्णव मठ</b> (500+) — सत्रिया की जन्मभूमि।'},
+ {n:17, deck:'सत्रिया', q:'किस सत्र में गए?', a:'<b>दक्षिणापथ सत्र</b> (माजुली, उत्तरी असम)।'},
+ {n:18, deck:'सत्रिया', q:'पहले सत्रिया कौन करते थे?', a:'मठों के <b>युवा साधु</b> (पुरुष) — गाना, नृत्य, छद्म युद्ध।'},
+ {n:19, deck:'सत्रिया', q:'सत्रिया में क्या बदलाव आया?', a:'<b>20वीं सदी के मध्य</b> साधु बाहर सिखाने लगे (पहले मठ से निकाले गए); अब <b>महिलाएँ</b> भी मंच पर।'},
+ {n:20, deck:'सत्रिया', q:'जय-विजय की कथा (3 पंक्तियों में)?', a:'ऋषियों को सोते विष्णु से मिलने नहीं दिया → <b>असुर बनने का श्राप</b> → विष्णु ने मारकर <b>श्राप से मुक्त</b> किया, फिर द्वारपाल बने।'},
+ {n:21, deck:'सत्रिया', q:'महिला नृत्यांगनाओं ने क्या पहना था?', a:'<b>सफ़ेद पगड़ीनुमा टोपी</b>।'},
+ {n:22, deck:'सत्रिया', q:'मुद्राएँ किसने सिखाईं?', a:'नृत्यांगनाएँ <b>प्रिया और रीता</b>।'},
+ {n:23, deck:'शब्द-अर्थ', q:'हतप्रभ · मंत्रमुग्ध', a:'<b>stunned</b> · <b>spellbound</b>'},
+ {n:24, deck:'शब्द-अर्थ', q:'पेचीदा · जल्दबाज़ी', a:'<b>tricky, complicated</b> · <b>hurry</b>'},
+ {n:25, deck:'शब्द-अर्थ', q:'छद्म युद्ध · द्वारपाल', a:'<b>mock fight</b> · <b>gatekeeper</b>'},
+ {n:26, deck:'शब्द-अर्थ', q:'श्राप · असुर · वचन', a:'<b>curse</b> · <b>demon</b> · <b>promise</b>'},
+ {n:27, deck:'शब्द-अर्थ', q:'अचंभित · लज़ीज़ पकवान', a:'<b>astonished</b> · <b>delicious dishes</b>'},
+ {n:28, deck:'शब्द-अर्थ', q:'साक्षात्कार · फ़िल्मांकन', a:'<b>interview</b> · <b>filming</b>'},
+ {n:29, deck:'शब्द-अर्थ', q:'उत्सुकता · रोमांचित · झलक', a:'<b>eagerness</b> · <b>thrilled</b> · <b>glimpse</b>'},
+ {n:30, deck:'शब्द-अर्थ', q:'समृद्ध परंपरा · वन्य-जीवन', a:'<b>rich tradition</b> · <b>wildlife</b>'},
+ {n:31, deck:'शब्द-अर्थ', q:'आग्रह · स्वीकृति · अनुमति', a:'<b>earnest request</b> · <b>approval</b> · <b>permission</b>'},
+ {n:32, deck:'शब्द-अर्थ', q:'मुद्राएँ · बारीकियाँ · पारंगत', a:'<b>dance poses</b> · <b>fine details</b> · <b>expert</b>'},
+ {n:33, deck:'असम और मूँगा', q:'असम किसके लिए जाना जाता है?', a:'<b>वन्य-जीवन, रेशम, चाय के बागान</b> + नृत्य परंपरा।'},
+ {n:34, deck:'असम और मूँगा', q:'पूर्वोत्तर के 8 राज्य?', a:'अरुणाचल प्रदेश, सिक्किम, मिज़ोरम, मेघालय, त्रिपुरा, नागालैंड, मणिपुर, <b>असम</b>।'},
+ {n:35, deck:'असम और मूँगा', q:'"मूँगा" का असमिया अर्थ?', a:'<b>पीला या गहरा भूरा</b>; रंग सुनहरा।'},
+ {n:36, deck:'असम और मूँगा', q:'मूँगा सिल्क की 4 खूबियाँ?', a:'सबसे <b>महँगा</b> · <b>ड्राई क्लीन नहीं</b>, धुलाई से निखार · <b>50 वर्ष</b> · सबसे <b>मज़बूत</b>, हर मौसम।'},
+ {n:37, deck:'असम और मूँगा', q:'लेखिका और पुस्तक?', a:'<b>जया मेहता</b> (जन्म 1977, ओडिसी नृत्यांगना) — <b>"नृत्य कथा"</b>; अनुवाद: शिवेंद्र कुमार सिंह।'},
+ {n:38, deck:'असम और मूँगा', q:'4 असमिया पहेलियों के उत्तर?', a:'<b>मूली, नारियल, होंठ, चींटी</b>'}
+];
+</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
